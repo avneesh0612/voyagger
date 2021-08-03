@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar_icon {
+    @apply h-[40px] md:min-h-[48px] w-[40px] md:min-w-[48px] text-black bg-gray-100 rounded-full p-2;
+  }
+  body {
+    @apply bg-bgmain;
+  }
+}
+
+.bg-gradient-radial {
+  background: rgb(248, 93, 73);
+  background: radial-gradient(
+    circle,
+    rgba(248, 93, 73, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.green-gradient {
+  background: linear-gradient(45deg, #4ae491, #49aa75);
+}
+
+.hidescrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hidescrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
