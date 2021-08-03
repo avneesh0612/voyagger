@@ -6,18 +6,18 @@ import { NextSeo } from "next-seo";
 export default function Home({ user }) {
   return (
     <div>
-      <NextSeo title="Voyage" description="A short description goes here." />
+      <NextSeo title="Voyager" description="A short description goes here." />
       <Header user={user} />
       <div className="flex flex-col w-screen mt-5 justify-evenly">
         <div className="flex flex-wrap w-3/5 mx-auto justify-evenly">
           <Items
             image="https://media.baamboozle.com/uploads/images/67836/1600826082_888203"
-            text="Travel"
+            text="Book a cab"
             href="travel"
           />
           <Items
             image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1627986059/ae5fdac3b3f6840c1efcc225d53ee0-unscreen_k7zhvz.gif"
-            text="Send something"
+            text="Send a package"
             href="parcel"
           />
         </div>
@@ -29,7 +29,7 @@ export default function Home({ user }) {
           />
           <Items
             image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1627986581/https-3A-2F-2Fbucketeer-e05bbc-unscreen_bcuzxf.gif"
-            text="Order medicines"
+            text="Get medicines"
             href="medicine"
             repeat
           />

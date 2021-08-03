@@ -20,7 +20,7 @@ function Items({ image, text, repeat, href }) {
             !repeat && "!bg-no-repeat"
           }`}
         ></div>
-        <h1 className="text-base text-center bg-pink-200 !mt-auto font-medium w-full rounded-b-lg pl-2 font-poppins py-1">
+        <h1 className="text-base text-center bg-[#fec5bb] !mt-auto font-medium w-full rounded-b-lg pl-2 font-poppins py-1">
           {text}
         </h1>
       </motion.div>
