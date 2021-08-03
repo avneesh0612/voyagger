@@ -12,7 +12,7 @@ function Items({ image, text, repeat, href }) {
             duration: 1,
           },
         }}
-        className="bg-[#ffb1a3] !rounded-t-lg w-96 h-52"
+        className="bg-[#ffb1a3] !rounded-t-lg w-96 h-52 my-5"
       >
         <div
           style={{ background: `url(${image})` }}
@@ -20,7 +20,7 @@ function Items({ image, text, repeat, href }) {
             !repeat && "!bg-no-repeat"
           }`}
         ></div>
-        <h1 className="text-base text-center bg-pink-200 !mt-auto font-medium w-full rounded-b-lg pl-2 font-poppins">
+        <h1 className="text-base text-center bg-pink-200 !mt-auto font-medium w-full rounded-b-lg pl-2 font-poppins py-1">
           {text}
         </h1>
       </motion.div>

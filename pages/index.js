@@ -1,13 +1,15 @@
 import Header from "../components/Header";
 import Items from "../components/Items";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
+import { NextSeo } from "next-seo";
 
 export default function Home({ user }) {
   return (
     <div>
+      <NextSeo title="Voyage" description="A short description goes here." />
       <Header user={user} />
-      <div className="flex flex-col w-screen justify-evenly">
-        <div className="flex w-3/5 mx-auto my-5 justify-evenly">
+      <div className="flex flex-col w-screen mt-5 justify-evenly">
+        <div className="flex flex-wrap w-3/5 mx-auto justify-evenly">
           <Items
             image="https://media.baamboozle.com/uploads/images/67836/1600826082_888203"
             text="Travel"
@@ -19,7 +21,7 @@ export default function Home({ user }) {
             href="parcel"
           />
         </div>
-        <div className="flex w-3/5 mx-auto my-5 justify-evenly">
+        <div className="flex flex-wrap w-3/5 mx-auto justify-evenly">
           <Items
             image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1627995535/701c4f418e5d1bb0b278aea50296c5-unscreen_grwuqi.gif"
             text="Order food"

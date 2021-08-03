@@ -7,7 +7,7 @@
     @apply h-[40px] md:min-h-[48px] w-[40px] md:min-w-[48px] text-black bg-gray-100 rounded-full p-2;
   }
   body {
-    @apply bg-bgmain;
+    @apply overflow-x-hidden bg-bgmain;
   }
 }
 

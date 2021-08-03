@@ -4,13 +4,13 @@ import OfferProduct from "./OfferProduct";
 
 function Main() {
   return (
-    <main className="md:w-[65vw] w-full md:pl-10  md:ml-20">
+    <main className="md:w-[65vw] w-full">
       <div className="md:w-[55vw] w-5/6 flex ring-1 ring-white backdrop-filter backdrop-blur-3xl bg-white  h-12 rounded-full  bg-opacity-40  m-5 mx-auto items-center justify-center">
         <input
-          className="bg-transparent outline-none w-full pl-10 text-gray-200 placeholder-gray-200 caret-gray-200"
+          className="w-full pl-10 text-gray-200 placeholder-gray-200 bg-transparent outline-none caret-gray-200"
           placeholder="Search"
         />
-        <SearchIcon className="h-12 backdrop-filter backdrop-blur-2xl w-12 bg-white bg-opacity-40 p-3 rounded-full" />
+        <SearchIcon className="w-12 h-12 p-3 bg-white rounded-full backdrop-filter backdrop-blur-2xl bg-opacity-40" />
       </div>
 
       <div className="flex overflow-scroll md:w-[67vw] hidescrollbar mx-10 h-48 space-x-6">
@@ -49,7 +49,7 @@ function Main() {
           </div>
         </div>
       </div>
-      <div className="mt-5 flex flex-wrap md:flex-nowrap justify-evenly mb-5 md:mb-0">
+      <div className="flex flex-wrap mt-5 mb-5 md:flex-nowrap justify-evenly md:mb-0">
         <OfferProduct
           name="Caesar Salad"
           image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1624633837/image-removebg-preview_mxb2vu.png"
