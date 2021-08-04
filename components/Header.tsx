@@ -1,14 +1,13 @@
 import { useUser } from "@auth0/nextjs-auth0";
 import Image from "next/image";
 
-type HeaderProps = {
+interface HeaderProps {
   ssruser?: {
     name?: string;
   };
-};
+}
 
 const Header: React.FC<HeaderProps> = ({ ssruser }) => {
-  console.log(ssruser);
   const user = useUser();
   return (
     <header className="flex items-center justify-evenly">

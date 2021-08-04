@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-type FoodItemProps = {
+interface FoodItemProps  {
   image: string;
   text: string;
   href: string;

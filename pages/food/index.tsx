@@ -4,9 +4,9 @@ import Header from "../../components/Header";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 4;
 
-type HomeProps = {
+interface HomeProps {
   user: object;
-};
+}
 
 const Home: React.FC<HomeProps> = ({ user }) => {
   return (

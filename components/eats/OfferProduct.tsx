@@ -1,12 +1,12 @@
 import { PlusIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 
-type FoodItemProps = {
+interface FoodItemProps {
   image: string;
   name: string;
   price: number;
   active?: boolean;
-};
+}
 
 const OfferProduct: React.FC<FoodItemProps> = ({
   name,

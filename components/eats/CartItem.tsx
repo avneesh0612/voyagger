@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-type CartItemProps = {
+interface CartItemProps {
   image: string;
   name: string;
   price: number;
   quant: number;
-};
+}
 
 const CartItem: React.FC<CartItemProps> = ({ price, quant, name, image }) => {
   return (

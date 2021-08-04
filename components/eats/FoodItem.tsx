@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-type FoodItemProps = {
+interface FoodItemProps {
   image: string;
   name: string;
   active?: boolean;
-};
+}
 
 const FoodItem: React.FC<FoodItemProps> = ({ image, name, active }) => {
   return (
