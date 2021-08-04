@@ -1,13 +1,12 @@
 import Header from "../components/Header";
 import Items from "../components/Items";
-import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 import { NextSeo } from "next-seo";
 
-export default function Home({ user }) {
+export default function Home() {
   return (
     <div>
       <NextSeo title="Voyager" description="A short description goes here." />
-      <Header user={user} />
+      <Header />
       <div className="flex flex-col w-screen mt-5 justify-evenly">
         <div className="flex flex-wrap w-3/5 mx-auto justify-evenly">
           <Items
@@ -38,5 +37,3 @@ export default function Home({ user }) {
     </div>
   );
 }
-
-export const getServerSideProps = withPageAuthRequired();

@@ -1,8 +1,9 @@
 import "../styles/globals.css";
 import { UserProvider } from "@auth0/nextjs-auth0";
 import { NextSeo } from "next-seo";
+import { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <UserProvider>
       <NextSeo
@@ -40,4 +41,6 @@ export default function App({ Component, pageProps }) {
       <Component {...pageProps} />
     </UserProvider>
   );
-}
+};
+
+export default MyApp;

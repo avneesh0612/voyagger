@@ -1,7 +1,8 @@
+import { useUser } from "@auth0/nextjs-auth0";
 import Image from "next/image";
-import Link from "next/link";
 
-function Header({ user }) {
+function Header({ ssruser }) {
+  const user = useUser();
   return (
     <header className="flex items-center justify-evenly">
       <Image
@@ -10,11 +11,13 @@ function Header({ user }) {
         objectFit="contain"
         src="https://res.cloudinary.com/dssvrf9oz/image/upload/v1627972754/voyager-removebg-preview_bixjvh.png"
       />
-      {user ? (
-        <a href="/api/auth/logout">{user.name}</a>
+      {ssruser ? (
+        <a href="/api/auth/logout">{ssruser.user.name}</a>
       ) : (
-        <Link href="/api/auth/login">Sign in</Link>
+        <a href="/api/auth/logout">{user.user?.name}</a>
       )}
+
+      {!ssruser?.user && !user?.user && <a href="/api/auth/login">Sign in</a>}
     </header>
   );
 }
