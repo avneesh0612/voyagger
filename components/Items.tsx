@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-function Items({ image, text, repeat, href }) {
+type FoodItemProps = {
+  image: string;
+  text: string;
+  href: string;
+  repeat?: boolean;
+};
+
+const Items: React.FC<FoodItemProps> = ({ image, text, repeat, href }) => {
   return (
     <Link href={href}>
       <motion.div
@@ -26,6 +33,6 @@ function Items({ image, text, repeat, href }) {
       </motion.div>
     </Link>
   );
-}
+};
 
 export default Items;

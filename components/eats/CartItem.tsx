@@ -1,15 +1,22 @@
 import Image from "next/image";
 
-function CartItem({ price, quant, name, image }) {
+type CartItemProps = {
+  image: string;
+  name: string;
+  price: number;
+  quant: number;
+};
+
+const CartItem: React.FC<CartItemProps> = ({ price, quant, name, image }) => {
   return (
-    <div className="flex justify-between font-semibold text-gray-600 px-2">
+    <div className="flex justify-between px-2 font-semibold text-gray-600">
       <div className="flex items-center space-x-2">
         <Image
           width={64}
           height={75}
           objectFit="contain"
           src={image}
-          className="drop-shadow-lg rounded-full"
+          className="rounded-full drop-shadow-lg"
         />
         <h2>{name}</h2>
       </div>
@@ -19,6 +26,6 @@ function CartItem({ price, quant, name, image }) {
       </div>
     </div>
   );
-}
+};
 
 export default CartItem;

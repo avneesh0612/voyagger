@@ -1,23 +1,35 @@
 import { PlusIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 
-function OfferProduct({ name, price, image, active }) {
+type FoodItemProps = {
+  image: string;
+  name: string;
+  price: number;
+  active?: boolean;
+};
+
+const OfferProduct: React.FC<FoodItemProps> = ({
+  name,
+  price,
+  image,
+  active,
+}) => {
   return (
-    <div className="w-60 flex flex-col items-center -mt-2">
+    <div className="flex flex-col items-center -mt-2 w-60">
       <Image
         height={180}
         width={160}
         objectFit="contain"
         src={image}
         alt="salad"
-        className="rounded-full object-contain  drop-shadow-xl h-40 w-40 z-10"
+        className="z-10 object-contain w-40 h-40 rounded-full drop-shadow-xl"
       />
       <div
         className={`w-52 p-5 ${
           active ? "bg-gradient-radial text-white" : "bg-white"
         }  pt-20 -mt-10 rounded-3xl`}
       >
-        <h3 className="text-center text-lg font-semibold">{name}</h3>
+        <h3 className="text-lg font-semibold text-center">{name}</h3>
         <div className="flex justify-between">
           <h2>${price}</h2>
           <PlusIcon
@@ -29,6 +41,6 @@ function OfferProduct({ name, price, image, active }) {
       </div>
     </div>
   );
-}
+};
 
 export default OfferProduct;

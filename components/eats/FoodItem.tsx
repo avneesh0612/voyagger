@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-function FoodItem({ image, name, active }) {
+type FoodItemProps = {
+  image: string;
+  name: string;
+  active?: boolean;
+};
+
+const FoodItem: React.FC<FoodItemProps> = ({ image, name, active }) => {
   return (
     <div
       className={`${
@@ -14,11 +20,11 @@ function FoodItem({ image, name, active }) {
         width={112}
         height={112}
         src={image}
-        className="w-28 h-28 object-contain"
+        className="object-contain w-28 h-28"
       />
-      <h2 className="mb-2 ">{name}</h2>
+      <h2 className="mb-2">{name}</h2>
     </div>
   );
-}
+};
 
 export default FoodItem;
