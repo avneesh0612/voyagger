@@ -3,6 +3,7 @@ import { LocationMarkerIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import { selectItems, selectTotal } from "../../slices/basketSlice";
 import { useSelector } from "react-redux";
+import { itemtype } from "../../types/itemTypes";
 
 function Cart() {
   const items = useSelector(selectItems);
@@ -36,7 +37,7 @@ function Cart() {
           >
             {items.length === 0 ? "Your Basket is empty." : "Shopping Basket"}
           </h1>
-          {items.map((item, i) => (
+          {items.map((item: itemtype, i: number) => (
             <div key={item.id}>
               <CartItem
                 price={item.price}

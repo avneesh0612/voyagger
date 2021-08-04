@@ -9,7 +9,7 @@ interface FoodItemProps {
   name: string;
   price: number;
   active?: boolean;
-  id: any;
+  id: number;
 }
 
 const OfferProduct: React.FC<FoodItemProps> = ({
@@ -20,7 +20,6 @@ const OfferProduct: React.FC<FoodItemProps> = ({
   id,
 }) => {
   const dispatch = useDispatch();
-  const items = useSelector(selectItems);
 
   const addItemToBasket = () => {
     const product = {
