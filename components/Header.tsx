@@ -3,7 +3,7 @@ import Image from "next/image";
 
 type HeaderProps = {
   ssruser?: {
-    name: string;
+    name?: string;
   };
 };
 
