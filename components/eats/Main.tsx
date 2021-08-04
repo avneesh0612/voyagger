@@ -54,22 +54,26 @@ function Main() {
           name="Caesar Salad"
           image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1624633837/image-removebg-preview_mxb2vu.png"
           price={15.0}
+          id={1}
           active
         />
         <OfferProduct
           name="Coleslaw"
           image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1624680422/image-removebg-preview_1_ukql6s.png"
           price={12.0}
+          id={2}
         />
         <OfferProduct
           name="Cobb salad"
           image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1624680573/image-removebg-preview_2_ficyc1.png"
           price={10.0}
+          id={3}
         />
         <OfferProduct
           name="Chilean Salad"
           image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1624680574/image-removebg-preview_3_vkyado.png"
           price={14.0}
+          id={4}
         />
       </div>
     </main>

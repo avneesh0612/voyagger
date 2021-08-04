@@ -5,9 +5,16 @@ interface CartItemProps {
   name: string;
   price: number;
   quant: number;
+  id: number;
 }
 
-const CartItem: React.FC<CartItemProps> = ({ price, quant, name, image }) => {
+const CartItem: React.FC<CartItemProps> = ({
+  price,
+  quant,
+  name,
+  image,
+  id,
+}) => {
   return (
     <div className="flex justify-between px-2 font-semibold text-gray-600">
       <div className="flex items-center space-x-2">

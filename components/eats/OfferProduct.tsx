@@ -1,11 +1,15 @@
 import { PlusIcon } from "@heroicons/react/solid";
 import Image from "next/image";
+import { useDispatch, useSelector } from "react-redux";
+import { addToBasket } from "../../slices/basketSlice";
+import { selectItems } from "../../slices/basketSlice";
 
 interface FoodItemProps {
   image: string;
   name: string;
   price: number;
   active?: boolean;
+  id: any;
 }
 
 const OfferProduct: React.FC<FoodItemProps> = ({
@@ -13,7 +17,23 @@ const OfferProduct: React.FC<FoodItemProps> = ({
   price,
   image,
   active,
+  id,
 }) => {
+  const dispatch = useDispatch();
+  const items = useSelector(selectItems);
+
+  const addItemToBasket = () => {
+    const product = {
+      name,
+      price,
+      image,
+      active,
+      id,
+    };
+
+    dispatch(addToBasket(product));
+  };
+
   return (
     <div className="flex flex-col items-center -mt-2 w-60">
       <Image
@@ -33,6 +53,7 @@ const OfferProduct: React.FC<FoodItemProps> = ({
         <div className="flex justify-between">
           <h2>${price}</h2>
           <PlusIcon
+            onClick={addItemToBasket}
             className={`h-8 w-8 rounded-full cursor-pointer ${
               active ? "bg-white text-black" : "green-gradient text-white"
             }`}

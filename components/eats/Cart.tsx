@@ -1,8 +1,13 @@
 import CartItem from "./CartItem";
 import { LocationMarkerIcon } from "@heroicons/react/solid";
 import Image from "next/image";
+import { selectItems, selectTotal } from "../../slices/basketSlice";
+import { useSelector } from "react-redux";
 
 function Cart() {
+  const items = useSelector(selectItems);
+  const total = useSelector(selectTotal);
+
   return (
     <div className="absolute right-0 z-10 flex-col hidden w-2/6 h-full bg-white bg-opacity-50 rounded-br-none md:flex backdrop-filter backdrop-blur-sm rounded-3xl ring-1 ring-white">
       <div className="border-b-2 border-white">
@@ -24,34 +29,28 @@ function Cart() {
           <h2 className="text-xl font-semibold">Edit</h2>
         </div>
         <div>
-          <CartItem
-            price={15.0}
-            quant={1}
-            name="Ceaser Salad"
-            image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1624633837/image-removebg-preview_mxb2vu.png"
-          />
-          <CartItem
-            price={24.0}
-            quant={2}
-            name="Coleslaw"
-            image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1624680422/image-removebg-preview_1_ukql6s.png"
-          />
-          <CartItem
-            price={20.0}
-            quant={2}
-            name="Cobb salad"
-            image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1624680573/image-removebg-preview_2_ficyc1.png"
-          />
-          <CartItem
-            price={14.0}
-            quant={1}
-            name="Chilean Salad"
-            image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1624680574/image-removebg-preview_3_vkyado.png"
-          />
+          <h1
+            className={`text-3xl dark:text-gray-200 ${
+              items.length > 0 ? "border-b pb-4" : "pb-2"
+            }`}
+          >
+            {items.length === 0 ? "Your Basket is empty." : "Shopping Basket"}
+          </h1>
+          {items.map((item, i) => (
+            <div key={item.id}>
+              <CartItem
+                price={item.price}
+                quant={item.length}
+                name={item.name}
+                image={item.image}
+                id={item.id}
+              />
+            </div>
+          ))}
         </div>
         <div className="flex items-center justify-between pb-3 m-10 mt-2 mb-2">
           <h2 className="text-2xl font-semibold">Total</h2>
-          <h2 className="text-xl font-semibold">$73.00</h2>
+          <h2 className="text-xl font-semibold">${total}</h2>
         </div>
       </div>
       <div className="flex items-center justify-between m-10 mt-2 mb-1">
