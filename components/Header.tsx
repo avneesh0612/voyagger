@@ -2,7 +2,7 @@ import { useUser } from "@auth0/nextjs-auth0";
 import Image from "next/image";
 
 type HeaderProps = {
-  ssruser?: Object;
+  ssruser?: any;
 };
 
 const Header: React.FC<HeaderProps> = ({ ssruser }) => {
