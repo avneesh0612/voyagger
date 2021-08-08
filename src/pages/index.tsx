@@ -3,7 +3,7 @@ import Items from "../components/Items";
 import { NextSeo } from "next-seo";
 import { useUser } from "@auth0/nextjs-auth0";
 import { useEffect } from "react";
-import { db } from "../firebase";
+import { db } from "../../firebase";
 
 export default function Home() {
   const user = useUser();

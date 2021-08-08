@@ -1,7 +1,7 @@
 import Main from "../../components/eats/Main";
 import Cart from "../../components/eats/Cart";
 import Header from "../../components/Header";
-import { db } from "../../firebase";
+import { db } from "../../../firebase";
 import { Category, Salad } from "../../types/itemTypes";
 import React, { useEffect } from "react";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0/";

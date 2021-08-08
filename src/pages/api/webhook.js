@@ -1,7 +1,7 @@
 import { buffer } from "micro";
 import * as admin from "firebase-admin";
 
-const serviceAccount = require("../../permissions");
+const serviceAccount = require("../../../permissions");
 const app = !admin.apps.length
   ? admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
