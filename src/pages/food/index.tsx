@@ -1,10 +1,11 @@
-import Main from "../../components/eats/Main";
-import Cart from "../../components/eats/Cart";
-import Header from "../../components/Header";
-import { db } from "../../../firebase";
-import { Category, Salad } from "../../types/itemTypes";
-import React, { useEffect } from "react";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0/";
+import { NextSeo } from "next-seo";
+import React, { useEffect } from "react";
+import { db } from "../../../firebase";
+import Cart from "../../components/eats/Cart";
+import Main from "../../components/eats/Main";
+import Header from "../../components/Header";
+import { Category, Salad } from "../../types/itemTypes";
 import { user } from "../../types/userType";
 
 interface HomeProps {
@@ -29,6 +30,7 @@ const Home: React.FC<HomeProps> = ({ salads, categories, user }) => {
 
   return (
     <div className="flex flex-col min-h-screen md:flex-row min-w-screen">
+      <NextSeo title="Order tasty food | Voyager" />
       <div>
         <Header ssruser={user} />
         <Main salads={salads} categories={categories} />

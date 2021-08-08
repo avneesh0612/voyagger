@@ -1,9 +1,9 @@
 import { SearchIcon, ShoppingBagIcon } from "@heroicons/react/outline";
-import FoodItem from "./FoodItem";
-import OfferProduct from "./OfferProduct";
+import Link from "next/link";
 import React from "react";
 import { Category, Salad } from "../../types/itemTypes";
-import Link from "next/link";
+import FoodItem from "./FoodItem";
+import OfferProduct from "./OfferProduct";
 
 interface MainProps {
   salads: [Salad];
@@ -47,6 +47,8 @@ const Main: React.FC<MainProps> = ({ salads, categories }) => {
               price={salad.price}
               id={salad.id}
               active={salad.active}
+              category={salad.category}
+              description={salad.description}
             />
           </div>
         ))}

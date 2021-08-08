@@ -1,10 +1,11 @@
-import { db } from "../../../firebase";
-import Header from "../../components/Header";
-import Order from "../../components/eats/Order";
-import moment from "moment";
-import { useRouter } from "next/router";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0/";
+import moment from "moment";
+import { NextSeo } from "next-seo";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { db } from "../../../firebase";
+import Order from "../../components/eats/Order";
+import Header from "../../components/Header";
 import { user } from "../../types/userType";
 
 interface OrdersProps {
@@ -36,7 +37,7 @@ const Orders: React.FC<OrdersProps> = ({ user }) => {
   return (
     <div className="min-h-screen">
       <Header />
-
+      <NextSeo title="Your orders | Voyager" />
       <main className="max-w-screen-lg p-10 mx-auto">
         <div className="pb-1 pl-4 mb-2 text-3xl bg-white bg-opacity-25 rounded-lg shadow-xl backdrop-filter backdrop-blur-2xl ">
           <h1 className="pb-4 border-b-2 border-gray-700">Your orders</h1>

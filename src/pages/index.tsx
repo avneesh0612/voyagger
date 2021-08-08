@@ -1,9 +1,9 @@
-import Header from "../components/Header";
-import Items from "../components/Items";
-import { NextSeo } from "next-seo";
 import { useUser } from "@auth0/nextjs-auth0";
+import { NextSeo } from "next-seo";
 import { useEffect } from "react";
 import { db } from "../../firebase";
+import Header from "../components/Header";
+import Items from "../components/Items";
 
 export default function Home() {
   const user = useUser();

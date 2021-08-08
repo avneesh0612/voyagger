@@ -1,4 +1,5 @@
 import { CheckCircleIcon } from "@heroicons/react/solid";
+import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -16,7 +17,7 @@ const Success: React.FC = () => {
   return (
     <div className="h-screen">
       <Header />
-
+      <NextSeo title="Your order has been confirmed" />
       <main className="max-w-screen-lg mx-auto">
         <div className="relative z-30 flex flex-col p-10 m-5 bg-white bg-opacity-25 shadow-xl backdrop-filter backdrop-blur-2xl rounded-xl cursor-ponter">
           <div className="flex items-center mb-5 space-x-2">

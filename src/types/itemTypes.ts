@@ -4,6 +4,8 @@ interface Salad {
   name: string;
   image: string;
   price: number;
+  category: string;
+  description: string;
 }
 
 interface Category {

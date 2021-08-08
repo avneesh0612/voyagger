@@ -1,9 +1,9 @@
-import Image from "next/image";
-import { addToBasket, removeFromBasket } from "../../slices/basketSlice";
-import { useDispatch } from "react-redux";
-import Currency from "react-currency-formatter";
 import { MinusSmIcon, PlusIcon } from "@heroicons/react/solid";
+import Image from "next/image";
+import Currency from "react-currency-formatter";
 import toast from "react-hot-toast";
+import { useDispatch } from "react-redux";
+import { addToBasket, removeFromBasket } from "../../slices/basketSlice";
 
 interface CartItemProps {
   image: string;

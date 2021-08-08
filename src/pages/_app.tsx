@@ -1,14 +1,14 @@
-import "../styles/globals.css";
 import { UserProvider } from "@auth0/nextjs-auth0";
 import { NextSeo } from "next-seo";
 import { AppProps } from "next/app";
+import Head from "next/head";
+import NextNProgress from "nextjs-progressbar";
+import { Toaster } from "react-hot-toast";
 import { Provider } from "react-redux";
 import { store } from "../app/store";
 import StorageService from "../services/StorageService";
 import { hydrate } from "../slices/basketSlice";
-import NextNProgress from "nextjs-progressbar";
-import { Toaster } from "react-hot-toast";
-import Head from "next/head";
+import "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   store.subscribe(() => {

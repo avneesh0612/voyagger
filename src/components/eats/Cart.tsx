@@ -1,19 +1,19 @@
-import CartItem from "./CartItem";
+import { useUser } from "@auth0/nextjs-auth0";
 import { LocationMarkerIcon } from "@heroicons/react/solid";
+import { loadStripe } from "@stripe/stripe-js";
+import axios from "axios";
+import { groupBy } from "lodash";
 import Image from "next/image";
+import Currency from "react-currency-formatter";
+import toast from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
 import {
   clearBasket,
   selectItems,
-  selectTotal,
+  selectTotal
 } from "../../slices/basketSlice";
-import { useDispatch, useSelector } from "react-redux";
-import { groupBy } from "lodash";
-import { useUser } from "@auth0/nextjs-auth0";
-import toast from "react-hot-toast";
-import Currency from "react-currency-formatter";
+import CartItem from "./CartItem";
 
-import { loadStripe } from "@stripe/stripe-js";
-import axios from "axios";
 const stripePromise = loadStripe(process.env.stripe_public_key!);
 
 interface CartProps {
@@ -120,22 +120,13 @@ const Cart: React.FC<CartProps> = ({ ssruser }) => {
           <p>Jersey(NJ), 07093</p>
         </div>
       </div>
-      {items.length === 0 ? (
-        <button
-          disabled
-          className="w-10/12 py-2 mb-5 ml-10 text-white rounded-full cursor-not-allowed bg-gradient-to-tr from-red-400 to-red-700"
-        >
-          Please add something to cart
-        </button>
-      ) : (
-        <button
-          role="link"
-          onClick={createCheckOutSession}
-          className="w-10/12 py-2 mb-5 ml-10 text-white rounded-full cursor-pointer green-gradient"
-        >
-          Checkout
-        </button>
-      )}
+      <button
+        role="link"
+        onClick={createCheckOutSession}
+        className="w-10/12 py-2 mb-5 ml-10 text-white rounded-full cursor-pointer green-gradient"
+      >
+        Checkout
+      </button>
     </div>
   );
 };

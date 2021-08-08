@@ -1,19 +1,20 @@
-import CartItem from "../../components/eats/CartItem";
+import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 import { ArrowLeftIcon, LocationMarkerIcon } from "@heroicons/react/solid";
+import { loadStripe } from "@stripe/stripe-js";
+import axios from "axios";
+import { groupBy } from "lodash";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
+import Link from "next/link";
+import Currency from "react-currency-formatter";
+import toast from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
+import CartItem from "../../components/eats/CartItem";
 import {
   clearBasket,
   selectItems,
-  selectTotal,
+  selectTotal
 } from "../../slices/basketSlice";
-import { useDispatch, useSelector } from "react-redux";
-import { groupBy } from "lodash";
-import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
-import toast from "react-hot-toast";
-import Currency from "react-currency-formatter";
-import { loadStripe } from "@stripe/stripe-js";
-import axios from "axios";
-import Link from "next/link";
 const stripePromise = loadStripe(process.env.stripe_public_key!);
 
 interface CartProps {
@@ -55,6 +56,7 @@ const Cart: React.FC<CartProps> = ({ user }) => {
 
   return (
     <div className="absolute right-0 z-10 flex flex-col w-full h-full bg-white bg-opacity-50 rounded-br-none md:w-2/6 backdrop-filter backdrop-blur-sm rounded-3xl ring-1 ring-white">
+      <NextSeo title="Your cart" />
       <div className="h-full">
         <div className="flex items-center p-8 bg-white bg-opacity-60 rounded-l-3xl ring-1 ring-white">
           <Link href="/food" passHref>

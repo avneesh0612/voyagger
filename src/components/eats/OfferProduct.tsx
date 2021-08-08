@@ -1,9 +1,10 @@
 import { PlusIcon } from "@heroicons/react/solid";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import Currency from "react-currency-formatter";
+import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../../slices/basketSlice";
-import toast from "react-hot-toast";
-import Currency from "react-currency-formatter";
 
 interface FoodItemProps {
   image: string;
@@ -11,6 +12,8 @@ interface FoodItemProps {
   price: number;
   active?: boolean;
   id: string;
+  category: string;
+  description: string;
 }
 
 const OfferProduct: React.FC<FoodItemProps> = ({
@@ -19,8 +22,12 @@ const OfferProduct: React.FC<FoodItemProps> = ({
   image,
   active,
   id,
+  category,
+  description,
 }) => {
   const dispatch = useDispatch();
+
+  const router = useRouter();
 
   const addItemToBasket = () => {
     const product = {
@@ -29,6 +36,7 @@ const OfferProduct: React.FC<FoodItemProps> = ({
       image,
       active,
       id,
+      description,
     };
 
     dispatch(addToBasket(product));
@@ -40,8 +48,13 @@ const OfferProduct: React.FC<FoodItemProps> = ({
   };
 
   return (
-    <div className="flex flex-col items-center -mt-2 w-60">
-      <div className="z-20 bg-white rounded-full drop-shadow-xl">
+    <div className="flex flex-col items-center -mt-2 cursor-pointer w-60">
+      <div
+        className="z-20 bg-white rounded-full drop-shadow-xl "
+        onClick={() =>
+          router.push(`/food/${id}/?category=${category.toLowerCase()}`)
+        }
+      >
         <Image
           height={160}
           width={160}
