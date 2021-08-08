@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ ssruser }) => {
           width={100}
           height={100}
           objectFit="contain"
-          src="https://res.cloudinary.com/dssvrf9oz/image/upload/v1627972754/voyager-removebg-preview_bixjvh.png"
+          src="/voyager.svg"
           className="cursor-pointer"
           alt="voyager"
         />

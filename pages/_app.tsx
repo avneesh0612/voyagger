@@ -8,6 +8,7 @@ import StorageService from "../services/StorageService";
 import { hydrate } from "../slices/basketSlice";
 import NextNProgress from "nextjs-progressbar";
 import { Toaster } from "react-hot-toast";
+import Head from "next/head";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   store.subscribe(() => {
@@ -53,6 +54,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           //     cardType: "summary_large_image",
           //   }}
         />
+        <Head>
+          <link rel="icon" href="/favicon.svg" />
+        </Head>
         <NextNProgress color="#DC602E" height={4} />
         <Toaster />
         <Component {...pageProps} />
