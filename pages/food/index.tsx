@@ -14,8 +14,6 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ salads, categories, user }) => {
-  console.log(permssions);
-
   useEffect(() => {
     if (user?.email) {
       db.collection("users").doc(user?.email).set(
