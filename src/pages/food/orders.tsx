@@ -1,4 +1,4 @@
-import { db } from "../../firebase";
+import { db } from "../../../firebase";
 import Header from "../../components/Header";
 import Order from "../../components/eats/Order";
 import moment from "moment";
