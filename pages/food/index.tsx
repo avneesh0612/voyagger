@@ -5,12 +5,12 @@ import { db } from "../../firebase";
 import { Category, Salad } from "../../types/itemTypes";
 import React, { useEffect } from "react";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0/";
-import permssions from "../../permissions";
+import { user } from "../../types/userType";
 
 interface HomeProps {
   salads: [Salad];
   categories: [Category];
-  user: any;
+  user: user;
 }
 
 const Home: React.FC<HomeProps> = ({ salads, categories, user }) => {

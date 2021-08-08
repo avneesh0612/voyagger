@@ -4,12 +4,11 @@ import { groupBy } from "lodash";
 import Image from "next/image";
 
 interface OrderProps {
-  id: any;
+  id: string;
   amount: number;
   amountShipping: number;
-  images: any;
-  timestamp: any;
-  items: any;
+  images: [string];
+  timestamp: number;
 }
 
 const Order: React.FC<OrderProps> = ({

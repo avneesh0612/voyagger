@@ -5,9 +5,10 @@ import moment from "moment";
 import { useRouter } from "next/router";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0/";
 import { useEffect, useState } from "react";
+import { user } from "../../types/userType";
 
 interface OrdersProps {
-  user: any;
+  user: user;
 }
 
 const Orders: React.FC<OrdersProps> = ({ user }) => {
@@ -73,7 +74,6 @@ const Orders: React.FC<OrdersProps> = ({ user }) => {
               amountShipping={order.amountShipping}
               images={order.images}
               timestamp={order.timestamp}
-              items={order.items}
             />
           ))}
         </div>
