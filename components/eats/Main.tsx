@@ -1,8 +1,9 @@
-import { ArrowRightIcon, SearchIcon } from "@heroicons/react/outline";
+import { SearchIcon, ShoppingBagIcon } from "@heroicons/react/outline";
 import FoodItem from "./FoodItem";
 import OfferProduct from "./OfferProduct";
 import React from "react";
 import { Category, Salad } from "../../types/itemTypes";
+import Link from "next/link";
 
 interface MainProps {
   salads: [Salad];
@@ -12,15 +13,20 @@ interface MainProps {
 const Main: React.FC<MainProps> = ({ salads, categories }) => {
   return (
     <main className="md:w-[65vw] w-full">
-      <div className="md:w-[55vw] w-5/6 flex ring-1 ring-white backdrop-filter backdrop-blur-3xl bg-white  h-12 rounded-full  bg-opacity-40  m-5 mx-auto items-center justify-center">
-        <input
-          className="w-full pl-10 bg-transparent outline-none caret-gray-200"
-          placeholder="Search"
-        />
-        <SearchIcon className="w-12 h-12 p-3 bg-white rounded-full backdrop-filter backdrop-blur-2xl bg-opacity-40" />
+      <div className="flex items-center justify-evenly">
+        <div className="md:w-[55vw] w-4/6 flex ring-1 ring-white backdrop-filter backdrop-blur-3xl bg-white  h-12 rounded-full  bg-opacity-40  m-5 mx-auto items-center justify-center">
+          <input
+            className="w-full pl-10 bg-transparent outline-none caret-gray-200"
+            placeholder="Search"
+          />
+          <SearchIcon className="w-12 h-12 p-3 bg-white rounded-full backdrop-filter backdrop-blur-2xl bg-opacity-40" />
+        </div>
+        <Link href="/food/cart">
+          <ShoppingBagIcon className="w-12 h-12 p-3 mr-3 bg-white rounded-full md:hidden backdrop-filter backdrop-blur-2xl bg-opacity-40" />
+        </Link>
       </div>
 
-      <div className="flex overflow-scroll md:w-[67vw] hidescrollbar mx-10 h-48 space-x-6 pr-14">
+      <div className="flex overflow-scroll md:w-[67vw] hidescrollbar mx-10 h-48 space-x-6  pr-14">
         {categories.map((category: Category) => (
           <div key={category.id}>
             <FoodItem image={category.image} name={category.name} />
@@ -32,7 +38,7 @@ const Main: React.FC<MainProps> = ({ salads, categories }) => {
           <h2 className="text-xl font-semibold">Best offers</h2>
         </div>
       </div>
-      <div className="flex flex-wrap mt-5 mb-5 md:flex-nowrap justify-evenly md:mb-0">
+      <div className="flex flex-wrap mt-5 mb-5 space-y-6 md:flex-nowrap md:space-y-0 justify-evenly md:mb-0">
         {salads.map((salad: Salad) => (
           <div key={salad.id}>
             <OfferProduct

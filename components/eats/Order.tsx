@@ -24,7 +24,7 @@ const Order: React.FC<OrderProps> = ({
 
   return (
     <div className="">
-      <div className="block sm:flex items-center sm:space-x-10 p-5 m-5 mt-5 text-[#023047] text-sm dark:text-gray-300  mb-2 pb-1 backdrop-filter backdrop-blur-2xl bg-white bg-opacity-25 dark:bg-opacity-10 shadow-xl dark:shadow-none rounded-lg pl-4">
+      <div className="block sm:flex items-center sm:space-x-10 p-5 m-5 mt-5 text-[#023047] text-sm  mb-2 pb-1 backdrop-filter backdrop-blur-2xl bg-white bg-opacity-25 shadow-xl rounded-lg pl-4">
         <div className="text-3xl">
           <p className="text-xs font-bold">ORDER PLACED</p>
           <p>{moment.unix(timestamp).format("MM/DD/YYYY")}</p>
@@ -37,7 +37,7 @@ const Order: React.FC<OrderProps> = ({
               <Currency quantity={amount} currency="INR" />
             </span>{" "}
             (Including <Currency quantity={amountShipping} currency="INR" /> for
-            "<span className="italic">Next Day Delivery</span>")
+            "<span className="italic">Delivery</span>")
           </p>
         </div>
 
@@ -61,7 +61,7 @@ const Order: React.FC<OrderProps> = ({
                 className="object-contain h-20 sm:h-32"
               />
               {group.length > 1 && (
-                <div className="absolute p-1 text-2xl font-bold text-center text-black bg-white bg-opacity-25 rounded shadow bottom-2 right-2 backdrop-filter backdrop-blur-2xl">
+                <div className="absolute p-1 text-2xl font-bold text-center text-black bg-white rounded shadow bg-opacity-60 bottom-2 right-2 backdrop-filter backdrop-blur-2xl">
                   &times; {group.length}
                 </div>
               )}

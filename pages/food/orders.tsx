@@ -33,14 +33,12 @@ const Orders: React.FC<OrdersProps> = ({ user }) => {
   }, []);
 
   return (
-    <div className="bg-[#10acd3] dark:bg-gray-800 min-h-screen">
+    <div className="min-h-screen">
       <Header />
 
       <main className="max-w-screen-lg p-10 mx-auto">
-        <div className="pb-1 pl-4 mb-2 text-3xl bg-white bg-opacity-25 rounded-lg shadow-xl backdrop-filter backdrop-blur-2xl dark:text-white dark:bg-opacity-10 dark:shadow-none">
-          <h1 className="pb-4 border-b-2 border-gray-700 dark:border-white">
-            Your orders
-          </h1>
+        <div className="pb-1 pl-4 mb-2 text-3xl bg-white bg-opacity-25 rounded-lg shadow-xl backdrop-filter backdrop-blur-2xl ">
+          <h1 className="pb-4 border-b-2 border-gray-700">Your orders</h1>
 
           {user ? (
             <h2 className="text-xl">
@@ -66,7 +64,7 @@ const Orders: React.FC<OrdersProps> = ({ user }) => {
           )}
         </div>
 
-        <div className="pt-2 pb-1 pl-0 mb-2 text-3xl bg-white bg-opacity-25 rounded-lg shadow-xl backdrop-filter backdrop-blur-2xl dark:text-white dark:bg-opacity-10 dark:shadow-none">
+        <div className="pt-2 pb-1 pl-0 mb-2 text-3xl bg-white bg-opacity-25 rounded-lg shadow-xl backdrop-filter backdrop-blur-2xl ">
           {orders?.map((order: any) => (
             <Order
               key={order.id}

@@ -62,18 +62,18 @@ const CartItem: React.FC<CartItemProps> = ({
       </div>
       <div className="flex items-center space-x-2">
         <button onClick={removeItemFromBasket}>
-          <MinusSmIcon className="h-5 text-[#023047] dark:text-gray-200" />
+          <MinusSmIcon className="h-5 text-[#023047]" />
         </button>
-        <p className="text-[#023047] dark:text-gray-200">
+        <p className="text-[#023047]">
           {" "}
           {quantity} × <Currency quantity={price} currency="INR" /> = {"  "}
         </p>
-        <span className="font-bold ml-1 text-[#023047] dark:text-gray-200">
+        <span className="font-bold ml-1 text-[#023047]">
           <Currency quantity={total} currency="INR" />
         </span>
       </div>
       <button onClick={addItemToBasket}>
-        <PlusIcon className="h-5 text-[#023047] dark:text-gray-200" />
+        <PlusIcon className="h-5 text-[#023047]" />
       </button>
     </div>
   );
