@@ -1,6 +1,6 @@
-import { db } from "../firebase";
-import Header from "../components/Header";
-import Order from "../components/eats/Order";
+import { db } from "../../firebase";
+import Header from "../../components/Header";
+import Order from "../../components/eats/Order";
 import moment from "moment";
 import { useRouter } from "next/router";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0/";

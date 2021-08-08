@@ -30,7 +30,7 @@ function success() {
             has shipped, if you would like to check the status of your order(s)
             please press the link below.
           </p>
-          <button onClick={() => router.push("/orders")} className="mt-8 btn">
+          <button onClick={() => router.push("/food/orders")} className="mt-8 btn">
             Go to my orders
           </button>
         </div>
