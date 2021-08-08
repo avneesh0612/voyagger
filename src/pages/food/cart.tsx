@@ -46,7 +46,7 @@ const Cart: React.FC<CartProps> = ({ user }) => {
   const groupedItems = Object.values(groupBy(items, "id"));
 
   function emptyBasket() {
-    dispatch(clearBasket(null));
+    dispatch(clearBasket());
     toast.error("Emptied basket", {
       style: {
         borderRadius: "100px",

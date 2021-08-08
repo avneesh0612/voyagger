@@ -104,11 +104,6 @@ export const getServerSideProps = withPageAuthRequired({
       .collection("categories")
       .get();
 
-    const categories = allcategories.docs.map((category) => ({
-      id: category.id,
-      ...category.data(),
-    }));
-
     return { props: { currentProduct, pathId, categoryId, user } };
   },
 });

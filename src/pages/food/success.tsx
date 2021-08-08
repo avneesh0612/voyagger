@@ -11,7 +11,7 @@ const Success: React.FC = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(clearBasket(null));
+    dispatch(clearBasket());
   }, [dispatch]);
 
   return (

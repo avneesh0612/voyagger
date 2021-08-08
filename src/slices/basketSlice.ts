@@ -34,7 +34,7 @@ export const basketSlice = createSlice({
 
       state.items = newBasket;
     },
-    clearBasket: (state, action) => {
+    clearBasket: (state) => {
       state.items = [];
     },
   },
