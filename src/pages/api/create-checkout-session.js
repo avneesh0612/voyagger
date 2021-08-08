@@ -1,9 +1,8 @@
-/* eslint-disable import/no-anonymous-default-export */
 import { groupBy } from "lodash";
 
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
-export default async (req, res) => {
+const handler = async (req, res) => {
   const { items, email, name } = req.body;
 
   const groupedItems = Object.values(groupBy(items, "id"));
@@ -40,3 +39,5 @@ export default async (req, res) => {
 
   res.status(200).json({ id: session.id });
 };
+
+export default handler;
