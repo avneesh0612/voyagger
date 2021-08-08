@@ -5,7 +5,6 @@ import moment from "moment";
 import { useRouter } from "next/router";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0/";
 import { useEffect, useState } from "react";
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 interface OrdersProps {
   user: any;
