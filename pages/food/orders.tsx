@@ -5,6 +5,7 @@ import moment from "moment";
 import { useRouter } from "next/router";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0/";
 import { useEffect, useState } from "react";
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 interface OrdersProps {
   user: any;
@@ -30,7 +31,7 @@ const Orders: React.FC<OrdersProps> = ({ user }) => {
           }))
         )
       );
-  }, []);
+  }, [user.email]);
 
   return (
     <div className="min-h-screen">
@@ -48,7 +49,7 @@ const Orders: React.FC<OrdersProps> = ({ user }) => {
                 </>
               ) : (
                 <>
-                  You don't have any order yet. Go visit the{" "}
+                  You don&#39;t have any order yet. Go visit the{" "}
                   <button
                     onClick={() => router.push("/")}
                     className="underline link hover:no-underline"

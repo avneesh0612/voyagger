@@ -19,6 +19,7 @@ const FoodItem: React.FC<FoodItemProps> = ({ image, name }) => {
         width={112}
         height={112}
         src={image}
+        alt={name}
         className="w-28 h-28"
       />
       <h2 className="mb-2 capitalize">{name}</h2>

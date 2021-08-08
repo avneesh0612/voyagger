@@ -13,17 +13,18 @@ const Header: React.FC<HeaderProps> = ({ ssruser }) => {
 
   return (
     <header className="flex items-center justify-evenly">
-      <Link href="/">
+      <Link href="/" passHref>
         <Image
           width={100}
           height={100}
           objectFit="contain"
           src="https://res.cloudinary.com/dssvrf9oz/image/upload/v1627972754/voyager-removebg-preview_bixjvh.png"
           className="cursor-pointer"
+          alt="voyager"
         />
       </Link>
       {ssruser ? (
-        <a href="/api/auth/logout">{ssruser.name}</a>
+        <Link href="/api/auth/logout">{ssruser.name}</Link>
       ) : (
         <Link href="/api/auth/logout">
           <a className={user.user?.name ? "" : "hidden"}>{user.user?.name}</a>

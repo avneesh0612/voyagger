@@ -5,13 +5,13 @@ import { useDispatch } from "react-redux";
 import Header from "../../components/Header";
 import { clearBasket } from "../../slices/basketSlice";
 
-function success() {
+const success: React.FC = () => {
   const router = useRouter();
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(clearBasket(null));
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="h-screen">
@@ -26,9 +26,9 @@ function success() {
             </h1>
           </div>
           <p>
-            Thank you for shopping with us. We'll send a confirmation once item
-            has shipped, if you would like to check the status of your order(s)
-            please press the link below.
+            Thank you for shopping with us. We&apos;ll send a confirmation once
+            item has shipped, if you would like to check the status of your
+            order(s) please press the link below.
           </p>
           <button
             onClick={() => router.push("/food/orders")}
@@ -40,6 +40,6 @@ function success() {
       </main>
     </div>
   );
-}
+};
 
 export default success;
