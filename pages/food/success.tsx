@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import Header from "../../components/Header";
 import { clearBasket } from "../../slices/basketSlice";
 
-const success: React.FC = () => {
+const Success: React.FC = () => {
   const router = useRouter();
   const dispatch = useDispatch();
 
@@ -42,4 +42,4 @@ const success: React.FC = () => {
   );
 };
 
-export default success;
+export default Success;

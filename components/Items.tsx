@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-interface FoodItemProps  {
+interface FoodItemProps {
   image: string;
   text: string;
   href: string;
   repeat?: boolean;
-};
+}
 
 const Items: React.FC<FoodItemProps> = ({ image, text, repeat, href }) => {
   return (
-    <Link href={href}>
+    <Link href={href} passHref>
       <motion.div
         whileHover={{
           scale: [1, 1.1, 1.05],
