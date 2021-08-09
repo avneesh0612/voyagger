@@ -19,19 +19,7 @@ const fulfillOrder = async (session) => {
     from: "avneeshagarwal0612@gmail.com",
     subject: "Voyager order Reciept",
     text: "Voyager order Reciept",
-    html: `<p> Adress: ${
-      (session.shipping.address.country,
-      session.shipping.address.state,
-      city,
-      "ZIP:",
-      session.shipping.address.postal_code)
-    }
-    </p>
-    Name:${session.shipping.name}
-    <img src=${session.metadata.images[0]}/>
-    amount: ${session.amount_total / 100},
-    amount_shipping: ${session.total_details.amount_shipping / 100}
-    `,
+    html: "<h1>Thank Yyou for ordering from voyager</h1>"
   };
 
   return sgMail
