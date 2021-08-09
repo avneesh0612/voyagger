@@ -13,7 +13,7 @@ import CartItem from "../../components/eats/CartItem";
 import {
   clearBasket,
   selectItems,
-  selectTotal
+  selectTotal,
 } from "../../slices/basketSlice";
 const stripePromise = loadStripe(process.env.stripe_public_key!);
 
@@ -55,7 +55,7 @@ const Cart: React.FC<CartProps> = ({ user }) => {
   }
 
   return (
-    <div className="absolute right-0 z-10 flex flex-col w-full h-full bg-white bg-opacity-50 rounded-br-none md:w-2/6 backdrop-filter backdrop-blur-sm rounded-3xl ring-1 ring-white">
+    <div className="absolute right-0 z-10 flex flex-col w-full min-h-full bg-white bg-opacity-50 rounded-br-none md:w-2/6 backdrop-filter backdrop-blur-sm rounded-3xl ring-1 ring-white">
       <NextSeo title="Your cart" />
       <div className="h-full">
         <div className="flex items-center p-8 bg-white bg-opacity-60 rounded-l-3xl ring-1 ring-white">

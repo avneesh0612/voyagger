@@ -8,7 +8,7 @@ const handler = async (req, res) => {
   const groupedItems = Object.values(groupBy(items, "id"));
 
   const transformedItems = groupedItems.map((group) => ({
-    description: "description",
+    description: group[0].description,
     quantity: group.length,
     price_data: {
       currency: "inr",
@@ -29,7 +29,7 @@ const handler = async (req, res) => {
     line_items: transformedItems,
     mode: "payment",
     success_url: `${process.env.HOST}/food/success`,
-    cancel_url: `${process.env.HOST}/checkout`,
+    cancel_url: `${process.env.HOST}/food/cart`,
     metadata: {
       email,
       name,

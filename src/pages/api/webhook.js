@@ -1,6 +1,8 @@
 import * as admin from "firebase-admin";
 import { buffer } from "micro";
-
+const sgMail = require("@sendgrid/mail");
+sgMail.setApiKey(process.env.send_grid_api);
+console.log(process.env.send_grid_api);
 const serviceAccount = require("../../../permissions");
 const app = !admin.apps.length
   ? admin.initializeApp({
@@ -11,18 +13,36 @@ const app = !admin.apps.length
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const endpointSecret = process.env.STRIPE_SIGNING_SECRET;
 const fulfillOrder = async (session) => {
-  return app
-    .firestore()
-    .collection("users")
-    .doc(session.metadata.email)
-    .collection("orders")
-    .doc(session.id)
-    .set({
-      amount: session.amount_total / 100,
-      amount_shipping: session.total_details.amount_shipping / 100,
-      images: JSON.parse(session.metadata.images),
-      timestamp: admin.firestore.FieldValue.serverTimestamp(),
-    });
+  const msg = {
+    to: session.metadata.email,
+    from: "avneeshagarwal0612@gmail.com",
+    subject: "TEST message",
+    text: "testing the sendgrid mail",
+    html: "<strong>let's see html test</strong>",
+  };
+
+  return sgMail
+    .send(msg)
+    .then(() => {
+      console.log("Email sent");
+    })
+    .catch((error) => {
+      console.error(error);
+    })
+    .then(
+      app
+        .firestore()
+        .collection("users")
+        .doc(session.metadata.email)
+        .collection("orders")
+        .doc(session.id)
+        .set({
+          amount: session.amount_total / 100,
+          amount_shipping: session.total_details.amount_shipping / 100,
+          images: JSON.parse(session.metadata.images),
+          timestamp: admin.firestore.FieldValue.serverTimestamp(),
+        })
+    );
 };
 
 const handler = async (req, res) => {

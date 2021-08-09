@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   clearBasket,
   selectItems,
-  selectTotal
+  selectTotal,
 } from "../../slices/basketSlice";
 import CartItem from "./CartItem";
 
@@ -55,7 +55,7 @@ const Cart: React.FC<CartProps> = ({ ssruser }) => {
   }
 
   return (
-    <div className="absolute right-0 z-10 flex-col hidden w-2/6 h-full bg-white bg-opacity-50 rounded-br-none md:flex backdrop-filter backdrop-blur-sm rounded-3xl ring-1 ring-white">
+    <div className="absolute right-0 z-10 flex-col hidden w-2/6 min-h-full bg-white bg-opacity-50 rounded-br-none md:flex backdrop-filter backdrop-blur-sm rounded-3xl ring-1 ring-white">
       <div>
         <div className="flex items-center p-8 bg-white bg-opacity-60 rounded-l-3xl ring-1 ring-white">
           {ssruser?.picture && (
