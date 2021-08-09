@@ -15,8 +15,8 @@ const Header: React.FC<HeaderProps> = ({ ssruser }) => {
     <header className="flex items-center justify-evenly">
       <Link href="/" passHref>
         <Image
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           objectFit="contain"
           src="/voyager.svg"
           className="cursor-pointer"

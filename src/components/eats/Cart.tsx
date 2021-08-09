@@ -13,7 +13,7 @@ import {
   selectTotal,
 } from "../../slices/basketSlice";
 import CartItem from "./CartItem";
-
+import React, { useState } from 'react';
 const stripePromise = loadStripe(process.env.stripe_public_key!);
 
 interface CartProps {
@@ -41,6 +41,9 @@ const Cart: React.FC<CartProps> = ({ ssruser }) => {
     const result = await stripe?.redirectToCheckout({
       sessionId: checkoutSession.data.id,
     });
+
+
+
   };
 
   const groupedItems = Object.values(groupBy(items, "id"));
@@ -55,9 +58,9 @@ const Cart: React.FC<CartProps> = ({ ssruser }) => {
   }
 
   return (
-    <div className="absolute right-0 z-10 flex-col hidden w-2/6 min-h-full bg-white bg-opacity-50 rounded-br-none md:flex backdrop-filter backdrop-blur-sm rounded-3xl ring-1 ring-white">
+    <div className="absolute right-0 z-10 flex-col hidden w-2/6  bg-white bg-opacity-50  md:flex backdrop-filter backdrop-blur-sm  ring-white">
       <div>
-        <div className="flex items-center p-8 bg-white bg-opacity-60 rounded-l-3xl ring-1 ring-white">
+        <div className="flex items-center p-8 bg-white bg-opacity-60 rounded-b-3xl ring-1 ring-white">
           {ssruser?.picture && (
             <Image
               width={64}
@@ -81,10 +84,10 @@ const Cart: React.FC<CartProps> = ({ ssruser }) => {
             Empty cart
           </h2>
         </div>
-        <div className="overflow-scroll h-80 hidescrollbar">
+        <div className="overflow-scroll h-72 hidescrollbar">
           <h2
             className={
-              items.length === 0 ? "m-4 mt-0 text-2xl font-semibold" : "hidden"
+              items.length === 0 ? "m-4 ml-[29%] text-2xl  font-semibold" : "hidden"
             }
           >
             Your Basket is empty
@@ -101,7 +104,7 @@ const Cart: React.FC<CartProps> = ({ ssruser }) => {
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-between pb-3 m-10 mt-2 mb-2">
+        <div className="flex items-center justify-between pb-3 m-10 mt-21 mb-1">
           <h2 className="text-2xl font-semibold">Total</h2>
           <h2 className="text-xl font-semibold">
             <Currency currency="INR" quantity={total} />
@@ -114,16 +117,16 @@ const Cart: React.FC<CartProps> = ({ ssruser }) => {
       </div>
       <div className="flex m-10 mt-2 mb-2">
         <LocationMarkerIcon className="text-[#F24A51] mt-2 h-8 w-8" />
-        <div className="flex flex-col ml-4 text-lg font-semibold">
-          <p>Po Box 2192</p>
-          <p>West New York, New</p>
-          <p>Jersey(NJ), 07093</p>
+        <div className="flex flex-col ml-4 text-md font-semibold">
+          <p>Dumb Apartment</p>
+          <p>Navi Mumbai, Maharashtra</p>
+          <p>India, 400706</p>
         </div>
       </div>
       <button
         role="link"
         onClick={createCheckOutSession}
-        className="w-10/12 py-2 mb-5 ml-10 text-white rounded-full cursor-pointer green-gradient"
+        className="w-10/12 py-2 mb-5 ml-10 text-white rounded-md  focus:outline-none hover:bg-green-400 focus:ring-2 focus:ring-green-900  cursor-pointer green-gradient"
       >
         Checkout
       </button>

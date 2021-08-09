@@ -19,7 +19,7 @@ const Main: React.FC<MainProps> = ({ salads, categories }) => {
             className="w-full pl-10 bg-transparent outline-none caret-gray-200"
             placeholder="Search"
           />
-          <SearchIcon className="w-12 h-12 p-3 bg-white rounded-full backdrop-filter backdrop-blur-2xl bg-opacity-40" />
+          <SearchIcon className="w-10 h-10 p-3 ml-2 bg-white rounded-full backdrop-filter backdrop-blur-2xl bg-opacity-40" />
         </div>
         <Link href="/food/cart" passHref>
           <ShoppingBagIcon className="w-12 h-12 p-3 mr-3 bg-white rounded-full md:hidden backdrop-filter backdrop-blur-2xl bg-opacity-40" />

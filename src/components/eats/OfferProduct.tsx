@@ -48,9 +48,9 @@ const OfferProduct: React.FC<FoodItemProps> = ({
   };
 
   return (
-    <div className="flex flex-col items-center -mt-2 cursor-pointer w-60">
+    <div className="flex flex-col items-center -mt-2 cursor-pointer w-60 ">
       <div
-        className="z-20 bg-white rounded-full drop-shadow-xl "
+        className="z-20 bg-white rounded-full drop-shadow-xl hover:animate-bounce"
         onClick={() =>
           router.push(`/food/${id}/?category=${category.toLowerCase()}`)
         }
@@ -61,7 +61,7 @@ const OfferProduct: React.FC<FoodItemProps> = ({
           objectFit="contain"
           src={image}
           alt="salad"
-          className="z-10 object-contain w-40 h-40 rounded-full"
+          className="z-10 object-contain w-40 h-40 rounded-full "
         />
       </div>
       <div
