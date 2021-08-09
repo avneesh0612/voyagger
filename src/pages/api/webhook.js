@@ -12,12 +12,14 @@ const app = !admin.apps.length
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const endpointSecret = process.env.STRIPE_SIGNING_SECRET;
 const fulfillOrder = async (session) => {
+  console.log(session);
+
   const msg = {
     to: session.metadata.email,
     from: "avneeshagarwal0612@gmail.com",
-    subject: "TEST message",
-    text: "testing the sendgrid mail",
-    html: "<strong>let's see html test</strong>",
+    subject: "Voyager order Reciept",
+    text: "Voyager order Reciept",
+    html: "<h1>Thank You for ordering from voyager</h1>"
   };
 
   return sgMail
@@ -33,7 +35,7 @@ const fulfillOrder = async (session) => {
         .firestore()
         .collection("users")
         .doc(session.metadata.email)
-        .collection("orders")
+        .collection("orders")J
         .doc(session.id)
         .set({
           amount: session.amount_total / 100,
