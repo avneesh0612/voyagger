@@ -2,7 +2,6 @@ import * as admin from "firebase-admin";
 import { buffer } from "micro";
 const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(process.env.send_grid_api);
-console.log(process.env.send_grid_api);
 const serviceAccount = require("../../../permissions");
 const app = !admin.apps.length
   ? admin.initializeApp({
