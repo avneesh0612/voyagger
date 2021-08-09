@@ -19,7 +19,7 @@ const fulfillOrder = async (session) => {
     from: "avneeshagarwal0612@gmail.com",
     subject: "Voyager order Reciept",
     text: "Voyager order Reciept",
-    html: "<h1>Thank Yyou for ordering from voyager</h1>"
+    html: "<h1>Thank You for ordering from voyager</h1>"
   };
 
   return sgMail
@@ -35,7 +35,7 @@ const fulfillOrder = async (session) => {
         .firestore()
         .collection("users")
         .doc(session.metadata.email)
-        .collection("orders")
+        .collection("orders")J
         .doc(session.id)
         .set({
           amount: session.amount_total / 100,
