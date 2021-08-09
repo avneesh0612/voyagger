@@ -27,5 +27,6 @@ module.exports = {
     permission_auth_provider_x509_cert_url:
       process.env.PERMISSION_AUTH_PROVIDER_URL,
     permission_client_x509_cert_url: process.env.PERMISSION_CLIENT_PROVIDER_URL,
+    send_grid_api: process.env.SEND_GRID_API,
   },
 };
