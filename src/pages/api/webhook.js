@@ -12,12 +12,26 @@ const app = !admin.apps.length
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const endpointSecret = process.env.STRIPE_SIGNING_SECRET;
 const fulfillOrder = async (session) => {
+  console.log(session);
+
   const msg = {
     to: session.metadata.email,
     from: "avneeshagarwal0612@gmail.com",
-    subject: "TEST message",
-    text: "testing the sendgrid mail",
-    html: "<strong>let's see html test</strong>",
+    subject: "Voyager order Reciept",
+    text: "Voyager order Reciept",
+    html: `<p> Adress: ${
+      (session.shipping.address.country,
+      session.shipping.address.state,
+      city,
+      "ZIP:",
+      session.shipping.address.postal_code)
+    }
+    </p>
+    Name:${session.shipping.name}
+    <img src=${session.metadata.images[0]}/>
+    amount: ${session.amount_total / 100},
+    amount_shipping: ${session.total_details.amount_shipping / 100}
+    `,
   };
 
   return sgMail
