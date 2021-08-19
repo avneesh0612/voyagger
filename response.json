@@ -1,0 +1,1672 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 4736,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "bE3BoAEACAAJ",
+      "etag": "XgvuYywABY8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/bE3BoAEACAAJ",
+      "volumeInfo": {
+        "title": "Applied Crime Analysis",
+        "subtitle": "A Social Science Approach to Understanding Crime, Criminals, and Victims",
+        "authors": ["Wayne Petherick"],
+        "publisher": "Academic Press",
+        "publishedDate": "2014-06-18",
+        "description": "Most approaches to crime analysis focus on geographical crime mapping, which is helpful in identifying crime clusters and allocating police resources, but does not explain why a particular crime took place. Applied Crime Analysis presents a model that brings statistical anchoring, behavioral psychopathology, and victimology from the social sciences together with physical and crime scene evidence to provide a complete picture of crime. This hands-on guide takes theoretical principles and demonstrates how they can be put into practice using real case examples. In addition to covering key topics such as staged crime scenes, false reports, and criminal motivations, the book's includes a final chapter on report writing, showing readers how to use their findings to successfully advance to prosecution and succeed in court. Presents a model that takes social science concepts, including statistical anchoring, behavioral psychopathology, and victimology and connects them with crime scene evidence to examine and analyze crime Puts crime analysis theory into practice with real-world examples highlighting important concepts and best practice Includes a report writing chapter to demonstrate how this approach can strengthen criminal cases and succeed in court Instructor materials include a Test Bank, Powerpoint lecture slides, and Instructor's Guide for each chapter",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "032329460X"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780323294607"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 282,
+        "printType": "BOOK",
+        "categories": ["Social Science"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=bE3BoAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=bE3BoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=bE3BoAEACAAJ&dq=crime&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=bE3BoAEACAAJ&dq=crime&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Applied_Crime_Analysis.html?hl=&id=bE3BoAEACAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=bE3BoAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This hands-on guide takes theoretical principles and demonstrates how they can be put into practice using real case examples."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "10r7CAAAQBAJ",
+      "etag": "NBFdl3IBgUc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/10r7CAAAQBAJ",
+      "volumeInfo": {
+        "title": "Handbook of Transnational Crime and Justice",
+        "authors": ["Philip Reichel", "Jay Albanese"],
+        "publisher": "SAGE Publications",
+        "publishedDate": "2013-04-29",
+        "description": "Transnational crime and justice will characterize the 21st century in same way that traditional street crimes dominated the 20th century. In the Handbook of Transnational Crime and Justice, Philip Reichel and Jay Albanese bring together top scholars from around the world to offer perspectives on the laws, crimes, and criminal justice responses to transnational crime. This concise, reader-friendly handbook is organized logically around four major themes: the problem of transnational crime; analysis of specific transnational crimes; approaches to its control; and regional geographical analyses. Each comprehensive chapter is designed to be explored as a stand-alone topic, making this handbook an important textbook and reference tool for students and practitioners alike.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781483321967"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1483321967"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 576,
+        "printType": "BOOK",
+        "categories": ["Social Science"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.1.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=10r7CAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=10r7CAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=10r7CAAAQBAJ&printsec=frontcover&dq=crime&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=10r7CAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=10r7CAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 7044.01,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 7044.01,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=10r7CAAAQBAJ&rdid=book-10r7CAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 7044010000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 7044010000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Handbook_of_Transnational_Crime_and_Just-sample-epub.acsm?id=10r7CAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Handbook_of_Transnational_Crime_and_Just-sample-pdf.acsm?id=10r7CAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=10r7CAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "In the Handbook of Transnational Crime and Justice, Philip Reichel and Jay Albanese bring together top scholars from around the world to offer perspectives on the laws, crimes, and criminal justice responses to transnational crime."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "v1vXsgEACAAJ",
+      "etag": "+xYXo1ufxFk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/v1vXsgEACAAJ",
+      "volumeInfo": {
+        "title": "Crime and Criminality",
+        "subtitle": "A Multidisciplinary Approach",
+        "authors": ["Sandie Taylor"],
+        "publishedDate": "2015-12-09",
+        "description": "The question of 'why' and 'how' certain individuals are drawn towards behaving in a way that contravenes the 'Law of the Land' is not an easy one to address. Researchers from various different fields have nevertheless attempted to develop theoretical explanations for the existence of different types of crime and why some individuals commit such acts. Crime and Criminalitydraws on criminology, sociology, psychology and neuroscience to offer a balanced perspective of crime, the criminal and criminality. Coverage includes: a comprehensive discussion of theoretical approaches to criminal behaviour, including biological, social and 'rational choice' approaches; an analysis of legal and social definitions of crime and how these definitions influence the way specific behaviours are labelled as criminal; an examination of different types of crime and criminals, from delinquents to 'psychopaths' and sex offenders; an exploration of different ways in which crime is predicted, including risk assessment and offender profiling and an overview of investigative techniques. Addressing a broad range of topics and offering a synthesis of competing theoretical explanations of criminality, this book is essential reading for students taking courses in criminology, criminal psychology, criminal behaviour, forensic psychology and psychological criminology.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1138888621"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781138888623"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 792,
+        "printType": "BOOK",
+        "categories": ["Criminal behavior"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=v1vXsgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=v1vXsgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=v1vXsgEACAAJ&dq=crime&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=v1vXsgEACAAJ&dq=crime&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Crime_and_Criminality.html?hl=&id=v1vXsgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=v1vXsgEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Addressing a broad range of topics and offering a synthesis of competing theoretical explanations of criminality, this book is essential reading for students taking courses in criminology, criminal psychology, criminal behaviour, forensic ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "MlMdBQAAQBAJ",
+      "etag": "5qHccLjd5TI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/MlMdBQAAQBAJ",
+      "volumeInfo": {
+        "title": "Crime and the Media",
+        "authors": ["Sarah E.H. Moore"],
+        "publisher": "Macmillan International Higher Education",
+        "publishedDate": "2014-04-17",
+        "description": "From video games that allow us to participate in Mafia-style violence, to newspaper reports about the latest terrorist atrocity, from detective novels that fill our bedside cabinets, to Hollywood's beloved legal dramas – the mass media is saturated with stories about crime, justice and disorder. Together they create a cultural landscape of crime that is distinctly at odds with reality, as criminologists are apt to complain. Crime and the Media attempts to make sense of this cultural landscape and its relationship with broader social trends and public attitudes. Through focussed, critical discussions about crime in the media - taking on crime news and fictional representations of cops, courts, and corrections - the text equips students with an understanding of the key theoretical concepts and methodological tools that are required to undertake media analysis. With questions for discussion, exercises and workshop sessions, as well as techniques for analysing crime in a range of media formats, the book makes an invaluable contribution to crime and media courses, and to the social sciences in general.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781137400543"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1137400544"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 336,
+        "printType": "BOOK",
+        "categories": ["Performing Arts"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.7.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=MlMdBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=MlMdBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=MlMdBQAAQBAJ&printsec=frontcover&dq=crime&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=MlMdBQAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=MlMdBQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 2631.42,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 2631.42,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=MlMdBQAAQBAJ&rdid=book-MlMdBQAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 2631420000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 2631420000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Crime_and_the_Media-sample-pdf.acsm?id=MlMdBQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=MlMdBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "With questions for discussion, exercises and workshop sessions, as well as techniques for analysing crime in a range of media formats, the book makes an invaluable contribution to crime and media courses, and to the social sciences in ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "3OI2DwAAQBAJ",
+      "etag": "e8d6KY2zQsU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/3OI2DwAAQBAJ",
+      "volumeInfo": {
+        "title": "Countering Economic Crime",
+        "subtitle": "A Comparative Analysis",
+        "authors": ["Axel Palmer"],
+        "publisher": "Routledge",
+        "publishedDate": "2017-09-22",
+        "description": "Economic crime is a significant feature of the UK’s economic landscape and yet despite the government’s bold mission statements ‘to hold those suspected of financial wrongdoing to account’ as part of their ‘day of reckoning’ and ‘serious about white-collar crime’ agenda, there is a sense that this is still not being done effectively. This book examines the history of the creation of the UK’s anti-economic crime institutions and accompanying legislation, providing a critique of their effectiveness. The book analyses whether the recent regulatory regime is fit for purpose as well as being appropriate for the future. In order to explore how the UK’s economic crime strategies could be improved the book takes a comparative approach analysing policy and legislative responses to economic crime in the United States and Australia in order to determine whether the UK could or should import similar structures or laws to improve the enforcement of UK economic crime.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781351852180"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1351852183"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 272,
+        "printType": "BOOK",
+        "categories": ["Business & Economics"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=3OI2DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=3OI2DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=3OI2DwAAQBAJ&printsec=frontcover&dq=crime&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=3OI2DwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=3OI2DwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 3138.8,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 3138.8,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=3OI2DwAAQBAJ&rdid=book-3OI2DwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 3138800000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 3138800000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Countering_Economic_Crime-sample-epub.acsm?id=3OI2DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Countering_Economic_Crime-sample-pdf.acsm?id=3OI2DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=3OI2DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Economic crime is a significant feature of the UK’s economic landscape and yet despite the government’s bold mission statements ‘to hold those suspected of financial wrongdoing to account’ as part of their ‘day of reckoning’ and ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "3DPvAQAACAAJ",
+      "etag": "Ws8IesiFH9c",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/3DPvAQAACAAJ",
+      "volumeInfo": {
+        "title": "Rural Crime and Community Safety",
+        "authors": ["Vania A. Ceccato"],
+        "publishedDate": "2017-04-27",
+        "description": "Crime is often perceived as an urban issue rather than a problem that occurs in rural areas, but how far is this view tenable? This book explores the relationship between crime and community in rural areas and addresses the notion of safety as part of the community dynamics in such areas. Rural Crime and Community Safety makes a significant contribution to crime science and integrates a range of theories to understand patterns of crime and perceived safety in rural contexts. Based on a wealth of original research, Ceccato combines spatial methods with qualitative analysis to examine, in detail, farm and wildlife crime, youth related crimes and gendered violence in rural settings. Making the most of the expanding field of Criminology and of the growing professional inquiry into crime and crime prevention in rural areas; rural development; and the social sustainability of rural areas, this book builds a bridge by connecting Criminology and Human Geography. This book will be suitable for academics, students and practitioners in the fields of criminology, community safety, rural studies, rural development and gender studies.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1138065919"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781138065918"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 424,
+        "printType": "BOOK",
+        "categories": ["Communities"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=3DPvAQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=3DPvAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=3DPvAQAACAAJ&dq=crime&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=3DPvAQAACAAJ&dq=crime&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Rural_Crime_and_Community_Safety.html?hl=&id=3DPvAQAACAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=3DPvAQAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This book explores the relationship between crime and community in rural areas and addresses the notion of safety as part of the community dynamics in such areas."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "eP6-DwAAQBAJ",
+      "etag": "i5vxeixHZ9s",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/eP6-DwAAQBAJ",
+      "volumeInfo": {
+        "title": "Eight Detectives",
+        "subtitle": "The Sunday Times Crime Book of the Month",
+        "authors": ["Alex Pavesi"],
+        "publisher": "Penguin UK",
+        "publishedDate": "2020-08-20",
+        "description": "THE BIGGEST MYSTERY CAN BE MURDER TO SOLVE . . . DISCOVER THE YEAR'S MOST ORIGINAL THRILLER 'One of the year's most entertaining crime novels' SUNDAY TIMES, CRIME BOOK OF THE MONTH 'When did you last read a genuinely original thriller? The wait is over' A. J. FINN 'An elegantly structured, intellectually challenging and completely unique thriller that grips like a vice' SOPHIE HANNAH _______ All murder mysteries follow a simple set of rules. In the 1930s, Grant McAllister, a mathematics professor turned author, worked them out, hiding their secrets in a book of crime stories. Then Grant disappeared. Julia Hart has finally tracked him down. She wants to know what happened to him. But she's about to discover that a good mystery can be murder to solve . . . _______ 'One of the most creative detective novels of the year . . . If not of all time' Samantha Downing 'Intelligent and inventive . . . It's the most fun I've had in ages' Cathy Rentzenbrink 'So, so clever . . . Agatha Christie would take her hat off to this one - bravo!' Sarah Pinborough",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781405944984"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1405944986"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 352,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 3.5,
+        "ratingsCount": 12,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.5.5.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=eP6-DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=eP6-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=eP6-DwAAQBAJ&printsec=frontcover&dq=crime&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=eP6-DwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=eP6-DwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 693.84,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 346.92,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=eP6-DwAAQBAJ&rdid=book-eP6-DwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 693840000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 346920000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Eight_Detectives-sample-epub.acsm?id=eP6-DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=eP6-DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "THE BIGGEST MYSTERY CAN BE MURDER TO SOLVE ."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "nwxjDwAAQBAJ",
+      "etag": "ocU/467FLPc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/nwxjDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Gangs and Organized Crime",
+        "authors": ["George W. Knox", "Gregg Etter", "Carter F. Smith"],
+        "publisher": "Taylor & Francis",
+        "publishedDate": "2018-07-04",
+        "description": "In Gangs and Organized Crime, George W. Knox, Gregg W. Etter, and Carter F. Smith offer an informed and carefully investigated examination of gangs and organized crime groups, covering street gangs, prison gangs, outlaw motorcycle gangs, and organized crime groups from every continent. The authors have spent decades investigating gangs as well as researching their history and activities, and this dual professional-academic perspective informs their analysis of gangs and crime groups. They take a multidisciplinary approach that combines criminal justice, public policy and administration, law, organizational behavior, sociology, psychology, and urban planning perspectives to provide insight into the actions and interactions of a variety of groups and their members. This textbook is ideal for criminal justice and sociology courses on gangs as well as related course topics like gang behavior, gang crime and the inner city, organized crime families, and transnational criminal groups. Gangs and Organized Crime is also an excellent addition to the professional’s reference library or primer for the general reader. More information is available at the supporting website – www.gangsandorganizedcrime.com",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781351644891"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1351644890"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 512,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.1.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=nwxjDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=nwxjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=nwxjDwAAQBAJ&printsec=frontcover&dq=crime&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=nwxjDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=nwxjDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 7285.32,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 7285.32,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=nwxjDwAAQBAJ&rdid=book-nwxjDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 7285320000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 7285320000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Gangs_and_Organized_Crime-sample-epub.acsm?id=nwxjDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Gangs_and_Organized_Crime-sample-pdf.acsm?id=nwxjDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=nwxjDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "In Gangs and Organized Crime, George W. Knox, Gregg W. Etter, and Carter F. Smith offer an informed and carefully investigated examination of gangs and organized crime groups, covering street gangs, prison gangs, outlaw motorcycle gangs, ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "8AqXDwAAQBAJ",
+      "etag": "MpOlMF0rEMI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/8AqXDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Queens of Crime",
+        "subtitle": "True Stories of Women Criminals from India",
+        "authors": ["Sushant Singh", "Kulpreet Yadav"],
+        "publisher": "Penguin Random House India Private Limited",
+        "publishedDate": "2019-05-16",
+        "description": "Dysfunctional families, sexual abuse, sheer greed and sometimes just a skewed moral compass. These are some of the triggers that drove the women captured in these pages to become lawbreakers. Queens of Crime demonstrates a haunting criminal power that most people do not associate women with. The acts of depravity described in this book will jolt you to the core, ensuring you have sleepless nights for months. Based on painstaking research, these are raw, violent and seemingly unbelievable but true rendition of India's women criminals.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9789353055356"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "9353055350"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 288,
+        "printType": "BOOK",
+        "categories": ["Literary Collections"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=8AqXDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=8AqXDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=8AqXDwAAQBAJ&printsec=frontcover&dq=crime&hl=&cd=9&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=8AqXDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=8AqXDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 269.04,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 188.33,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=8AqXDwAAQBAJ&rdid=book-8AqXDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 269040000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 188330000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Queens_of_Crime-sample-epub.acsm?id=8AqXDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Queens_of_Crime-sample-pdf.acsm?id=8AqXDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=8AqXDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "These are some of the triggers that drove the women captured in these pages to become lawbreakers. Queens of Crime demonstrates a haunting criminal power that most people do not associate women with."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "yoXbBAAAQBAJ",
+      "etag": "8NwSdBbGMhY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/yoXbBAAAQBAJ",
+      "volumeInfo": {
+        "title": "Organised Crime and the Law",
+        "subtitle": "A Comparative Analysis",
+        "authors": ["Liz Campbell"],
+        "publisher": "Bloomsbury Publishing",
+        "publishedDate": "2013-02-01",
+        "description": "Organised Crime and the Law presents an overview of the laws and policies adopted to address the phenomenon of organised crime in the United Kingdom and Ireland, assessing the changes to these justice systems, in terms of the prevention, investigation, prosecution and punishment of such criminality. While the notion of organised crime is a contested one, States' legal responses treat it and its constituent offences as unproblematic in a definitional sense. This book advances a systematic doctrinal critique of these domestic criminal laws,laws of evidence and civil processes. Organised Crime and the Law focuses on the tension between due process and crime control, the demands of public protection and risk aversion, and other adaptations. In particular, it identifies parallels and points of divergence between the different jurisdictions in the UK and Ireland, bearing in mind the shared history of subversive threats and counter-terrorism policies. It also examines the extent to which policy transfer is evident in the UK and Ireland in terms of emulating the United States in reacting to organised crime.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781782250784"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1782250786"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 316,
+        "printType": "BOOK",
+        "categories": ["Law"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=yoXbBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=yoXbBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=yoXbBAAAQBAJ&printsec=frontcover&dq=crime&hl=&cd=10&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=yoXbBAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=yoXbBAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 3776,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 3776,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=yoXbBAAAQBAJ&rdid=book-yoXbBAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 3776000000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 3776000000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Organised_Crime_and_the_Law-sample-pdf.acsm?id=yoXbBAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=yoXbBAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This book advances a systematic doctrinal critique of these domestic criminal laws,laws of evidence and civil processes."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "MFAtEAAAQBAJ",
+      "etag": "Mqk21rsGMsU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/MFAtEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Crossroads of Rural Crime",
+        "subtitle": "Representations and Realities of Transgression in the Australian Countryside",
+        "authors": ["Alistair Harkness", "Rob White"],
+        "publisher": "Emerald Group Publishing",
+        "publishedDate": "2021-05-19",
+        "description": "Using the notion of ‘crossroads’ to provide a unique lens through which to examine the realities of rural crime, Crossroads of Rural Crime provides an understanding of the nature of rural life and ways in which transgression manifests itself in the context of a presumed rural-urban divide.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781800436466"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1800436467"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 248,
+        "printType": "BOOK",
+        "categories": ["Social Science"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=MFAtEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=MFAtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=MFAtEAAAQBAJ&printsec=frontcover&dq=crime&hl=&cd=11&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=MFAtEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=MFAtEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 6689.5,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 6689.5,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=MFAtEAAAQBAJ&rdid=book-MFAtEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 6689500000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 6689500000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Crossroads_of_Rural_Crime-sample-epub.acsm?id=MFAtEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Crossroads_of_Rural_Crime-sample-pdf.acsm?id=MFAtEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=MFAtEAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Using the notion of ‘crossroads’ to provide a unique lens through which to examine the realities of rural crime, Crossroads of Rural Crime provides an understanding of the nature of rural life and ways in which transgression manifests ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "aqjSf3lLMzoC",
+      "etag": "q3YEJZdGrg0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/aqjSf3lLMzoC",
+      "volumeInfo": {
+        "title": "The Psychology of Crime",
+        "subtitle": "A Social Science Textbook",
+        "authors": ["Philip Feldman", "Maurice Philip Feldman"],
+        "publisher": "Cambridge University Press",
+        "publishedDate": "1993-06-25",
+        "description": "An introductory textbook on criminal behaviour: its identification, cause and control.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0521337321"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780521337328"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 526,
+        "printType": "BOOK",
+        "categories": ["Psychology"],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=aqjSf3lLMzoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=aqjSf3lLMzoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=aqjSf3lLMzoC&printsec=frontcover&dq=crime&hl=&cd=12&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=aqjSf3lLMzoC&dq=crime&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Psychology_of_Crime.html?hl=&id=aqjSf3lLMzoC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=aqjSf3lLMzoC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "An introductory textbook on criminal behaviour: its identification, cause and control."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "OKuHAgAAQBAJ",
+      "etag": "7JNtf1qI0/k",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/OKuHAgAAQBAJ",
+      "volumeInfo": {
+        "title": "Murder by the Book?",
+        "subtitle": "Feminism and the Crime Novel",
+        "authors": ["Sally Rowena Munt"],
+        "publisher": "Routledge",
+        "publishedDate": "2003-09-02",
+        "description": "Murder by the Book? is a thorough - and thoroughly enjoyable - look at the blossoming genre of the feminist crime novel in Britain and the United States. Sally Munt asks why the form has proved so attractive as a vehicle for oppositional politics; whether the pleasures of detective fiction can be truly transgressive; and when exactly it was that the dyke detective appeared as the new super-hero for today. Along the way Munt poses some critical questions about the relations between fiction and activism, politics and representations, the writer and the reader. This will be an enticing book both for addicts of the genre and for teachers and their students.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781134838431"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1134838433"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 272,
+        "printType": "BOOK",
+        "categories": ["Literary Criticism"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=OKuHAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=OKuHAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=OKuHAgAAQBAJ&pg=PP1&dq=crime&hl=&cd=13&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=OKuHAgAAQBAJ&dq=crime&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Murder_by_the_Book.html?hl=&id=OKuHAgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=OKuHAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Murder by the Book? is a thorough - and thoroughly enjoyable - look at the blossoming genre of the feminist crime novel in Britain and the United States."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Vmfae_yBkHMC",
+      "etag": "ThfcViJbYzM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Vmfae_yBkHMC",
+      "volumeInfo": {
+        "title": "Crime Talk",
+        "subtitle": "How Citizens Construct a Social Problem",
+        "authors": ["Theodore Sasson"],
+        "publisher": "Transaction Publishers",
+        "publishedDate": "1995",
+        "description": "Crime in the streets has remained consistently among the most conspicuous aspects of the American political landscape. Sasson argues that the significance of our national pre-occupation with the issue depends on how it is constructed or \"framed\" in the mass media and in everyday conversation. Drawing on the methodology for analyzing issue frames in political discourse developed by William Gamson (who has contributed a foreword to this book), Sasson identifies the five interpretative frames that comprise the crime debate: Faulty System, Social Breakdown, Blocked Opportunities, Media Violence, and Racist System. Tracking the performances of these frames in twenty small group discussions among black and white urbanites, and in a sample of newspaper columns, he demonstrates that the two \"generally conservative\" frames, Faulty System and Social Breakdown, are by far the most prominent. He explains their prominence in the group discussions through a careful analysis of the ideational resources (popular wisdom, personal experience, media discourse) used by the participants. Sasson's empirical findings lead him to conclude that the American preoccupation with crime will generate recurrent demands for a more expansive and punitive criminal justice system and new support for conservative politicians and their causes. Apart from its contribution to the understanding of the civic role of crime and of the politics of crime control, Crime Talk also advances a methodology for framing popular discourse, and a theoretical perspective on how ordinary citizens make sense of social problems. A study at the intersections of criminology and political sociology, it will capture the attention of a wide range of social scientists, as well as instructors in courses on social problems, the mass media and research methodology.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0202365271"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780202365275"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 197,
+        "printType": "BOOK",
+        "categories": ["Law"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.3.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Vmfae_yBkHMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Vmfae_yBkHMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=Vmfae_yBkHMC&printsec=frontcover&dq=crime&hl=&cd=14&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=Vmfae_yBkHMC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Vmfae_yBkHMC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 2289.13,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 2289.13,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=Vmfae_yBkHMC&rdid=book-Vmfae_yBkHMC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 2289130000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 2289130000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Crime_Talk-sample-pdf.acsm?id=Vmfae_yBkHMC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Vmfae_yBkHMC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Apart from its contribution to the understanding of the civic role of crime and of the politics of crime control, Crime Talk also advances a methodology for framing popular discourse, and a theoretical perspective on how ordinary citizens ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "uNM9ybnZxj8C",
+      "etag": "XtBlvb6kGe8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/uNM9ybnZxj8C",
+      "volumeInfo": {
+        "title": "Corporate Crime",
+        "authors": ["Peter Cleary Yeager"],
+        "publisher": "Transaction Publishers",
+        "publishedDate": "2006",
+        "description": "Corporate Crime, originally published in 1980, is the first and still the only comprehensive study of corporate law violations by our largest corporations. The book laid the groundwork for analyses of important aspects of corporate behavior. It defined corporate crime and found ways of locating corporate violations from various sources. It even drew up measures of the seriousness of crimes. Much of this book still applies today to the corporate world and its illegal behavior. A new introduction, \"Corporate Crime: Yesterday and Today--A Comparison,\" prepared for this edition by coauthor Marshall B. Clinard, discusses the development of a criminological interest in corporate crime, explains the nature of corporate crime, and analyzes a number of issues involved in its study. Among the issues tackled are whether today's corporate crime is greater, more serious, and more complex; accounting fraud and its crucial role in hiding corporate crime; the pharmaceuticals, the industry with the most corporate violations; explanations of corporate crime in terms of economic factors, corporate culture, and the role of top executives; and new laws to control corporate crime and alternative approaches.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1412804930"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781412804936"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 386,
+        "printType": "BOOK",
+        "categories": ["Business & Economics"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.6.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=uNM9ybnZxj8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=uNM9ybnZxj8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=uNM9ybnZxj8C&printsec=frontcover&dq=crime&hl=&cd=15&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=uNM9ybnZxj8C&dq=crime&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Corporate_Crime.html?hl=&id=uNM9ybnZxj8C"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Corporate_Crime-sample-epub.acsm?id=uNM9ybnZxj8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Corporate_Crime-sample-pdf.acsm?id=uNM9ybnZxj8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=uNM9ybnZxj8C&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "It defined corporate crime and found ways of locating corporate violations from various sources. It even drew up measures of the seriousness of crimes. Much of this book still applies today to the corporate world and its illegal behavior."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "f5MoDgAAQBAJ",
+      "etag": "GqswghrIOq0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/f5MoDgAAQBAJ",
+      "volumeInfo": {
+        "title": "Crime and Poetry",
+        "subtitle": "A Magical Bookshop Mystery",
+        "authors": ["Amanda Flower"],
+        "publisher": "Penguin",
+        "publishedDate": "2016-04",
+        "description": "Violet Waverly rushes home to her ailing grandmother to find it was all a ploy to get her closer to home. Violet begins working in Charming Books, her grandma's magical bookshop. Soon a dead man is discovered clutching a volume of Emily Dickinson's poems and Violet is caught up in the mystery.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780451477446"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0451477448"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 368,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 11,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=f5MoDgAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=f5MoDgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=f5MoDgAAQBAJ&dq=crime&hl=&cd=16&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=f5MoDgAAQBAJ&dq=crime&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Crime_and_Poetry.html?hl=&id=f5MoDgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=f5MoDgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Includes a sneak peek of Murder, Handcrafted: an Amish Quilt Shop Mystery written by Amanda Flower writing as Isabella Alan."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ctd_pRjP2uMC",
+      "etag": "gOc5SoMJf9A",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ctd_pRjP2uMC",
+      "volumeInfo": {
+        "title": "Crime, Critique and Utopia",
+        "authors": ["Margaret Malloch", "Bill Munro"],
+        "publisher": "Springer",
+        "publishedDate": "2013-05-30",
+        "description": "This book explores the relevance of utopia in relation to contemporary criminology. The range of contributors explore the application of a utopian method for uncovering the potential within criminology and criminal justice, as well as the relevance of the utopian impulse for developing a challenge to the status quo in academia and beyond.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781137009807"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1137009802"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 212,
+        "printType": "BOOK",
+        "categories": ["Philosophy"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.3.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ctd_pRjP2uMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ctd_pRjP2uMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=ctd_pRjP2uMC&printsec=frontcover&dq=crime&hl=&cd=17&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=ctd_pRjP2uMC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ctd_pRjP2uMC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 5628.6,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 5628.6,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=ctd_pRjP2uMC&rdid=book-ctd_pRjP2uMC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 5628600000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 5628600000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Crime_Critique_and_Utopia-sample-epub.acsm?id=ctd_pRjP2uMC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Crime_Critique_and_Utopia-sample-pdf.acsm?id=ctd_pRjP2uMC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ctd_pRjP2uMC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This book explores the relevance of utopia in relation to contemporary criminology."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "uRKJDwAAQBAJ",
+      "etag": "8lt9Um3zT60",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/uRKJDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Crime Wave",
+        "authors": ["Howard Hughes"],
+        "publisher": "Bloomsbury Publishing",
+        "publishedDate": "2006-05-26",
+        "description": "Crime movies inhabit dark and desperate worlds, yet they account for many of Hollywood's most triumphant successes. In full acknowledgement of this achievement, \"Crime Wave\" offers an authoritative and informative, stimulating and entertaining guide to the crime movie phenomenon, from its early days to the present, charting its history and celebrating the people who have given it a special and enduring place in cinema goers' affections. Chapters focus on landmark Hollywood films - from 1931's \"The Public Enemy\", through \"The Maltese Falcon\", \"Point Blank\", \"Dirty Harry\", \"The Godfather\" trilogy and \"Goodfellas\", to \"LA Confidential\" and \"Oceans 11\" - telling their stories and on the way discussing many more crime movies, both major and lesser known. \"Crime Wave\" represents and investigates gangster and heist movies, blaxploitation and noir, murder mysteries, vehicles for vigilante or buddy cops, even a gangster love story. It features biographies and filmographies detailing the key participants and background details of the film's making, locations and sets. It also explores each film's sources and influences, its impact on the crime genre and current fashion, including spin-offs, copies and sequels. It examines the films' themes, style and box office fortunes. Detailed cast list information is provided for each of the main featured films. Written with passion, for those who love this cinema, \"Crime Wave\" is the perfect partner in crime.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780857730480"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0857730487"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 264,
+        "printType": "BOOK",
+        "categories": ["Performing Arts"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=uRKJDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=uRKJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=uRKJDwAAQBAJ&printsec=frontcover&dq=crime&hl=&cd=18&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=uRKJDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=uRKJDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 2129,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 2129,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=uRKJDwAAQBAJ&rdid=book-uRKJDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 2129000000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 2129000000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Crime_Wave-sample-epub.acsm?id=uRKJDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Crime_Wave-sample-pdf.acsm?id=uRKJDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=uRKJDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "&quot;Crime Wave&quot; represents and investigates gangster and heist movies, blaxploitation and noir, murder mysteries, vehicles for vigilante or buddy cops, even a gangster love story."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "bapgAQAAQBAJ",
+      "etag": "mvF95oAuedQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/bapgAQAAQBAJ",
+      "volumeInfo": {
+        "title": "Property Crime in London, 1850–Present",
+        "authors": ["W. Meier"],
+        "publisher": "Springer",
+        "publishedDate": "2011-07-04",
+        "description": "This book examines London's transformation from the mid-Victorian \"miracle\" of low crime to a high-crime society, treating six different types of misdeed as representative of phases in the evolution of crime to argue that lawbreaking must be explained by connecting all types of offenses to their social and economic contexts.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780230119680"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0230119689"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 236,
+        "printType": "BOOK",
+        "categories": ["History"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=bapgAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=bapgAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=bapgAQAAQBAJ&printsec=frontcover&dq=crime&hl=&cd=19&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=bapgAQAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=bapgAQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 6301.2,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 6301.2,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=bapgAQAAQBAJ&rdid=book-bapgAQAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 6301200000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 6301200000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Property_Crime_in_London_1850_Present-sample-epub.acsm?id=bapgAQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Property_Crime_in_London_1850_Present-sample-pdf.acsm?id=bapgAQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=bapgAQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This book examines London&#39;s transformation from the mid-Victorian &quot;miracle&quot; of low crime to a high-crime society, treating six different types of misdeed as representative of phases in the evolution of crime to argue that lawbreaking must ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "uMIuAQAAIAAJ",
+      "etag": "SqhkhfDNhTY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/uMIuAQAAIAAJ",
+      "volumeInfo": {
+        "title": "Dead End",
+        "subtitle": "The Crime Story of the Decade : Murder, Incest, and High-tech Thievery",
+        "authors": ["Jeanne King"],
+        "publisher": "M Evans & Company",
+        "publishedDate": "2002",
+        "description": "Presents the true account of Sante Kimes, a killer and con-artist who left a trail of bodies across the country and who brainwashed her son Kenneth, training him in the art of deception and murder.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "STANFORD:36105060683930"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 341,
+        "printType": "BOOK",
+        "categories": ["True Crime"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.3.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=uMIuAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=uMIuAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=uMIuAQAAIAAJ&q=crime&dq=crime&hl=&cd=20&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=uMIuAQAAIAAJ&dq=crime&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Dead_End.html?hl=&id=uMIuAQAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=uMIuAQAAIAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Presents the true account of Sante Kimes, a killer and con-artist who left a trail of bodies across the country and who brainwashed her son Kenneth, training him in the art of deception and murder."
+      }
+    }
+  ]
+}
