@@ -13,9 +13,17 @@ interface HomeProps {
   categories: [Category];
   user: user;
   dbuser: user;
+  category: string;
 }
 
-const Home: React.FC<HomeProps> = ({ salads, categories, user, dbuser }) => {
+const Home: React.FC<HomeProps> = ({
+  salads,
+  categories,
+  user,
+  dbuser,
+  category,
+}) => {
+
   useEffect(() => {
     if (user?.email) {
       db.collection("users").doc(user?.email).set(
@@ -34,7 +42,11 @@ const Home: React.FC<HomeProps> = ({ salads, categories, user, dbuser }) => {
       <NextSeo title="Order tasty food | Voyager" />
       <div>
         <Header />
-        <Main salads={salads} categories={categories} />
+        <Main
+          salads={salads}
+          categories={categories}
+          categoryRoute={category}
+        />
       </div>
       <Cart ssruser={user} dbuser={dbuser} />
     </div>
@@ -89,6 +101,7 @@ export const getServerSideProps = withPageAuthRequired({
       props: {
         salads,
         categories,
+        category,
         dbuser,
       },
     };

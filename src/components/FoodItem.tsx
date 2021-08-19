@@ -5,17 +5,24 @@ import Image from "next/image";
 interface FoodItemProps {
   image: string;
   name: string;
+  categoryRoute: string;
 }
 
-const FoodItem: React.FC<FoodItemProps> = ({ image, name }) => {
+const FoodItem: React.FC<FoodItemProps> = ({ image, name, categoryRoute }) => {
   const router = useRouter();
+
+  console.log(categoryRoute);
+
   return (
     <motion.div
       initial={{ x: 50 }}
       animate={{ x: 0 }}
       transition={{ duration: 0.3 }}
-      className="
-       backdrop-filter flex bg-white flex-col bg-opacity-40 ring-1 cursor-pointer ml-1 mt-1 ring-white items-center justify-center min-w-[10rem] h-40 backdrop-blur-2xl bg-gradient-to-br p-3 rounded-full"
+      className={` ${
+        categoryRoute === name
+          ? "bg-peachdark bg-opacity-100"
+          : "bg-white bg-opacity-40"
+      }  backdrop-filter flex  flex-col  ring-1 cursor-pointer ml-1 mt-1 ring-white items-center justify-center min-w-[10rem] h-40 backdrop-blur-2xl bg-gradient-to-br p-3 rounded-full`}
       onClick={() => router.push(`/food/?category=${name.toLowerCase()}`)}
     >
       <Image

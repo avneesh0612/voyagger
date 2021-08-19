@@ -6,15 +6,20 @@ import OfferProduct from "../OfferProduct";
 interface MainProps {
   salads: [Salad];
   categories: [Category];
+  categoryRoute: string;
 }
 
-const Main: React.FC<MainProps> = ({ salads, categories }) => {
+const Main: React.FC<MainProps> = ({ salads, categories, categoryRoute }) => {
   return (
     <main className="md:w-[65vw] w-full">
       <div className="flex overflow-scroll md:w-[67vw] hidescrollbar mx-10 h-48 space-x-6  pr-14">
         {categories.map((category: Category) => (
           <div key={category.id}>
-            <FoodItem image={category.image} name={category.name} />
+            <FoodItem
+              image={category.image}
+              name={category.name}
+              categoryRoute={categoryRoute}
+            />
           </div>
         ))}
       </div>
