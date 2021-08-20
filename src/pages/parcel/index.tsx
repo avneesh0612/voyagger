@@ -13,8 +13,8 @@ interface parcelProps {
 
 const Index: React.FC<parcelProps> = ({ user }) => {
   const [pickupaddress, setpickupaddress] = useState("");
-  const [recipeintsaddress, setRecipeintsaddress] = useState("");
-  const [recipeintphone, setRecipeintphone] = useState("");
+  const [recipientsaddress, setrecipientsaddress] = useState("");
+  const [recipientphone, setrecipientphone] = useState("");
   const [zip, setzip] = useState("");
   const [weight, setWeight] = useState("Under 1/2 kg");
   const router = useRouter();
@@ -26,19 +26,19 @@ const Index: React.FC<parcelProps> = ({ user }) => {
 
     if (!pickupaddress) return toast.error("Please add your pickup address");
 
-    if (!recipeintsaddress)
+    if (!recipientsaddress)
       return toast.error("Please add your recipeinet address");
 
     if (!zip) return toast.error("Please add the zip code");
 
-    if (!recipeintphone)
+    if (!recipientphone)
       return toast.error("Please add recipient's phone number");
-    if (!recipeintphone)
+    if (!recipientphone)
       return toast.error("Please add recipient's phone number");
 
-    if (!pattern.test(recipeintphone)) {
+    if (!pattern.test(recipientphone)) {
       return toast.error("Please enter a valid phone number");
-    } else if (recipeintphone.length != 10) {
+    } else if (recipientphone.length != 10) {
       return toast.error("Please enter a valid phone number");
     }
 
@@ -46,16 +46,16 @@ const Index: React.FC<parcelProps> = ({ user }) => {
       usermail: user.email,
       username: user.name,
       pickupaddress: pickupaddress,
-      recipeintsaddress: recipeintsaddress,
+      recipientsaddress: recipientsaddress,
       zip: zip,
-      recipeintphone: recipeintphone,
+      recipientphone: recipientphone,
       weight: weight,
     });
 
     setpickupaddress("");
-    setRecipeintsaddress("");
+    setrecipientsaddress("");
     setWeight("");
-    setRecipeintphone("");
+    setrecipientphone("");
     toast.success("parcel added successfully");
     router.push("/parcel/orders");
   };
@@ -75,12 +75,12 @@ const Index: React.FC<parcelProps> = ({ user }) => {
         </div>
         <div className="flex flex-col justify-center w-full">
           <label className="text-left font-medium text-xl ">
-            Recipeint’s address
+            recipient’s address
           </label>
           <input
             type="text"
-            value={recipeintsaddress}
-            onChange={(e) => setRecipeintsaddress(e.target.value)}
+            value={recipientsaddress}
+            onChange={(e) => setrecipientsaddress(e.target.value)}
             className="w-full rounded-lg bg-white/50 focus:outline-none pl-3 h-10 "
           />
         </div>
@@ -101,8 +101,8 @@ const Index: React.FC<parcelProps> = ({ user }) => {
           </label>
           <input
             type="phone"
-            value={recipeintphone}
-            onChange={(e) => setRecipeintphone(e.target.value)}
+            value={recipientphone}
+            onChange={(e) => setrecipientphone(e.target.value)}
             className="w-full rounded-lg bg-white/50 focus:outline-none pl-3 h-10 "
           />
         </div>

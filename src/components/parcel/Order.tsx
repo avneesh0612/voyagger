@@ -4,8 +4,8 @@ import toast from "react-hot-toast";
 interface OrderProps {
   pickupaddress: string;
   zip: string;
-  recipeintphone: string;
-  recipeintsaddress: string;
+  recipientphone: string;
+  recipientsaddress: string;
   usermail: string;
   username: string;
   weight: string;
@@ -14,9 +14,9 @@ interface OrderProps {
 
 const Order: React.FC<OrderProps> = ({
   pickupaddress,
-  recipeintphone,
+  recipientphone,
   zip,
-  recipeintsaddress,
+  recipientsaddress,
   weight,
   id,
 }) => {
@@ -53,11 +53,11 @@ const Order: React.FC<OrderProps> = ({
         </div>
         <div className="flex items-center space-x-2 md:items-start ">
           <h3>Recipient&lsquo;s Phone: </h3>
-          <h3>{recipeintphone}</h3>
+          <h3>{recipientphone}</h3>
         </div>
         <div className="flex items-center space-x-2 md:items-start ">
           <h3>Recipient&lsquo;s address: </h3>
-          <h3>{recipeintsaddress}</h3>
+          <h3>{recipientsaddress}</h3>
         </div>
         <div className="flex items-center space-x-2 md:items-start ">
           <h3>Weight: </h3>

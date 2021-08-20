@@ -9,8 +9,8 @@ interface OrderType {
 
 interface order {
   pickupaddress: string;
-  recipeintphone: string;
-  recipeintsaddress: string;
+  recipientphone: string;
+  recipientsaddress: string;
   zip: string;
   usermail: string;
   username: string;
@@ -47,11 +47,11 @@ export const getServerSideProps = withPageAuthRequired({
         id: order.id,
         pickupaddress: order.data().pickupaddress,
         zip: order.data().zip,
-        recipeintphone: order.data().recipeintphone,
+        recipientphone: order.data().recipientphone,
         usermail: order.data().usermail,
         username: order.data().username,
         weight: order.data().weight,
-        recipeintsaddress: order.data().recipeintsaddress,
+        recipientsaddress: order.data().recipientsaddress,
       }))
     );
 

@@ -7,8 +7,8 @@ interface ParcelProps {
   parcel: {
     pickupaddress: string;
     zip: string;
-    recipeintphone: string;
-    recipeintsaddress: string;
+    recipientphone: string;
+    recipientsaddress: string;
     usermail: string;
     username: string;
     weight: string;
@@ -55,11 +55,11 @@ const parcelTrack: React.FC<ParcelProps> = ({ parcel }) => {
             </div>
             <div className="flex items-center space-x-2 md:items-start ">
               <h3>Recipient&lsquo;s Phone: </h3>
-              <h3>{parcel.recipeintphone}</h3>
+              <h3>{parcel.recipientphone}</h3>
             </div>
             <div className="flex items-center space-x-2 md:items-start ">
               <h3>Recipient&lsquo;s address: </h3>
-              <h3>{parcel.recipeintsaddress}</h3>
+              <h3>{parcel.recipientsaddress}</h3>
             </div>
             <div className="flex items-center space-x-2 md:items-start ">
               <h3>Weight: </h3>
