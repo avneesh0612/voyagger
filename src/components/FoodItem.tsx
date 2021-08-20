@@ -11,8 +11,6 @@ interface FoodItemProps {
 const FoodItem: React.FC<FoodItemProps> = ({ image, name, categoryRoute }) => {
   const router = useRouter();
 
-  console.log(categoryRoute);
-
   return (
     <motion.div
       initial={{ x: 50 }}
@@ -33,7 +31,7 @@ const FoodItem: React.FC<FoodItemProps> = ({ image, name, categoryRoute }) => {
         alt={name}
         className="w-28 h-28"
       />
-      <h2 className="mb-2 capitalize text-lg font-anton">{name}</h2>
+      <h2 className="mb-2 text-lg capitalize font-anton">{name}</h2>
     </motion.div>
   );
 };

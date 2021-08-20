@@ -11,9 +11,6 @@ const Footer: React.FC = () => {
       .get("https://api.github.com/repos/avneesh0612/voyager")
       .then((response) => {
         setStarCount(response.data.stargazers_count);
-      })
-      .catch((error) => {
-        console.log(error);
       });
   };
 
@@ -22,11 +19,13 @@ const Footer: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full py-1 text-lg my-5 px-5 flex items-center justify-center space-x-10">
+    <div className="flex items-center justify-center w-full px-5 py-1 my-5 space-x-10 text-lg">
       <h1>
         Made By
         <Link href="https://avneesh-links.vercel.app/">
-          <a target="_blank" className="ml-1 font-bold underline">Avneesh Agarwal</a>
+          <a target="_blank" className="ml-1 font-bold underline">
+            Avneesh Agarwal
+          </a>
         </Link>
       </h1>
       <Link passHref href="https://github.com/avneesh0612/voyager">
