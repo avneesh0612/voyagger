@@ -26,9 +26,9 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <div className="absolute top-[60%] left-[0%] md:left-[20%] md:w-96 md:h-96 w-20 h-20 bg-purple-300 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob"></div>
-      <div className="absolute top-[70%] left-[50%] md:w-96 md:h-96 w-20 h-20 bg-red-400 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-2000"></div>
-      <div className="absolute top-[75%] md:top-[60%] left-[10%] md:left-[30%] md:w-96 md:h-96 w-20 h-20 bg-indigo-400 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-4000"></div>
+      <div className=" top-[60%] left-[0%] hidden md:absolute md:left-[20%] md:w-96 md:h-96 w-20 h-20 bg-purple-300 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob"></div>
+      <div className="absolute top-[70%] left-[50%] hidden md:absolute md:w-96 md:h-96 w-20 h-20 bg-red-400 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-2000"></div>
+      <div className="absolute hidden md:absolute top-[75%] md:top-[60%] left-[10%] md:left-[30%] md:w-96 md:h-96 w-20 h-20 bg-indigo-400 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-4000"></div>
       <NextSeo title="Voyager" description="A short description goes here." />
       <Header />
       <Banner />
