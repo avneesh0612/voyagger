@@ -80,7 +80,7 @@ PERMISSION_CLIENT_PROVIDER_URL
 HOST=http://localhost:3000
 ```
 
-I created development credentials for making the job of cintributing easier, so you can simply copy and paste these to get your app up and running perfectly
+I created development credentials for making the job of contributing easier, so you can simply copy and paste these into `.env.local` to get your app up and running perfectly
 ```
 # Auth0
 AUTH0_SECRET='791dbc2bcd85f887912a5c98f26e0e7090442dfa0a1dfe33b5848188fa3839b4'
