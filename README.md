@@ -26,15 +26,6 @@ yarn install
 yarn dev
 ```
 
-## Author
-
-👤 **Avneesh Agarwal**
-
-- Website: https://voyagerr.vercel.app/
-- Twitter: [@avneesh0612](https://twitter.com/avneesh0612)
-- Github: [@avneesh0612](https://github.com/avneesh0612)
-- LinkedIn: [@avneesh-agarwal-78312b20a](https://linkedin.com/in/avneesh-agarwal-78312b20a)
-
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/avneesh0612/voyager/issues).
@@ -128,6 +119,15 @@ PERMISSION_AUTH_PROVIDER_URL="https://www.googleapis.com/oauth2/v1/certs"
 PERMISSION_CLIENT_PROVIDER_URL="https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-n5ggx%40voyager-developmen.iam.gserviceaccount.com"
 ```
 
+## Author
+
+👤 **Avneesh Agarwal**
+
+- Website: https://voyagerr.vercel.app/
+- Twitter: [@avneesh0612](https://twitter.com/avneesh0612)
+- Github: [@avneesh0612](https://github.com/avneesh0612)
+- LinkedIn: [@avneesh-agarwal-78312b20a](https://linkedin.com/in/avneesh-agarwal-78312b20a)
+- 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
