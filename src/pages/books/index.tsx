@@ -27,7 +27,7 @@ const Index: React.FC<BookProps> = ({ books }) => {
           {Object.entries(requests).map(([key, { title }]) => (
             <h2
               key={key}
-              className="mr-3 font-lobster text-text  cursor-pointer hover:underline"
+              className="mr-3 cursor-pointer font-lobster text-text hover:underline"
               onClick={() => router.push(`/books/?volume=${key}`)}
             >
               {title}
@@ -37,7 +37,7 @@ const Index: React.FC<BookProps> = ({ books }) => {
         <motion.div
           initial={{ x: 100 }}
           animate={{ x: 0 }}
-          className="relative w-1/2 bottom-0 z-20 flex mx-auto text-text flex-wrap"
+          className="relative bottom-0 z-20 flex flex-wrap w-1/2 mx-auto text-text"
         >
           {books.items.map((book: book) => (
             <motion.div
@@ -53,16 +53,16 @@ const Index: React.FC<BookProps> = ({ books }) => {
             >
               <Link href={book.volumeInfo?.previewLink} passHref>
                 {book.volumeInfo.imageLinks?.thumbnail && (
-                  <motion.div className="flex  shadow-xl cursor-pointer">
-                    <a target="_blank" className="relative w-[150px] h-[225px]">
+                  <a target="_blank" className="relative w-[150px] h-[225px]">
+                    <motion.div className="flex shadow-xl cursor-pointer">
                       <Image
                         layout="fill"
                         objectFit="contain"
                         src={book.volumeInfo.imageLinks?.thumbnail}
                         alt={book.volumeInfo.title}
                       />
-                    </a>
-                  </motion.div>
+                    </motion.div>
+                  </a>
                 )}
               </Link>
               <h2 className="w-[150px]   cursor-pointer text-text text-center text-lg">
