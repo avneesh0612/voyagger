@@ -20,7 +20,7 @@ const requests = {
 
   fetchRomance: {
     title: "Romance",
-    url: `/volumes?q=romaces&key=${process.env.BOOK_API_KEY}`,
+    url: `/volumes?q=romace&key=${process.env.BOOK_API_KEY}`,
   },
 
   fetchCrime: {
