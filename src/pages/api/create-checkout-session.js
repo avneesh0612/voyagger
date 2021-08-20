@@ -22,7 +22,11 @@ const handler = async (req, res) => {
 
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
-    shipping_rates: ["shr_1JLoNhSFCeAarzuF943bcl3G"],
+    shipping_rates: [
+      process.env.HOST === "http://localhost:3000"
+        ? process.env.STRIPE_SHIPPING_RATE
+        : "shr_1JLoNhSFCeAarzuF943bcl3G",
+    ],
     shipping_address_collection: {
       allowed_countries: [
         "GB",
