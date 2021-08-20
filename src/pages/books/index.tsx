@@ -54,7 +54,12 @@ const Index: React.FC<BookProps> = ({ books, routertitle }) => {
               className="flex flex-col m-5"
             >
               {book.volumeInfo.imageLinks?.thumbnail && (
-                <a target="_blank" className="relative w-[150px] h-[225px]">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={book.volumeInfo.previewLink}
+                  className="relative w-[150px] h-[225px]"
+                >
                   <motion.div className="flex shadow-xl cursor-pointer">
                     <Image
                       layout="fill"
