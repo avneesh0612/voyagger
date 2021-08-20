@@ -26,22 +26,22 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <div className=" top-[60%] left-[0%] hidden md:absolute md:left-[20%] md:w-96 md:h-96 w-20 h-20 md:flex bg-purple-300 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob"></div>
+      <div className="top-[60%] left-[0%] hidden md:absolute md:left-[20%] md:w-96 md:h-96 w-20 h-20 md:flex bg-purple-300 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob"></div>
       <div className="absolute top-[70%] left-[50%] hidden md:flex md:absolute md:w-96 md:h-96 w-20 h-20 bg-red-400 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-2000"></div>
       <div className="absolute hidden md:absolute top-[75%] md:top-[60%] left-[10%] md:left-[30%] md:w-96 md:flex md:h-96 w-20 h-20 bg-indigo-400 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-4000"></div>
       <NextSeo title="Voyager" description="A short description goes here." />
       <Header />
       <Banner />
-      <main className="flex flex-col w-screen mt-5 md:justify-evenly justify-center">
+      <main className="flex flex-col justify-center w-screen mt-5 md:justify-evenly">
         <motion.h1
           initial={{ y: -50 }}
           animate={{ y: 0 }}
           transition={{ duration: 1.5 }}
-          className="font-bold text-4xl font-anton text-text mx-auto text-center"
+          className="mx-auto text-4xl font-bold text-center font-anton text-text"
         >
           What do you want to do?
         </motion.h1>
-        <div className="flex flex-wrap w-3/5 mx-auto md:justify-evenly justify-center">
+        <div className="flex flex-wrap justify-center w-3/5 mx-auto md:justify-evenly">
           <motion.div
             initial={{ x: -50, y: -50 }}
             animate={{ x: 0, y: 0 }}
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
             />
           </motion.div>
         </div>
-        <div className="flex flex-wrap w-3/5 mx-auto md:justify-evenly justify-center">
+        <div className="flex flex-wrap justify-center w-3/5 mx-auto md:justify-evenly">
           <motion.div
             initial={{ x: -50, y: 50 }}
             animate={{ x: 0, y: 0 }}

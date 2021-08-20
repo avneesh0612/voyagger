@@ -88,7 +88,7 @@ const Cart: React.FC<CartProps> = ({ ssruser, dbuser }) => {
               alt="avatar"
             />
           )}
-          <h1 className="ml-20 text-text text-xl font-semibold text-left">
+          <h1 className="ml-20 text-xl font-semibold text-left text-text">
             {ssruser?.name}
           </h1>
         </div>
@@ -138,7 +138,7 @@ const Cart: React.FC<CartProps> = ({ ssruser, dbuser }) => {
         </h2>
       </div>
       <div className="flex items-center m-10 mt-2 mb-2">
-        <LocationMarkerIcon className="text-redmarker mt-2 h-8 w-8" />
+        <LocationMarkerIcon className="w-8 h-8 mt-2 text-redmarker" />
         <div className="flex flex-col ml-4 font-semibold text-md">
           {editShow ? (
             <form action="" onSubmit={editAddress}>
@@ -151,7 +151,7 @@ const Cart: React.FC<CartProps> = ({ ssruser, dbuser }) => {
             </form>
           ) : (
             <div className="flex flex-col ml-4 font-semibold text-md">
-              {dbuser.address ? address : "Please add your address"}
+              {address ? address : "Please add your address"}
             </div>
           )}
         </div>
