@@ -9,10 +9,10 @@
     "@auth0/nextjs-auth0": "^1.5.0",
     "@heroicons/react": "^1.0.4",
     "@reduxjs/toolkit": "^1.6.1",
-    "@stripe/stripe-js": "^1.17.0",
+    "@stripe/stripe-js": "^1.17.1",
     "axios": "^0.21.1",
-    "firebase": "^8.9.1",
-    "firebase-admin": "^9.11.0",
+    "firebase": "^8.10.0",
+    "firebase-admin": "^9.11.1",
     "framer-motion": "^4.1.17",
     "lodash": "^4.17.21",
     "micro": "^9.3.4",
@@ -28,7 +28,7 @@
     "react-hot-toast": "^2.1.0",
     "react-redux": "^7.2.4",
     "react-responsive-carousel": "^3.2.21",
-    "stripe": "^8.169.0"
+    "stripe": "^8.170.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.172",
