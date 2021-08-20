@@ -53,7 +53,17 @@ AUTH0_CLIENT_ID
 AUTH0_CLIENT_SECRET
 ```
 
-firebase
+These are the development credentials for Auth0
+
+```
+AUTH0_SECRET='791dbc2bcd85f887912a5c98f26e0e7090442dfa0a1dfe33b5848188fa3839b4'
+AUTH0_BASE_URL='http://localhost:3000'
+AUTH0_ISSUER_BASE_URL='https://avneesh0612.us.auth0.com'
+AUTH0_CLIENT_ID='7SqxihF6VNb0yNCudX2qjmd2vd84Ztsu'
+AUTH0_CLIENT_SECRET='r1YTMuh0VZbE_WQnUuA-YIy97aOqMztDVokQwqbBO6PAYx0bMLPKXNHY0MjzQxwQ'
+```
+
+Firebase
 
 ```
 FIREBASE_CONFIG_API_KEY
