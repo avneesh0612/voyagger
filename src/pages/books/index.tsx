@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Header from "../../components/Header";
 import requests from "../../utils/requests";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import book from "../../types/bookTypes";
 
@@ -10,9 +9,10 @@ interface BookProps {
   books: {
     items: [book];
   };
+  routertitle: string;
 }
 
-const Index: React.FC<BookProps> = ({ books }) => {
+const Index: React.FC<BookProps> = ({ books, routertitle }) => {
   const router = useRouter();
 
   return (
@@ -27,7 +27,9 @@ const Index: React.FC<BookProps> = ({ books }) => {
           {Object.entries(requests).map(([key, { title }]) => (
             <h2
               key={key}
-              className="mr-3 cursor-pointer font-lobster text-text hover:underline"
+              className={`mr-3 cursor-pointer font-lobster text-text hover:underline ${
+                routertitle === title ? "underline" : ""
+              }`}
               onClick={() => router.push(`/books/?volume=${key}`)}
             >
               {title}
@@ -51,20 +53,18 @@ const Index: React.FC<BookProps> = ({ books }) => {
               key={book.id}
               className="flex flex-col m-5"
             >
-              <Link href={book.volumeInfo?.previewLink} passHref>
-                {book.volumeInfo.imageLinks?.thumbnail && (
-                  <a target="_blank" className="relative w-[150px] h-[225px]">
-                    <motion.div className="flex shadow-xl cursor-pointer">
-                      <Image
-                        layout="fill"
-                        objectFit="contain"
-                        src={book.volumeInfo.imageLinks?.thumbnail}
-                        alt={book.volumeInfo.title}
-                      />
-                    </motion.div>
-                  </a>
-                )}
-              </Link>
+              {book.volumeInfo.imageLinks?.thumbnail && (
+                <a target="_blank" className="relative w-[150px] h-[225px]">
+                  <motion.div className="flex shadow-xl cursor-pointer">
+                    <Image
+                      layout="fill"
+                      objectFit="contain"
+                      src={book.volumeInfo.imageLinks?.thumbnail}
+                      alt={book.volumeInfo.title}
+                    />
+                  </motion.div>
+                </a>
+              )}
               <h2 className="w-[150px]   cursor-pointer text-text text-center text-lg">
                 {book?.volumeInfo.title.slice(0, 25)}{" "}
                 {book?.volumeInfo.title.length > 25 ? "..." : ""}
@@ -89,6 +89,8 @@ export async function getServerSideProps(context) {
     volume = "fetchFiction";
   }
 
+  const routertitle = requests[volume].title;
+
   const URL = `https://www.googleapis.com/books/v1${requests[volume]?.url}&maxResults=20`;
 
   const request = await fetch(URL).then((res) => res.json());
@@ -97,6 +99,7 @@ export async function getServerSideProps(context) {
     props: {
       books: request,
       volume,
+      routertitle,
     },
   };
 }
