@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import toast from "react-hot-toast";
 
 interface OrderProps {
   pickupaddress: string;
@@ -19,12 +20,17 @@ const Order: React.FC<OrderProps> = ({
   weight,
   id,
 }) => {
+  const CopyLink = () => {
+    navigator.clipboard.writeText(`http://voyagerr.vercel.app/parcel/${id}`);
+    toast.success("copied link to clipboard");
+  };
+
   return (
     <motion.div
       initial={{ x: 50 }}
       animate={{ x: 0 }}
       transition={{ duration: 1 }}
-      className="flex flex-col items-center w-4/5 py-5 pl-4 m-5 space-y-5 md:space-y-0 mx-auto mb-2 font-medium text-center bg-white bg-opacity-25 rounded-lg shadow-xl justify-evenly md:flex-row md:space-x-5 backdrop-filter backdrop-blur-2xl"
+      className="flex flex-col items-center w-4/5 py-5 pl-4 m-5 mx-auto mb-2 space-y-5 font-medium text-center bg-white bg-opacity-25 rounded-lg shadow-xl md:space-y-0 justify-evenly md:flex-row md:space-x-5 backdrop-filter backdrop-blur-2xl"
     >
       <div className="flex flex-col items-center md:items-start">
         <h3>Order ID</h3>
@@ -58,6 +64,10 @@ const Order: React.FC<OrderProps> = ({
           <h3>{weight}</h3>
         </div>
       </div>
+
+      <button className="text-lg font-medium text-center" onClick={CopyLink}>
+        Share with someone
+      </button>
     </motion.div>
   );
 };
