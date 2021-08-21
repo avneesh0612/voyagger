@@ -4,6 +4,7 @@ import { NextSeo } from "next-seo";
 import { useEffect } from "react";
 import { db } from "../../firebase";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Items from "../components/Items";
 
@@ -90,6 +91,7 @@ const Home: React.FC = () => {
           </motion.div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
