@@ -28,7 +28,7 @@ const Orders: React.FC<OrdersProps> = ({ user, orders }) => {
           transition={{ duration: 1 }}
           className="pb-1 pl-4 mb-2 text-3xl bg-white bg-opacity-25 rounded-lg shadow-xl backdrop-filter backdrop-blur-2xl "
         >
-          <h1 className="pb-4 border-b-2 text-text font-anton border-gray-700">
+          <h1 className="pb-4 border-b-2 border-gray-700 text-text font-anton">
             Your orders
           </h1>
 
@@ -42,7 +42,7 @@ const Orders: React.FC<OrdersProps> = ({ user, orders }) => {
                 <>
                   You don&#39;t have any order yet. Go visit the{" "}
                   <button
-                    onClick={() => router.push("/")}
+                    onClick={() => router.push("/food")}
                     className="underline link hover:no-underline"
                   >
                     Homepage Store
