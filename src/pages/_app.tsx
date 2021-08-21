@@ -31,8 +31,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             description: "Voyager",
             images: [
               {
-                url: "https://res.cloudinary.com/dssvrf9oz/image/upload/v1629442357/ou_swuwqu.png",
-                width: 950,
+                url: "https://res.cloudinary.com/dssvrf9oz/image/upload/v1629552406/Copy_of_Connecting_people_Changing_lives_bvbr3d.png",
+                width: 800,
                 height: 700,
                 alt: "Voyager",
               },
