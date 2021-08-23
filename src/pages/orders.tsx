@@ -54,7 +54,7 @@ const Orders: React.FC<OrdersProps> = ({ user }) => {
             <h2 className="text-xl">
               {orders?.length > 0 ? (
                 <>
-                  {orders?.length} Order{orders.length > 1 && "s"}
+                  {orders?.length} Order{orders?.length > 1 && "s"}
                 </>
               ) : (
                 <>
