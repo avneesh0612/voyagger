@@ -16,6 +16,7 @@ module.exports = withPWA({
       "avatars.githubusercontent.com",
       "books.google.com",
       "upload.wikimedia.org",
+      "s.gravatar.com",
     ],
   },
 

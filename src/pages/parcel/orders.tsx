@@ -1,12 +1,14 @@
-import { getSession, withPageAuthRequired } from "@auth0/nextjs-auth0/";
+import { withPageAuthRequired } from "@auth0/nextjs-auth0/";
 import { db } from "../../../firebase";
 import Order from "../../components/parcel/Order";
 import Header from "../../components/Header";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { user } from "../../types/userType";
 
 interface OrderType {
-  orders: [order];
+  user: user;
 }
 
 interface order {
@@ -20,8 +22,23 @@ interface order {
   id: string;
 }
 
-const Orders: React.FC<OrderType> = ({ orders }) => {
+const Orders: React.FC<OrderType> = ({ user }) => {
   const router = useRouter();
+
+  const [orders, setorders] = useState([]);
+
+  useEffect(() => {
+    db.collection("parcels")
+      .where("usermail", "==", user?.email)
+      .onSnapshot((snapshot) =>
+        setorders(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        )
+      );
+  }, [user?.email]);
 
   return (
     <div>
@@ -69,32 +86,4 @@ const Orders: React.FC<OrderType> = ({ orders }) => {
 
 export default Orders;
 
-export const getServerSideProps = withPageAuthRequired({
-  async getServerSideProps(context: any) {
-    const session = getSession(context.req, context.res);
-
-    const allorders = await db
-      .collection("parcels")
-      .where("usermail", "==", session?.user.email)
-      .get();
-
-    const orders = await Promise.all(
-      allorders.docs.map(async (order) => ({
-        id: order.id,
-        pickupaddress: order.data().pickupaddress,
-        zip: order.data().zip,
-        recipientphone: order.data().recipientphone,
-        usermail: order.data().usermail,
-        username: order.data().username,
-        weight: order.data().weight,
-        recipientsaddress: order.data().recipientsaddress,
-      }))
-    );
-
-    return {
-      props: {
-        orders,
-      },
-    };
-  },
-});
+export const getServerSideProps = withPageAuthRequired({});

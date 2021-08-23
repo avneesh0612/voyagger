@@ -8,14 +8,32 @@ import Header from "../components/Header";
 import { user } from "../types/userType";
 import { orderType } from "../types/orderTypes";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 interface OrdersProps {
   user: user;
   orders: [orderType];
 }
 
-const Orders: React.FC<OrdersProps> = ({ user, orders }) => {
+const Orders: React.FC<OrdersProps> = ({ user }) => {
   const router = useRouter();
+
+  const [orders, setorders] = useState([]);
+
+  useEffect(() => {
+    db.collection("users")
+      .doc(user.email)
+      .collection("orders")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setorders(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        )
+      );
+  }, [user?.email]);
 
   return (
     <div className="min-h-screen">
@@ -45,7 +63,7 @@ const Orders: React.FC<OrdersProps> = ({ user, orders }) => {
                     onClick={() => router.push("/food")}
                     className="underline link hover:no-underline"
                   >
-                    Homepage Store
+                    Store
                   </button>{" "}
                   to purchase some items.
                 </>
@@ -75,30 +93,4 @@ const Orders: React.FC<OrdersProps> = ({ user, orders }) => {
 
 export default Orders;
 
-export const getServerSideProps = withPageAuthRequired({
-  async getServerSideProps(context: any) {
-    const session = getSession(context.req, context.res);
-
-    const stripeOrders = await db
-      .collection("users")
-      .doc(session?.user.email)
-      .collection("orders")
-      .orderBy("timestamp", "desc")
-      .get();
-
-    const orders = await Promise.all(
-      stripeOrders.docs.map(async (order) => ({
-        id: order.id,
-        amount: order.data().amount,
-        amountShipping: order.data().amount_shipping,
-        images: order.data().images,
-        timestamp: moment(order.data().timestamp.toDate()).unix(),
-      }))
-    );
-    return {
-      props: {
-        orders,
-      },
-    };
-  },
-});
+export const getServerSideProps = withPageAuthRequired({});
