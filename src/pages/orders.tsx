@@ -17,22 +17,6 @@ interface OrdersProps {
 
 const Orders: React.FC<OrdersProps> = ({ orders, user }) => {
   const router = useRouter();
-  const [clientOrder, setClientOrder] = useState([]);
-
-  useEffect(() => {
-    db.collection("users")
-      .doc(user.email)
-      .collection("orders")
-      .orderBy("timestamp", "desc")
-      .onSnapshot((snapshot) =>
-        setClientOrder(
-          snapshot.docs.map((doc) => ({
-            id: doc.id,
-            data: doc.data(),
-          }))
-        )
-      );
-  }, [user.email]);
 
   return (
     <div className="min-h-screen">
@@ -73,33 +57,18 @@ const Orders: React.FC<OrdersProps> = ({ orders, user }) => {
           )}
         </motion.div>
 
-        {clientOrder === [] ? (
-          <div className="pt-2 pb-1 pl-0 mb-2 text-3xl ">
-            {orders?.map((order: orderType) => (
-              <Order
-                key={order.id}
-                id={order.id}
-                amount={order.amount}
-                amountShipping={order.amountShipping}
-                images={order.images}
-                timestamp={order.timestamp}
-              />
-            ))}
-          </div>
-        ) : (
-          <div className="pt-2 pb-1 pl-0 mb-2 text-3xl ">
-            {clientOrder?.map((order: orderType) => (
-              <Order
-                key={order.id}
-                id={order.id}
-                amount={order.amount}
-                amountShipping={order.amountShipping}
-                images={order.images}
-                timestamp={order.timestamp}
-              />
-            ))}
-          </div>
-        )}
+        <div className="pt-2 pb-1 pl-0 mb-2 text-3xl ">
+          {orders?.map((order: orderType) => (
+            <Order
+              key={order.id}
+              id={order.id}
+              amount={order.amount}
+              amountShipping={order.amountShipping}
+              images={order.images}
+              timestamp={order.timestamp}
+            />
+          ))}
+        </div>
       </main>
     </div>
   );
