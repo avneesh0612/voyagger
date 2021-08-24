@@ -7,25 +7,10 @@ import Header from "../../components/Header";
 import Order from "../../components/parcel/Order";
 import { user } from "../../types/userType";
 
-interface OrderType {
-  user: user;
-}
-
-interface order {
-  pickupaddress: string;
-  recipientphone: string;
-  recipientsaddress: string;
-  zip: string;
-  usermail: string;
-  username: string;
-  weight: string;
-  id: string;
-}
-
-const Orders: React.FC<OrderType> = ({ user }) => {
+const Orders = ({ user }) => {
   const router = useRouter();
 
-  const [orders, setorders] = useState([]);
+  const [orders, setorders] = useState();
 
   useEffect(() => {
     db.collection("parcels")
@@ -74,7 +59,7 @@ const Orders: React.FC<OrderType> = ({ user }) => {
           </h2>
         </motion.div>
 
-        {orders.map((order: order) => (
+        {orders.map((order) => (
           <div key={order.id}>
             <Order {...order} />
           </div>
