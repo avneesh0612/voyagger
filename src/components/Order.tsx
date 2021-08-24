@@ -20,19 +20,16 @@ const Order: React.FC<OrderProps> = ({
   images,
   timestamp,
 }) => {
-
   let groupedImages;
 
   if (images.every((image) => !image.startsWith("["))) {
     groupedImages = Object.values(
       groupBy(images.map((image) => path.basename(image)))
     ).map((group) => [group.length, group[0]]);
-    console.log(1, groupedImages);
   } else {
     groupedImages = [...images.map((image) => JSON.parse(image))];
-    console.log(2, groupedImages);
   }
-  
+
   return (
     <motion.div
       initial={{ x: 100 }}
