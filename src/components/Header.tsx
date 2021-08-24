@@ -1,37 +1,136 @@
-import { useUser } from "@auth0/nextjs-auth0";
-import { ShoppingBagIcon } from "@heroicons/react/solid";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import {
+  ChevronUpIcon,
+  ChevronDownIcon,
+  SearchIcon,
+} from "@heroicons/react/outline";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import { useSelector } from "react-redux";
+import { useUser } from "@auth0/nextjs-auth0";
 import { selectItems } from "../slices/basketSlice";
+import { ShoppingBagIcon } from "@heroicons/react/solid";
 
-interface HeaderProps {}
-
-const Header: React.FC<HeaderProps> = () => {
+function Header() {
   const user = useUser();
   const items = useSelector(selectItems);
+
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex items-center justify-between px-10 text-text"
     >
-      <Link href="/">
-        <a>
-          <Image
-            width={100}
-            height={100}
-            objectFit="contain"
-            src="/voyager.svg"
-            className="cursor-pointer"
-            alt="voyager"
+      <header className="flex items-center my-2 justify-between px-10 text-text">
+        <Link href="/">
+          <a className="hidden md:inline-flex">
+            <Image
+              width={100}
+              height={100}
+              objectFit="contain"
+              src="/voyager.svg"
+              className="cursor-pointer"
+              alt="voyager"
+            />
+          </a>
+        </Link>
+        <div className="items-center hidden sm:flex">
+          <div className="flex items-center mt-2 ml-4 space-x-8 justify-evenly">
+            <motion.div
+              whileHover={{
+                scale: 1.2,
+                transition: { duration: 0.5 },
+              }}
+              whileTap={{ scale: 0.9 }}
+              className="space-x-6 text-xl font-medium hover:underline"
+            >
+              <Link href="/orders">
+                <a>My orders</a>
+              </Link>
+            </motion.div>
+
+            <motion.div
+              whileHover={{
+                scale: 1.2,
+                transition: { duration: 0.5 },
+              }}
+              whileTap={{ scale: 0.9 }}
+              className="space-x-6 text-xl  font-medium hover:underline"
+            >
+              <Link href="/parcel/orders">
+                <a>Parcel tracking</a>
+              </Link>
+            </motion.div>
+
+            <motion.div
+              whileHover={{
+                scale: 1.2,
+                transition: { duration: 0.5 },
+              }}
+              whileTap={{ scale: 0.9 }}
+              className="text-xl font-medium hover:underline mr-4"
+            >
+              {user.user && <Link href="/api/auth/logout">Sign out</Link>}
+
+              {!user?.user && <Link href="/api/auth/login">Sign in</Link>}
+            </motion.div>
+          </div>
+        </div>
+      </header>
+
+      <div className="flex justify-evenly items-center">
+        <div className="sm:hidden">
+          <Link href="/">
+            <a>
+              <Image
+                width={100}
+                height={100}
+                objectFit="contain"
+                src="/voyager.svg"
+                className="cursor-pointer"
+                alt="voyager"
+              />
+            </a>
+          </Link>
+        </div>
+
+        <Link href="/cart" passHref>
+          <div className="md:hidden relative inline-flex ">
+            <ShoppingBagIcon className="w-12 h-12 p-3 mr-3 bg-white rounded-full md:hidden backdrop-filter backdrop-blur-2xl bg-opacity-40" />
+            <h2 className="backdrop-filter shadow-xl absolute right-0 top-0 -mt-1 bg-white bg-opacity-75 mr-2 text- font-semibold cursor-pointer md:hidden inline-flex rounded-full  px-[8px]">
+              {items.length}
+            </h2>
+          </div>
+        </Link>
+        {isNavOpen ? (
+          <ChevronUpIcon
+            className="cursor-pointer sm:hidden"
+            width={20}
+            onClick={() => setIsNavOpen(!isNavOpen)}
           />
-        </a>
-      </Link>
-      <div className="space-x-4 flex">
+        ) : (
+          <ChevronDownIcon
+            className="cursor-pointer sm:hidden"
+            width={20}
+            onClick={() => setIsNavOpen(!isNavOpen)}
+          />
+        )}
+      </div>
+
+      <motion.nav
+        initial={{ height: 0, visibility: "hidden" }}
+        animate={
+          isNavOpen
+            ? { height: "auto", visibility: "visible" }
+            : { height: 0, visibility: "hidden" }
+        }
+        className="px-4 text-center sm:hidden  mb-4"
+      >
         <motion.div
           whileHover={{
             scale: 1.2,
@@ -44,6 +143,7 @@ const Header: React.FC<HeaderProps> = () => {
             <a>My orders</a>
           </Link>
         </motion.div>
+
         <motion.div
           whileHover={{
             scale: 1.2,
@@ -56,29 +156,22 @@ const Header: React.FC<HeaderProps> = () => {
             <a>Parcel tracking</a>
           </Link>
         </motion.div>
-      </div>
-      <motion.div
-        whileHover={{
-          scale: 1.2,
-          transition: { duration: 0.5 },
-        }}
-        whileTap={{ scale: 0.9 }}
-        className="text-xl font-medium hover:underline mr-4"
-      >
-        {user.user && <Link href="/api/auth/logout">Sign out</Link>}
 
-        {!user?.user && <Link href="/api/auth/login">Sign in</Link>}
-      </motion.div>
-      <Link href="/cart" passHref>
-        <div className="md:hidden inline-flex absolute top-3 right-0">
-          <ShoppingBagIcon className="w-12 h-12 p-3 mr-3 bg-white rounded-full md:hidden backdrop-filter backdrop-blur-2xl bg-opacity-40" />
-          <h2 className="backdrop-filter shadow-xl  bg-white bg-opacity-75 mr-2 text- font-semibold cursor-pointer md:hidden inline-flex absolute top-1 right-1 rounded-full  px-[8px]">
-            {items.length}
-          </h2>
-        </div>
-      </Link>
+        <motion.div
+          whileHover={{
+            scale: 1.2,
+            transition: { duration: 0.5 },
+          }}
+          whileTap={{ scale: 0.9 }}
+          className="text-xl font-medium hover:underline mr-4"
+        >
+          {user.user && <Link href="/api/auth/logout">Sign out</Link>}
+
+          {!user?.user && <Link href="/api/auth/login">Sign in</Link>}
+        </motion.div>
+      </motion.nav>
     </motion.header>
   );
-};
+}
 
 export default Header;

@@ -88,7 +88,7 @@ const Home: React.FC = () => {
               <motion.div
                 initial={{ x: -50, y: 50 }}
                 animate={{ x: 0, y: 0 }}
-                 transition={{ duration: 1.5 }}
+                transition={{ duration: 1.5 }}
               >
                 <Items
                   image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1629081611/ezgif.com-gif-maker_fdr0kr.gif"
