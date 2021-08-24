@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import moment from "moment";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import { db } from "../../firebase";
 import Header from "../components/Header";
 import Order from "../components/Order";
@@ -10,12 +11,28 @@ import { orderType } from "../types/orderTypes";
 import { user } from "../types/userType";
 
 interface OrdersProps {
-  user: user;
   orders: [orderType];
+  user: user;
 }
 
-const Orders: React.FC<OrdersProps> = ({ user, orders }) => {
+const Orders: React.FC<OrdersProps> = ({ orders, user }) => {
   const router = useRouter();
+  const [clientOrder, setClientOrder] = useState([]);
+
+  useEffect(() => {
+    db.collection("users")
+      .doc(user.email)
+      .collection("orders")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setClientOrder(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        )
+      );
+  }, [user.email]);
 
   return (
     <div className="min-h-screen">
@@ -56,18 +73,33 @@ const Orders: React.FC<OrdersProps> = ({ user, orders }) => {
           )}
         </motion.div>
 
-        <div className="pt-2 pb-1 pl-0 mb-2 text-3xl ">
-          {orders?.map((order: orderType) => (
-            <Order
-              key={order.id}
-              id={order.id}
-              amount={order.amount}
-              amountShipping={order.amountShipping}
-              images={order.images}
-              timestamp={order.timestamp}
-            />
-          ))}
-        </div>
+        {clientOrder === [] ? (
+          <div className="pt-2 pb-1 pl-0 mb-2 text-3xl ">
+            {orders?.map((order: orderType) => (
+              <Order
+                key={order.id}
+                id={order.id}
+                amount={order.amount}
+                amountShipping={order.amountShipping}
+                images={order.images}
+                timestamp={order.timestamp}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="pt-2 pb-1 pl-0 mb-2 text-3xl ">
+            {clientOrder?.map((order: orderType) => (
+              <Order
+                key={order.id}
+                id={order.id}
+                amount={order.amount}
+                amountShipping={order.amountShipping}
+                images={order.images}
+                timestamp={order.timestamp}
+              />
+            ))}
+          </div>
+        )}
       </main>
     </div>
   );
@@ -77,11 +109,11 @@ export default Orders;
 
 export const getServerSideProps = withPageAuthRequired({
   async getServerSideProps(context: any) {
-    const session = getSession(context.req, context.res);
+    const user = getSession(context.req, context.res);
 
     const stripeOrders = await db
       .collection("users")
-      .doc(session?.user.email)
+      .doc(user?.user.email)
       .collection("orders")
       .orderBy("timestamp", "desc")
       .get();
@@ -98,6 +130,7 @@ export const getServerSideProps = withPageAuthRequired({
     return {
       props: {
         orders,
+        user,
       },
     };
   },
