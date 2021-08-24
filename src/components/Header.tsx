@@ -33,9 +33,9 @@ function Header() {
               width={100}
               height={100}
               objectFit="contain"
-              src="/voyager.svg"
+              src="/Voyagger.svg"
               className="cursor-pointer"
-              alt="voyager"
+              alt="Voyagger"
             />
           </a>
         </Link>
@@ -92,9 +92,9 @@ function Header() {
                 width={100}
                 height={100}
                 objectFit="contain"
-                src="/voyager.svg"
+                src="/Voyagger.svg"
                 className="cursor-pointer"
-                alt="voyager"
+                alt="Voyagger"
               />
             </a>
           </Link>

@@ -23,21 +23,21 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <UserProvider>
       <Provider store={store}>
         <NextSeo
-          title="Voyager"
+          title="Voyagger"
           description="Connecting people, Changing Lives"
           openGraph={{
             url: "https://www.voyagger.tech/",
-            title: "Voyager",
-            description: "Voyager",
+            title: "Voyagger",
+            description: "Voyagger",
             images: [
               {
-                url: "https://res.cloudinary.com/dssvrf9oz/image/upload/v1629552406/Copy_of_Connecting_people_Changing_lives_bvbr3d.png",
+                url: "https://res.cloudinary.com/dssvrf9oz/image/upload/v1629820359/Copy_of_Connecting_people_Changing_lives_bmhjvd.png",
                 width: 800,
                 height: 700,
-                alt: "Voyager",
+                alt: "Voyagger",
               },
             ],
-            site_name: "Voyager",
+            site_name: "Voyagger",
           }}
           twitter={{
             handle: "@avneesh0612",

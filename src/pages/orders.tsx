@@ -21,7 +21,7 @@ const Orders: React.FC<OrdersProps> = ({ orders, user }) => {
   return (
     <div className="min-h-screen">
       <Header />
-      <NextSeo title="Your orders | Voyager" />
+      <NextSeo title="Your orders | Voyagger" />
       <main className="max-w-screen-lg p-10 mx-auto">
         <motion.div
           initial={{ x: -100 }}

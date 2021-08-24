@@ -21,7 +21,7 @@ const Order: React.FC<OrderProps> = ({
   id,
 }) => {
   const CopyLink = () => {
-    navigator.clipboard.writeText(`http://voyagerr.vercel.app/parcel/${id}`);
+    navigator.clipboard.writeText(`http://Voyaggerr.vercel.app/parcel/${id}`);
     toast.success("copied link to clipboard");
   };
 

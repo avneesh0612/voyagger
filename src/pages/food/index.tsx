@@ -23,7 +23,6 @@ const Home: React.FC<HomeProps> = ({
   dbuser,
   category,
 }) => {
-
   useEffect(() => {
     if (user?.email) {
       db.collection("users").doc(user?.email).set(
@@ -39,7 +38,7 @@ const Home: React.FC<HomeProps> = ({
 
   return (
     <div className="flex flex-col min-h-screen md:flex-row min-w-screen">
-      <NextSeo title="Order tasty food | Voyager" />
+      <NextSeo title="Order tasty food | Voyagger" />
       <div>
         <Header />
         <Main

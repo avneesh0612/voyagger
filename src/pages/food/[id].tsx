@@ -46,7 +46,7 @@ const Product: React.FC<ProductProps> = ({ currentProduct, user, dbuser }) => {
 
   return (
     <div className="flex flex-col min-h-screen md:flex-row min-w-screen">
-      <NextSeo title={`${name} | Voyager`} />
+      <NextSeo title={`${name} | Voyagger`} />
       <div className="flex items-center justify-center w-full md:w-4/6">
         <div className="flex flex-col items-center -mt-2 w-96">
           <div className="z-20 bg-white rounded-full drop-shadow-xl ">

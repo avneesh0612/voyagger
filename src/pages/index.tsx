@@ -34,9 +34,9 @@ const Home: React.FC = () => {
               width={200}
               height={200}
               objectFit="contain"
-              src="/voyager.svg"
+              src="/Voyagger.svg"
               className="cursor-pointer"
-              alt="voyager"
+              alt="Voyagger"
             />
           </motion.div>
         </div>
@@ -46,7 +46,7 @@ const Home: React.FC = () => {
           <div className="absolute top-[70%] left-[50%] hidden md:flex md:absolute md:w-96 md:h-96 w-20 h-20 bg-red-400 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-2000"></div>
           <div className="absolute hidden md:absolute top-[75%] md:top-[60%] left-[10%] md:left-[30%] md:w-96 md:flex md:h-96 w-20 h-20 bg-indigo-400 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-4000"></div>
           <NextSeo
-            title="Voyager"
+            title="Voyagger"
             description="A short description goes here."
           />
           <Header />

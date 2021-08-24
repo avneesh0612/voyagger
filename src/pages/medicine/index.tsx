@@ -30,7 +30,7 @@ const Home: React.FC<HomeProps> = ({ user, dbuser, medicines }) => {
 
   return (
     <div className="flex flex-col min-h-screen md:flex-row min-w-screen">
-      <NextSeo title="Order Medicines | Voyager" />
+      <NextSeo title="Order Medicines | Voyagger" />
       <div>
         <Header />
         <Main medicines={medicines} />

@@ -19,7 +19,7 @@ interface ParcelProps {
 const parcelTrack: React.FC<ParcelProps> = ({ parcel }) => {
   const CopyLink = () => {
     navigator.clipboard.writeText(
-      `http://voyagerr.vercel.app/parcel/${parcel.id}`
+      `http://Voyaggerr.vercel.app/parcel/${parcel.id}`
     );
     toast.success("copied link to clipboard");
   };

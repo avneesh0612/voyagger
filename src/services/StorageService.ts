@@ -1,4 +1,4 @@
-const LOCALSTORAGE_KEY_PREFIX = "voyager-basket";
+const LOCALSTORAGE_KEY_PREFIX = "Voyagger-basket";
 
 export default {
   get(item: string) {
