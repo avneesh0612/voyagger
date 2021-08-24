@@ -10,9 +10,9 @@
 
 > Connecting people, Changing lives
 
-### 🏠 [Homepage](https://voyagerr.vercel.app/)
+### 🏠 [Homepage](https://www.voyagger.tech//)
 
-### ✨ [Demo](https://voyagerr.vercel.app/)
+### ✨ [Demo](https://www.voyagger.tech//)
 
 ## Install
 
@@ -81,6 +81,7 @@ HOST=http://localhost:3000
 ```
 
 I created development credentials for making the job of contributing easier, so you can simply copy and paste these into `.env.local` to get your app up and running perfectly
+
 ```
 # Auth0
 AUTH0_SECRET='791dbc2bcd85f887912a5c98f26e0e7090442dfa0a1dfe33b5848188fa3839b4'
@@ -123,11 +124,10 @@ PERMISSION_CLIENT_PROVIDER_URL="https://www.googleapis.com/robot/v1/metadata/x50
 
 👤 **Avneesh Agarwal**
 
-- Website: https://voyagerr.vercel.app/
+- Website: https://www.voyagger.tech//
 - Twitter: [@avneesh0612](https://twitter.com/avneesh0612)
 - Github: [@avneesh0612](https://github.com/avneesh0612)
 - LinkedIn: [@avneesh-agarwal-78312b20a](https://linkedin.com/in/avneesh-agarwal-78312b20a)
-
 
 ## Show your support
 

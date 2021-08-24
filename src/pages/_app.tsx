@@ -26,7 +26,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           title="Voyager"
           description="Connecting people, Changing Lives"
           openGraph={{
-            url: "https://voyagerr.vercel.app",
+            url: "https://www.voyagger.tech/",
             title: "Voyager",
             description: "Voyager",
             images: [
@@ -41,7 +41,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           }}
           twitter={{
             handle: "@avneesh0612",
-            site: "https://voyagerr.vercel.app/",
+            site: "https://www.voyagger.tech//",
             cardType: "summary_large_image",
           }}
         />
