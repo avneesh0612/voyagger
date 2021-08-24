@@ -24,15 +24,6 @@ const handler = async (req, res) => {
     groupBy(items.map((item) => path.basename(item.image)))
   ).map((group) => [group.length, group[0]]);
 
-  /*
-        This gives us an array like this (shorter for storing into the session):
-        [
-            [2, "image_A.jpg"], // means "2 products with that same image"
-            [1, "image_B.jpg"], // ...
-            [6, "image_C.jpg"], // ...
-        ]
-    */
-
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
     shipping_rates: [

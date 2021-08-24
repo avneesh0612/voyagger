@@ -1,10 +1,10 @@
 import { withPageAuthRequired } from "@auth0/nextjs-auth0/";
-import { db } from "../../../firebase";
-import Order from "../../components/parcel/Order";
-import Header from "../../components/Header";
-import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { db } from "../../../firebase";
+import Header from "../../components/Header";
+import Order from "../../components/parcel/Order";
 import { user } from "../../types/userType";
 
 interface OrderType {

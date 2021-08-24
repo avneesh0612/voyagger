@@ -1,9 +1,9 @@
-import { useRouter } from "next/router";
-import Image from "next/image";
-import Header from "../../components/Header";
-import requests from "../../utils/requests";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import Header from "../../components/Header";
 import book from "../../types/bookTypes";
+import requests from "../../utils/requests";
 
 interface BookProps {
   books: {

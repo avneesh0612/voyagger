@@ -2,17 +2,17 @@ import { useUser } from "@auth0/nextjs-auth0";
 import { LocationMarkerIcon } from "@heroicons/react/solid";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
+import { motion } from "framer-motion";
 import { groupBy } from "lodash";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
 import Currency from "react-currency-formatter";
 import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
-import { clearBasket, selectItems, selectTotal } from "../slices/basketSlice";
-import CartItem from "./CartItem";
-import React, { useEffect, useRef, useState } from "react";
 import { db } from "../../firebase";
+import { clearBasket, selectItems, selectTotal } from "../slices/basketSlice";
 import { user } from "../types/userType";
-import { motion } from "framer-motion";
+import CartItem from "./CartItem";
 const stripePromise = loadStripe(process.env.stripe_public_key!);
 
 interface CartProps {

@@ -1,5 +1,5 @@
-import { buffer } from "micro";
 import * as admin from "firebase-admin";
+import { buffer } from "micro";
 
 const serviceAccount = require("../../../permissions");
 const app = !admin.apps.length

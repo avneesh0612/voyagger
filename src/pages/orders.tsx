@@ -1,13 +1,13 @@
 import { getSession, withPageAuthRequired } from "@auth0/nextjs-auth0/";
+import { motion } from "framer-motion";
 import moment from "moment";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 import { db } from "../../firebase";
-import Order from "../components/Order";
 import Header from "../components/Header";
-import { user } from "../types/userType";
+import Order from "../components/Order";
 import { orderType } from "../types/orderTypes";
-import { motion } from "framer-motion";
+import { user } from "../types/userType";
 
 interface OrdersProps {
   user: user;

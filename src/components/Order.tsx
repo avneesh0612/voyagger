@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { groupBy, isString } from "lodash";
-import path from "path";
+import { groupBy } from "lodash";
 import moment from "moment";
 import Image from "next/image";
+import path from "path";
 import Currency from "react-currency-formatter";
 
 interface OrderProps {

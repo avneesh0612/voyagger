@@ -3,10 +3,10 @@ import { NextSeo } from "next-seo";
 import React, { useEffect } from "react";
 import { db } from "../../../firebase";
 import Cart from "../../components/Cart";
-import Main from "../../components/meds/Main";
 import Header from "../../components/Header";
-import { user } from "../../types/userType";
+import Main from "../../components/meds/Main";
 import { Medicines } from "../../types/itemTypes";
+import { user } from "../../types/userType";
 
 interface HomeProps {
   user: user;
