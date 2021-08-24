@@ -1,5 +1,5 @@
 import { groupBy } from "lodash";
-
+const path = require("path");
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const handler = async (req, res) => {
@@ -19,6 +19,19 @@ const handler = async (req, res) => {
       },
     },
   }));
+
+  const groupedImages = Object.values(
+    groupBy(items.map((item) => path.basename(item.image)))
+  ).map((group) => [group.length, group[0]]);
+
+  /*
+        This gives us an array like this (shorter for storing into the session):
+        [
+            [2, "image_A.jpg"], // means "2 products with that same image"
+            [1, "image_B.jpg"], // ...
+            [6, "image_C.jpg"], // ...
+        ]
+    */
 
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
@@ -71,7 +84,7 @@ const handler = async (req, res) => {
     metadata: {
       email,
       name,
-      images: JSON.stringify(items.map((item) => item.image)),
+      images: JSON.stringify(groupedImages),
     },
   });
 

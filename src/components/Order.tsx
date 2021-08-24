@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { groupBy } from "lodash";
+import { groupBy, isString } from "lodash";
+import path from "path";
 import moment from "moment";
 import Image from "next/image";
 import Currency from "react-currency-formatter";
@@ -19,8 +20,19 @@ const Order: React.FC<OrderProps> = ({
   images,
   timestamp,
 }) => {
-  const groupedImages = Object.values(groupBy(images));
 
+  let groupedImages;
+
+  if (images.every((image) => !image.startsWith("["))) {
+    groupedImages = Object.values(
+      groupBy(images.map((image) => path.basename(image)))
+    ).map((group) => [group.length, group[0]]);
+    console.log(1, groupedImages);
+  } else {
+    groupedImages = [...images.map((image) => JSON.parse(image))];
+    console.log(2, groupedImages);
+  }
+  
   return (
     <motion.div
       initial={{ x: 100 }}
@@ -58,21 +70,21 @@ const Order: React.FC<OrderProps> = ({
 
       <div className="p-5 sm:p-10">
         <div className="flex space-x-6 overflow-x-auto">
-          {groupedImages.map((group, i) => (
-            <div key={i} className="relative">
+          {groupedImages.map((group) => (
+            <div key={group[1]} className="relative">
               <div className="h-36 w-36 rounded-full flex items-center justify-center bg-white">
                 <div className="relative w-24 h-24 sm:h-32 sm:w-32">
                   <Image
-                    src={group[0]}
+                    src={`https://res.cloudinary.com/dssvrf9oz/image/upload/v1628594408/${group[1]}`}
                     alt="image"
                     layout="fill"
                     objectFit="contain"
                   />
                 </div>
               </div>
-              {group.length > 1 && (
+              {group[0] > 1 && (
                 <div className="absolute p-1 text-2xl font-bold text-center text-black bg-white rounded shadow bg-opacity-60 bottom-2 right-2 backdrop-filter backdrop-blur-2xl">
-                  &times; {group.length}
+                  &times; {group[0]}
                 </div>
               )}
             </div>
