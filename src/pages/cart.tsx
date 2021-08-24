@@ -127,16 +127,16 @@ const Cart: React.FC<CartProps> = ({ user, dbuser }) => {
           ))}
         </div>
         <div className="flex items-center justify-between pb-3 m-10 mt-21 mb-1">
-          <h2 className="text-2xl font-anton">Total</h2>
+          <h2 className="text-2xl font-Poppins">Total</h2>
           <h2 className="text-xl font-semibold">
             <Currency currency="INR" quantity={total} />
           </h2>
         </div>
       </div>
       <div className="flex items-center justify-between w-full px-5 mt-auto mb-1 border-t-2 border-white">
-        <h2 className="text-2xl font-anton">Address</h2>
+        <h2 className="text-2xl font-Poppins">Address</h2>
         <h2
-          className="text-xl cursor-pointer font-anton"
+          className="text-xl cursor-pointer font-Poppins"
           onClick={() => seteditShow(!editShow)}
         >
           Edit

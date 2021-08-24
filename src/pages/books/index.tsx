@@ -70,11 +70,11 @@ const Index: React.FC<BookProps> = ({ books, routertitle }) => {
                   </motion.div>
                 </a>
               )}
-              <h2 className="w-[150px]   cursor-pointer text-text text-center text-lg">
+              <h2 className="w-[150px] font-Poppins  cursor-pointer text-text text-center text-lg">
                 {book?.volumeInfo.title.slice(0, 25)}{" "}
                 {book?.volumeInfo.title.length > 25 ? "..." : ""}
               </h2>
-              <h2 className="w-[150px] font-extrabold font-dancing cursor-pointer text-text text-center text-lg">
+              <h2 className="w-[150px] font-extrabold font-lobster cursor-pointer text-text text-center text-lg">
                 {book?.volumeInfo.authors}{" "}
               </h2>
             </motion.div>

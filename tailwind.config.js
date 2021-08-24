@@ -27,8 +27,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        anton: ["Anton"],
-        dancing: ["Dancing Script", "cursive"],
+        Poppins: ["Poppins", "sans-serif"],
         lobster: ["Lobster", "cursive"],
       },
       colors: {

@@ -56,7 +56,7 @@ const Home: React.FC = () => {
               initial={{ y: -50 }}
               animate={{ y: 0 }}
               transition={{ duration: 1.5 }}
-              className="mx-auto text-4xl font-bold text-center font-anton text-text"
+              className="mx-auto text-4xl font-bold text-center font-Poppins text-text"
             >
               What do you want to do?
             </motion.h1>
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
               >
                 <Items
                   image="https://res.cloudinary.com/dssvrf9oz/image/upload/v1629081611/ezgif.com-gif-maker_fdr0kr.gif"
-                  text="Books"
+                  text="Read Books"
                   href="books"
                 />
               </motion.div>

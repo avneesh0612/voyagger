@@ -29,7 +29,7 @@ const Orders: React.FC<OrdersProps> = ({ orders, user }) => {
           transition={{ duration: 1 }}
           className="pb-1 pl-4 mb-2 text-3xl bg-white bg-opacity-25 rounded-lg shadow-xl backdrop-filter backdrop-blur-2xl "
         >
-          <h1 className="pb-4 border-b-2 border-gray-700 text-text font-anton">
+          <h1 className="pb-4 border-b-2 border-gray-700 text-text font-Poppins">
             Your orders
           </h1>
 

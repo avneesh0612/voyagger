@@ -28,7 +28,7 @@ const Items: React.FC<FoodItemProps> = ({ image, text, repeat, href }) => {
               !repeat && "!bg-no-repeat"
             }`}
           ></div>
-          <p className="text-base font-anton cursor-pointer text-text text-center bg-peachmedium !mt-auto font-medium w-full rounded-b-lg pl-2 font-poppins py-1">
+          <p className="text-base font-lobster font-extrabold cursor-pointer text-text text-center bg-peachmedium !mt-auto w-full rounded-b-lg pl-2 font-poppins py-1">
             {text}
           </p>
         </motion.div>
