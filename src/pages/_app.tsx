@@ -41,7 +41,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           }}
           twitter={{
             handle: "@avneesh0612",
-            site: "https://www.voyagger.tech//",
+            site: "https://www.voyagger.tech/",
             cardType: "summary_large_image",
           }}
         />
