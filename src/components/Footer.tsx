@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <h1>
         Made with 🤎 by
         <Link href="https://avneesh-links.vercel.app/">
-          <a target="_blank" className="ml-1 font-bold underline">
+          <a target="_blank" rel="noreferrer" className="ml-1 font-bold underline">
             Avneesh Agarwal
           </a>
         </Link>
