@@ -11,7 +11,7 @@ export const firebaseConfig = {
   measurementId: process.env.firebase_measurementid,
 };
 
-const app = !firebase?.apps?.length
+const app = !firebase.apps.length
   ? firebase.initializeApp(firebaseConfig)
   : firebase.app();
 
