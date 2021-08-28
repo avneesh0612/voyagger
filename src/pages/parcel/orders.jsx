@@ -59,7 +59,7 @@ export const getServerSideProps = withPageAuthRequired({
 
     const ParcelOrders = await db
       .collection("parcels")
-      .where("usermail", "==", user?.email)
+      .where("usermail", "==", user?.user.email)
       .get();
 
     const orders = await Promise.all(
