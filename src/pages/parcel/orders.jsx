@@ -1,30 +1,12 @@
-import { withPageAuthRequired } from "@auth0/nextjs-auth0/";
+import { getSession, withPageAuthRequired } from "@auth0/nextjs-auth0/";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 import { db } from "../../../firebase";
 import Header from "../../components/Header";
 import Order from "../../components/parcel/Order";
-import { user } from "../../types/userType";
 
-const Orders = ({ user }) => {
+const Orders = ({ orders }) => {
   const router = useRouter();
-
-  const [orders, setorders] = useState();
-
-  useEffect(() => {
-    db.collection("parcels")
-      .where("usermail", "==", user?.email)
-      .onSnapshot((snapshot) =>
-        setorders(
-          snapshot.docs.map((doc) => ({
-            id: doc.id,
-            data: doc.data(),
-          }))
-        )
-      );
-  }, [user?.email]);
-
   return (
     <div>
       <Header />
@@ -71,4 +53,32 @@ const Orders = ({ user }) => {
 
 export default Orders;
 
-export const getServerSideProps = withPageAuthRequired({});
+export const getServerSideProps = withPageAuthRequired({
+  async getServerSideProps(context) {
+    const user = getSession(context.req, context.res);
+
+    const ParcelOrders = await db
+      .collection("parcels")
+      .where("usermail", "==", user?.email)
+      .get();
+
+    const orders = await Promise.all(
+      ParcelOrders.docs.map(async (order) => ({
+        id: order.id,
+        pickupaddress: order.data().pickupaddress,
+        recipientphone: order.data().recipientphone,
+        recipientsaddress: order.data().recipientsaddress,
+        usermail: order.data().usermail,
+        username: order.data().username,
+        weight: order.data().weight,
+      }))
+    );
+
+    return {
+      props: {
+        orders,
+        user,
+      },
+    };
+  },
+});
