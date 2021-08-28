@@ -41,7 +41,7 @@ const Orders = ({ orders }) => {
           </h2>
         </motion.div>
 
-        {orders.map((order) => (
+        {orders?.map((order) => (
           <div key={order.id}>
             <Order {...order} />
           </div>
