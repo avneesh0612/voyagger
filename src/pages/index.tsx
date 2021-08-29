@@ -56,11 +56,11 @@ const Home: React.FC = () => {
               initial={{ y: -50 }}
               animate={{ y: 0 }}
               transition={{ duration: 1.5 }}
-              className="mx-auto text-4xl font-bold text-center font-Poppins text-text"
+              className="mx-auto z-40 text-4xl font-bold text-center font-Poppins text-text"
             >
               What do you want to do?
             </motion.h1>
-            <div className="flex flex-wrap justify-center w-3/5 mx-auto md:justify-evenly">
+            <div className="flex z-40 flex-wrap justify-center w-3/5 mx-auto md:justify-evenly">
               <motion.div
                 initial={{ x: -50, y: -50 }}
                 animate={{ x: 0, y: 0 }}

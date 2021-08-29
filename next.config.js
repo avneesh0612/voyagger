@@ -17,6 +17,7 @@ module.exports = withPWA({
       "books.google.com",
       "upload.wikimedia.org",
       "s.gravatar.com",
+      "en.wikipedia.org",
     ],
   },
 
