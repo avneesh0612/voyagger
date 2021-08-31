@@ -23,8 +23,14 @@
   }
 }
 
-.chatbotish__button {
+.chatbotish__button,
+.chatbotish__feedbackForm button,
+.chatbotish__topBar {
   background-color: #8d94f4 !important;
+}
+
+.chatbotish__powered a {
+  color: #8d94f4 !important;
 }
 
 .bg-gradient-radial {
