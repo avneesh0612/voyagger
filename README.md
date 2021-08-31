@@ -98,7 +98,6 @@ FIREBASE_STORAGE_BUCKET="voyager-developmen.appspot.com"
 FIREBASE_PROJECT_ID="voyager-developmen"
 FIREBASE_AUTH_DOMAIN="voyager-developmen.firebaseapp.com"
 FIREBASE_CONFIG_API_KEY="AIzaSyC61I6HDzJPfxWN7ANmNpUxrcZTWdcSZzk"
-BOOK_API_KEY="AIzaSyC61I6HDzJPfxWN7ANmNpUxrcZTWdcSZzk"
 
 # Stripe
 STRIPE_SIGNING_SECRET="whsec_QcwcdZEGlDIsG5BQe9V0iFGotphZAiJ7"
