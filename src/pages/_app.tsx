@@ -45,7 +45,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             cardType: "summary_large_image",
           }}
         />
-        <Head>
+      <Head>
           <link rel="icon" href="/favicon.svg" />
         </Head>
         <NextNProgress color="#DC602E" height={4} />
