@@ -28,11 +28,11 @@ const Footer: React.FC = () => {
       </h3>
 
       <Link passHref href="https://github.com/avneesh0612/voyagger">
-        <a target="_blank" className="mr-20">
+        <a target="_blank" className="mr-24">
           <Image
             className="cursor-pointer"
-            width={80}
-            height={80}
+            width={70}
+            height={70}
             src="/github.svg"
             alt="GitHub logo"
           />
