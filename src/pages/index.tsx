@@ -29,6 +29,15 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <link href="https://chatbotish.vercel.app/index.css" rel="stylesheet" />
+      </Head>
+      <Script
+          src="https://chatbotish.vercel.app/index.js"
+          data-chatbotish
+          data-id="HD78EFfUJSI7sFbTdfnO"
+          strategy="lazyOnload"
+        ></Script>
       {isLoading ? (
         <div className="w-screen h-screen flex justify-center items-center">
           <motion.div initial={{ x: -500 }} animate={{ x: 0 }}>
