@@ -30,7 +30,7 @@ yarn dev
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/avneesh0612/Voyagger/issues).
 
-See [Contribution.MD](https://github.com/avneesh0612/voyagger/edit/main/CONTRIBUTING.md) for details about how to contribute
+See [Contribution.MD](https://github.com/avneesh0612/voyagger/blob/main/CONTRIBUTING.md) for details about how to contribute
 ## Author
 
 👤 **Avneesh Agarwal**
