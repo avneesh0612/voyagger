@@ -1,14 +1,15 @@
 # Contributing to Voyagger
 
-
 ## Setting up workflow
-* Fork this repository
-* If you have yarn installed
- ```
- yarn install
- ```
 
-* If you don't have yarn installed
+- Fork this repository
+- If you have yarn installed
+
+```
+yarn install
+```
+
+- If you don't have yarn installed
 
 ```
 npm i -g yarn
@@ -93,15 +94,15 @@ STRIPE_SHIPPING_RATE=shr_1JQa0SSFCK0n3kd38NRJOcjE
 
 # Firebase permissions
 PERMISSION_TYPE="service_account"
-PERMISSION_PROJECT_ID="Voyagger-developmen"
-PERMISSION_PRIVATE_KEY_ID="d9aef77034e9fc85c232ebb24b8c054896765435"
-PERMISSION_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDBr1ACBxQLdMnX\nGoY6lxbUKgh4hdJDvVKtrRU8dCLqmLAqIv6hczllwrIfLIFyhOvRoIz9GlI6nUzJ\noCaQFkirVn6FTNvYP4N0HMOXiYLUNQtE1A79uDqdgD/EDTKP9h/zVLKN47Jhd6vF\nYaqcyAR6VdjZNfG4rxXVdkJ+K8oznqlhntmmXDHWyv0nvrV1Kke+vMDVbthrAw02\nko8+ZDU5sWZ4CV/Xilg24eu+txow3zGh8WKXSbaf2bMJ7jjecgd8Cmev4dpC0OJc\nO4xVPh+/vjXUx1ZeVrK8/g6mRWxEoFGXaXwtQrh9uaYtnJcDFKa87OoTTlN5JmLc\n7Yn6VK0fAgMBAAECggEAX0Ol5CFsJAhhAIp8zBOleFxmRzV3Crdzk5YG1HHA/Md2\nGnuU538/k4Q0TS38S4ICZVyFDDamjErzSlaZsRQs0Q1ddJ4tocr3kqRVNdM+hLbE\nYKm25+d1+SLr+jeNj458/5fArRZ6FgOg+pgDrVKaFTvlSU0FpBOF9zTQFrPeJA3C\nVfwMzhSSjVIzvhiW9gldiBtFwTu9flvMDG1gHBFjkYhvcY72+L1ndMkuOlcxYmjP\n/CxnDHNOulzPHqRuEBT0o4sxFrCrxO2oe5lbRr+nVIq8xlpi5SGMRHiqV9JBJMiD\n+m4yWbgxZKgReMFBX2DhnfKmM5xoCeiXGwBKyKgD5QKBgQDlrBwkrG12RyhsSABr\ngTnCRuqHJyw0wfjiEtPIIe30BhyqJLowVzpVz77/mCq403OonxrNKNgmjRKw9Djw\nl+2JCuL8oQ5bS+hiM+gVVKwHyA5QMleZq8TZEbj828MJv1cmobFzfCxc8WuWL7ln\ncg4+gTA16xJiIvBTiG6BUGDi4wKBgQDX4yAOOKRZRCh43RJ9ysAx6JqxgKmZVtLq\nBui98VyeEtMzuv+KfB7I19lu0iK1es2b/fqN6WVPpu5vc6SzwnwmOHNrkS9Otpmc\nhw6fUWUbTjVhWutVWMWw8XzevL7SfecTmHHr50QV6mE9q6Dg8hFe8FbqnK4RtoY7\ndTyzn5wVlQKBgHW9VqwiTPdOoVVpT/XMyIxlCIQCu/HL4sgauMEnS7JGk9lRfLWd\ncgVdu9+R5YzcsbUm43l7T9vrhEJ84NfOOvJ/R0AVXKPG9TmqvHZ68roGf/fy5t+b\npA1XvYq7KnBLy+S9DZhTdvaquOnES3rRiKXYWpu5h7IRkTxxe50FVLXbAoGAGOMa\n9+i5sXy0+bHqhsvPujEpXBsL8hxbNhVT0Um4tpRO+qCtAsbqOZcAftEEpU0h1MDD\nmIZ2YmdJB1oae4qJC1Loo1baUEWmka/UFLOqZypt5uo3ROB18b70+SxjBxryf4TM\nZTiE1c3uJdDaO/RL4ljsfCFRw8L52HLca4yTzr0CgYAiBAI4rXhWTsY1fv/zrq5a\nsPGaQ722HcGp83/OUmhFOjFjVnorzwzDSfgWHGlSOChxyn0Lp6IUtEK3Cy/rj3ov\nz5D6oql3gzMSIfnNI66C9MpWCkz5xsR4WvYPhO1Gjq9vU6OcbT0ELFgfTAIqK71l\nfh91yDIYmKbYDr/aL6gXkg==\n-----END PRIVATE KEY-----\n"
-PERMISSION_CLIENT_EMAIL="firebase-adminsdk-n5ggx@Voyagger-developmen.iam.gserviceaccount.com"
+PERMISSION_PROJECT_ID="voyager-developmen"
+PERMISSION_PRIVATE_KEY_ID="4781a8bece41a3cfdea93a0d1019f368d3502ef2"
+PERMISSION_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCUTZ749Zkq3p+x\nWmQ/cYKpBVzWjkgNiUeq/AtbIPfpiJut9zY459QQ8AFc+e2lB1OcNl0Jud3y7Tl4\ncImtziov1jQ8X4W3RiBhJ7MD3c9/wXlBMqR1sy0qI31dhm4Pxcpo8XZCjxMyvmZ7\nFB7kp3cQBnveNkUIpvBQH376JmNBID9fBJ15ZBoVdFAYWohbjrSmskeDzAHXNsph\nvBRb38frVg1/5B7RRGw5U9WhKDiKGVkHYeilUngNC8ths8mMal5uxd+6Zm6nPeVu\ngCzPrKxBGgXLqIB5ghO0FGbYIr/yhxYCIMiu6LO0BUrj9zvpH3HFc7KaQAJfjVq5\nFQS/+PjBAgMBAAECggEAQsdzAqrgxg+J/Bv2USUlT0Olas2Vv1amKWWmHWpKh+Om\nKl9LkLM/aEMSchHugyW57fkCyvrhaN6ORt/x9wwDLhg33EmtFfpjYSw1rVOHeIEf\nvw51RLSibTue22rJi5umSbwU4uK3I93dmqVUReTstZAd3dE1I7C8PG/6RtzbS7rw\noDOfP92EcqU0yRimOirU0QEDop146ZVQRBLtDBGPcnKmEt2/QtGTBzdEF4Td70CP\n8Vvoqm5nySqhI/2MKyjCxv0jp64BW1DR8243mmyv3eeigt7m9m1KCYH1ULhPeCfH\nLfJ4NUXzgn1Q2ypFjvvf7ZNL6Tzm4xkWS9MHQLs+2wKBgQDFXgNmof4s2uSkq1ag\nmi4Z81R9PnAoCR+ZUXeqwcfkNjtxhS79PX8PaqVlr8wNk2I7leGtzbfYXSoGN6QN\nZhBJer4FEAvgmn79/jSoCpYJrSg88aarKMvRb7lo/zrGtbCnPJ2T0mDsAY/SVIIP\nP113SY5KKyi6kPrAWpBqafd9vwKBgQDAXDx9drSk5ooSErOgCrAxLkyumwolbqFZ\nXRlWGu1mWMEzk7iPm9t8G65wXqe59rcfOydxN70Gxjqos3PazPrEZWqZW7J8yuxt\ncRDLMzI1wU4ucoeVgAFU4XdY0tLvc+Lh8QzqHLxyd4lJI6q6FUZWD426CuXQtIbN\nP4YvdHIpfwKBgDw7FI6doRPPOTeHkkgwxSDmQUJ3a4LMRfhkBED4Iihi5IEgQ9bE\njaIGybLek0cRU0kb1GNWBGTjCZAcKtRr8Ux7SMICw50niNm6WhduI5uQXFc858AU\nEx83GT4Rpb4+dEqVFQGnkixzzZBCee5tR/i/Wc0InsVQuTU6bhgLfpvBAoGAL8N3\nXavpBP0dkYlFQtsEjuGxNrXWmh7TP45HaUL8aapmJrlqXXZU1IdHFC3ctedV5xJY\nI9u0Owdjr1oHzW+SYMvR4UyMkEIO3MnzYpFOyVw7XnsfwXZsXjgx20NWDxEWaAXj\nsAn8nOujkh6iGNyJf3sTNPvZvq3kvvgkCIqAgl8CgYBYeUVvtnsLSVADWUvWcdYF\neoOeqcsx5QvPcmea98IvQOmdu07tDUfGFuyAFoqIxkqYRsmlVgGBbmkRdufXS3Cu\nnZXKJnMTBpLSWgp4HC4q7wfGVwqnUmf8kuXYSmims2FzxmPQGsE/H7AZ0lwjYOuj\nhQ0NXJaX/xoPCNQ0qyCF7Q==\n-----END PRIVATE KEY-----\n"
+PERMISSION_CLIENT_EMAIL="firebase-adminsdk-n5ggx@voyager-developmen.iam.gserviceaccount.com"
 PERMISSION_CLIENT_ID="115109409345022971033"
 PERMISSION_AUTH_URI="https://accounts.google.com/o/oauth2/auth"
 PERMISSION_TOKEN_URI="https://oauth2.googleapis.com/token"
-PERMISSION_AUTH_PROVIDER_URL="https://www.googleapis.com/oauth2/v1/certs"
-PERMISSION_CLIENT_PROVIDER_URL="https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-n5ggx%40Voyagger-developmen.iam.gserviceaccount.com"
+PERMISSION_AUTH__X509_CERT_URL="https://www.googleapis.com/oauth2/v1/certs"
+PERMISSION_CLIENT__X509_CERT_URL="https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-n5ggx%40voyager-developmen.iam.gserviceaccount.com"
 ```
 
 ## Starting the development server
@@ -109,7 +110,6 @@ PERMISSION_CLIENT_PROVIDER_URL="https://www.googleapis.com/robot/v1/metadata/x50
 ```
 yarn dev
 ```
-
 
 #### Now you are ready to work on a new features/ fixing issues.
 

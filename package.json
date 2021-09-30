@@ -11,7 +11,7 @@
     "@reduxjs/toolkit": "^1.6.1",
     "@stripe/stripe-js": "^1.17.1",
     "axios": "^0.21.1",
-    "firebase": "^8.10.0",
+    "firebase": "^9.1.0",
     "firebase-admin": "^9.11.1",
     "framer-motion": "^4.1.17",
     "lodash": "^4.17.21",

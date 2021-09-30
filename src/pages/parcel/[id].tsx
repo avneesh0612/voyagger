@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 import { db } from "../../../firebase";
 import Header from "../../components/Header";
+import { getDoc, doc } from "firebase/firestore";
 
 interface ParcelProps {
   parcel: {
@@ -19,7 +20,7 @@ interface ParcelProps {
 const parcelTrack: React.FC<ParcelProps> = ({ parcel }) => {
   const CopyLink = () => {
     navigator.clipboard.writeText(
-      `http://Voyaggerr.vercel.app/parcel/${parcel.id}`
+      `https://www.voyagger.tech/parcel/${parcel.id}`
     );
     toast.success("copied link to clipboard");
   };
@@ -82,9 +83,10 @@ export default parcelTrack;
 
 export async function getServerSideProps(context: any) {
   const id = context.query.id;
-  const parcelref = db.collection("parcels").doc(id);
 
-  const parcelRes = await parcelref.get();
+  const parcelRef = doc(db, `parcels/${id}`);
+
+  const parcelRes = await getDoc(parcelRef);
 
   const parcel = {
     id: parcelRes.id,

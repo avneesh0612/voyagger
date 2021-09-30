@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 import { db } from "../../../firebase";
 import Header from "../../components/Header";
 import { user } from "../../types/userType";
+import { collection, addDoc } from "firebase/firestore";
 
 interface parcelProps {
   user: user;
@@ -21,7 +22,7 @@ const Index: React.FC<parcelProps> = ({ user }) => {
 
   const pattern = new RegExp(/^[0-9\b]+$/);
 
-  const addParcel = (e: React.MouseEvent) => {
+  const addParcel = async (e: React.MouseEvent) => {
     e.preventDefault();
 
     if (!pickupaddress) return toast.error("Please add your pickup address");
@@ -42,7 +43,7 @@ const Index: React.FC<parcelProps> = ({ user }) => {
       return toast.error("Please enter a valid phone number");
     }
 
-    db.collection("parcels").add({
+    await addDoc(collection(db, "parcels"), {
       usermail: user.email,
       username: user.name,
       pickupaddress: pickupaddress,

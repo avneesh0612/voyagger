@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { db } from "../../../firebase";
 import Header from "../../components/Header";
 import Order from "../../components/parcel/Order";
+import { collection, where, getDocs, query } from "firebase/firestore";
 
 const Orders = ({ orders }) => {
   const router = useRouter();
@@ -57,10 +58,12 @@ export const getServerSideProps = withPageAuthRequired({
   async getServerSideProps(context) {
     const user = getSession(context.req, context.res);
 
-    const ParcelOrders = await db
-      .collection("parcels")
-      .where("usermail", "==", user?.user.email)
-      .get();
+    const parcelOrdersQuery = query(
+      collection(db, "parcels"),
+      where("usermail", "==", user?.user.email)
+    );
+
+    const ParcelOrders = await getDocs(parcelOrdersQuery);
 
     const orders = await Promise.all(
       ParcelOrders.docs.map(async (order) => ({
@@ -71,6 +74,7 @@ export const getServerSideProps = withPageAuthRequired({
         usermail: order.data().usermail,
         username: order.data().username,
         weight: order.data().weight,
+        zip: order.data().zip,
       }))
     );
 

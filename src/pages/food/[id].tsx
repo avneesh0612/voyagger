@@ -10,6 +10,7 @@ import Cart from "../../components/Cart";
 import { addToBasket } from "../../slices/basketSlice";
 import { Salad } from "../../types/itemTypes";
 import { user } from "../../types/userType";
+import { doc, getDoc } from "firebase/firestore";
 
 interface ProductProps {
   currentProduct: Salad;
@@ -86,9 +87,9 @@ export const getServerSideProps = withPageAuthRequired({
     const categoryId = context.query.category;
     const session = getSession(context.req, context.res);
 
-    const userref = db.collection("users").doc(session?.user.email);
+    const userref = doc(db, `users/${session?.user.email}`);
 
-    const userRes = await userref.get();
+    const userRes = await getDoc(userref);
 
     const dbuser = {
       id: userRes.id,
@@ -96,24 +97,15 @@ export const getServerSideProps = withPageAuthRequired({
     };
 
     const pathId = context.query.id;
-    const ref = db
-      .collection("products")
-      .doc("food")
-      .collection(categoryId)
-      .doc(context.query.id);
 
-    const productRes = await ref.get();
+    const ref = doc(db, `products/food/${categoryId}/${pathId}`);
+
+    const productRes = await getDoc(ref);
 
     const currentProduct = {
       id: productRes.id,
       ...productRes.data(),
     };
-
-    const allcategories = await db
-      .collection("products")
-      .doc("food")
-      .collection("categories")
-      .get();
 
     return { props: { currentProduct, pathId, categoryId, dbuser } };
   },
