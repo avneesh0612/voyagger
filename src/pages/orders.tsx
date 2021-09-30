@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import moment from "moment";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 import { db } from "../../firebase";
 import Header from "../components/Header";
 import Order from "../components/Order";
 import { orderType } from "../types/orderTypes";
 import { user } from "../types/userType";
+import { getDocs, collection, query, orderBy } from "firebase/firestore";
 
 interface OrdersProps {
   orders: [orderType];
@@ -80,12 +80,14 @@ export const getServerSideProps = withPageAuthRequired({
   async getServerSideProps(context: any) {
     const user = getSession(context.req, context.res);
 
-    const stripeOrders = await db
-      .collection("users")
-      .doc(user?.user.email)
-      .collection("orders")
-      .orderBy("timestamp", "desc")
-      .get();
+    const stripeOrdersRef = collection(db, `users/${user?.user.email}/orders`);
+
+    const stripeOrdersQuery = query(
+      stripeOrdersRef,
+      orderBy("timestamp", "desc")
+    );
+
+    const stripeOrders = await getDocs(stripeOrdersQuery);
 
     const orders = await Promise.all(
       stripeOrders.docs.map(async (order) => ({

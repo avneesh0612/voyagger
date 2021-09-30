@@ -10,20 +10,23 @@ import Items from "../components/Items";
 import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
+import { updateDoc, doc } from "firebase/firestore";
 
 const Home: React.FC = () => {
   const { user, isLoading } = useUser();
 
   useEffect(() => {
     if (user?.email) {
-      db.collection("users").doc(user?.email).set(
-        {
+      const updateUser = async () => {
+        const userRef = doc(db, `users/${user?.email}`);
+        await updateDoc(userRef, {
           email: user?.email,
           name: user?.name,
           photoURL: user?.picture,
-        },
-        { merge: true }
-      );
+        });
+
+        updateUser();
+      };
     }
   });
 
@@ -33,11 +36,11 @@ const Home: React.FC = () => {
         <link href="https://chatbotish.vercel.app/index.css" rel="stylesheet" />
       </Head>
       <Script
-          src="https://chatbotish.vercel.app/index.js"
-          data-chatbotish
-          data-id="HD78EFfUJSI7sFbTdfnO"
-          strategy="lazyOnload"
-        ></Script>
+        src="https://chatbotish.vercel.app/index.js"
+        data-chatbotish
+        data-id="HD78EFfUJSI7sFbTdfnO"
+        strategy="lazyOnload"
+      ></Script>
       {isLoading ? (
         <div className="w-screen h-screen flex justify-center items-center">
           <motion.div initial={{ x: -500 }} animate={{ x: 0 }}>

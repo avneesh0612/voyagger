@@ -13,6 +13,8 @@ import { db } from "../../firebase";
 import { clearBasket, selectItems, selectTotal } from "../slices/basketSlice";
 import { user } from "../types/userType";
 import CartItem from "./CartItem";
+import { doc, updateDoc } from "firebase/firestore";
+
 const stripePromise = loadStripe(process.env.stripe_public_key!);
 
 interface CartProps {
@@ -34,16 +36,15 @@ const Cart: React.FC<CartProps> = ({ ssruser, dbuser }) => {
     }
   }, [dbuser?.address]);
 
-  const editAddress = (e: React.FormEvent) => {
+  const editAddress = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (user.user && address) {
-      db.collection("users").doc(dbuser.email).set(
-        {
-          address: address,
-        },
-        { merge: true }
-      );
+      const userRef = doc(db, `users/${dbuser.email}`);
+
+      await updateDoc(userRef, {
+        address: address,
+      });
     }
     seteditShow(!editShow);
     toast.success("Address updated!");

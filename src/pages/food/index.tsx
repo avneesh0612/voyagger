@@ -7,6 +7,15 @@ import Main from "../../components/eats/Main";
 import Header from "../../components/Header";
 import { Category, Salad } from "../../types/itemTypes";
 import { user } from "../../types/userType";
+import {
+  collection,
+  query,
+  getDoc,
+  getDocs,
+  updateDoc,
+  doc,
+  orderBy,
+} from "firebase/firestore";
 
 interface HomeProps {
   salads: [Salad];
@@ -25,14 +34,17 @@ const Home: React.FC<HomeProps> = ({
 }) => {
   useEffect(() => {
     if (user?.email) {
-      db.collection("users").doc(user?.email).set(
-        {
+      const updateUsers = async () => {
+        const userRef = doc(db, `users/${user?.email}`);
+
+        await updateDoc(userRef, {
           email: user?.email,
           name: user?.name,
           photoURL: user?.picture,
-        },
-        { merge: true }
-      );
+        });
+      };
+
+      updateUsers();
     }
   }, [user]);
 
@@ -64,32 +76,29 @@ export const getServerSideProps = withPageAuthRequired({
 
     const session = getSession(context.req, context.res);
 
-    const userref = db.collection("users").doc(session?.user.email);
+    const userref = doc(db, `users/${session?.user.email}`);
 
-    const userRes = await userref.get();
+    const userRes = await getDoc(userref);
 
     const dbuser = {
       id: userRes.id,
       ...userRes.data(),
     };
 
-    const allsalads = await db
-      .collection("products")
-      .doc("food")
-      .collection(category)
-      .orderBy("active", "desc")
-      .get();
+    const saladsRef = collection(db, `products/food/${category}`);
+
+    const saladsQuery = query(saladsRef, orderBy("active", "desc"));
+
+    const allsalads = await getDocs(saladsQuery);
 
     const salads = allsalads.docs.map((salad) => ({
       id: salad.id,
       ...salad.data(),
     }));
 
-    const allcategories = await db
-      .collection("products")
-      .doc("food")
-      .collection("categories")
-      .get();
+    const categoriesRef = collection(db, `products/food/categories`);
+
+    const allcategories = await getDocs(categoriesRef);
 
     const categories = allcategories.docs.map((salad) => ({
       id: salad.id,

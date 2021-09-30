@@ -7,6 +7,13 @@ import Header from "../../components/Header";
 import Main from "../../components/meds/Main";
 import { Medicines } from "../../types/itemTypes";
 import { user } from "../../types/userType";
+import {
+  doc,
+  updateDoc,
+  getDoc,
+  collection,
+  getDocs,
+} from "firebase/firestore";
 
 interface HomeProps {
   user: user;
@@ -17,14 +24,17 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ user, dbuser, medicines }) => {
   useEffect(() => {
     if (user?.email) {
-      db.collection("users").doc(user?.email).set(
-        {
+      const updateUsers = async () => {
+        const userRef = doc(db, `users/${user?.email}`);
+
+        await updateDoc(userRef, {
           email: user?.email,
           name: user?.name,
           photoURL: user?.picture,
-        },
-        { merge: true }
-      );
+        });
+      };
+
+      updateUsers();
     }
   }, [user]);
 
@@ -46,24 +56,22 @@ export const getServerSideProps = withPageAuthRequired({
   async getServerSideProps(context: any) {
     const session = getSession(context.req, context.res);
 
-    const userref = db.collection("users").doc(session?.user.email);
+    const userref = doc(db, `users/${session?.user.email}`);
 
-    const userRes = await userref.get();
+    const userRes = await getDoc(userref);
 
     const dbuser = {
       id: userRes.id,
       ...userRes.data(),
     };
 
-    const allmedicines = await db
-      .collection("products")
-      .doc("medicine")
-      .collection("medicine")
-      .get();
+    const medicinesRef = collection(db, `products/medicine/medicine`);
 
-    const medicines = allmedicines.docs.map((salad) => ({
-      id: salad.id,
-      ...salad.data(),
+    const allmedicines = await getDocs(medicinesRef);
+
+    const medicines = allmedicines.docs.map((medicine) => ({
+      id: medicine.id,
+      ...medicine.data(),
     }));
 
     return { props: { dbuser, medicines } };
