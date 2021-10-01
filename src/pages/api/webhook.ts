@@ -1,14 +1,15 @@
 import * as admin from "firebase-admin";
 import { buffer } from "micro";
+import stripelib from "stripe";
 
 const serviceAccount = require("../../../permissions");
 const app = !admin.apps.length
   ? admin.initializeApp({
-      credential: admin.credential.cert(serviceAccount),
-    })
+    credential: admin.credential.cert(serviceAccount),
+  })
   : admin.app();
 
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const stripe = stripelib(process.env.STRIPE_SECRET_KEY)
 const endpointSecret = process.env.STRIPE_SIGNING_SECRET;
 const fulfillOrder = async (session) => {
   const images = JSON.parse(session.metadata.images).map((image) =>

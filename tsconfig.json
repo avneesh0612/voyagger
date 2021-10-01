@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/utils/requests.js", "src/pages/books/index.jsx", "src/pages/parcel/orders.jsx"  ],
+, "src/utils/requests.ts", "src/pages/books/index.tsx", "src/pages/parcel/orders.jsx"  ],
   "exclude": [
     "node_modules"
   ]

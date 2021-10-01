@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   type: process.env.permission_type,
   project_id: process.env.permission_project_id,
   private_key_id: process.env.permission_private_key_id,

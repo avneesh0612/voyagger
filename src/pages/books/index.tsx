@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Header from "../../components/Header";
-import requests from "../../utils/requests";
+import requests from "../../utils/requests.ts";
 
 const Index = ({ books, routertitle }) => {
   const router = useRouter();

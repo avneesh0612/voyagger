@@ -1,6 +1,8 @@
 import { groupBy } from "lodash";
-const path = require("path");
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+import path from "path";
+import stripelib from "stripe";
+
+const stripe = stripelib(process.env.STRIPE_SECRET_KEY)
 
 const handler = async (req, res) => {
   const { items, email, name } = req.body;
