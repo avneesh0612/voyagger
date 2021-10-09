@@ -4,7 +4,12 @@ import { useRouter } from "next/router";
 import Header from "../../components/Header";
 import requests from "../../utils/requests";
 
-const Index = ({ books, routertitle }) => {
+interface Booksprops {
+  books: any;
+  routertitle: any;
+}
+
+const Index: React.FC<Booksprops> = ({ books, routertitle }) => {
   const router = useRouter();
 
   return (
@@ -33,7 +38,7 @@ const Index = ({ books, routertitle }) => {
           animate={{ x: 0 }}
           className="relative bottom-0 z-20 flex flex-wrap w-1/2 mx-auto text-text"
         >
-          {books.items.map((book) => (
+          {books.items.map((book: any) => (
             <motion.div
               whileHover={{
                 scale: [1, 1.1, 1.05],
@@ -79,15 +84,17 @@ const Index = ({ books, routertitle }) => {
 
 export default Index;
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context: any) {
   let volume = context.query.volume;
 
   if (!volume) {
     volume = "fetchFiction";
   }
 
+  // @ts-ignore
   const routertitle = requests[volume].title;
 
+  // @ts-ignore
   const URL = `https://www.googleapis.com/books/v1${requests[volume]?.url}&maxResults=20`;
 
   const request = await fetch(URL).then((res) => res.json());
