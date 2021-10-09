@@ -1,8 +1,14 @@
 import { groupBy } from "lodash";
-const path = require("path");
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+import path from "path";
+import stripelib from "stripe";
 
-const handler = async (req, res) => {
+// @ts-ignore: ENV vars would be present
+const stripe = new stripelib.Stripe(process.env.STRIPE_SECRET_KEY, {
+  apiVersion: '2020-08-27',
+  typescript: true
+})
+
+const handler = async (req: { body: { items: any; email: any; name: any; }; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { id: any; }): void; new(): any; }; }; }) => {
   const { items, email, name } = req.body;
 
   const groupedItems = Object.values(groupBy(items, "id"));
@@ -21,12 +27,13 @@ const handler = async (req, res) => {
   }));
 
   const groupedImages = Object.values(
-    groupBy(items.map((item) => path.basename(item.image)))
+    groupBy(items.map((item: { image: string; }) => path.basename(item.image)))
   ).map((group) => [group.length, group[0]]);
 
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
     shipping_rates: [
+      // @ts-ignore: ENV vars would be present
       process.env.HOST === "http://localhost:3000"
         ? process.env.STRIPE_SHIPPING_RATE
         : "shr_1JLoNhSFCeAarzuF943bcl3G",
