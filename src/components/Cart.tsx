@@ -60,7 +60,7 @@ const Cart: React.FC<CartProps> = ({ ssruser, dbuser }) => {
     });
 
     const result = await stripe?.redirectToCheckout({
-      sessionId: checkoutSession.data.id,
+      sessionId: checkoutSession.data?.id,
     });
   };
 

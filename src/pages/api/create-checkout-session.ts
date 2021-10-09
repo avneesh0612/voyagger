@@ -8,7 +8,7 @@ const stripe = new stripelib.Stripe(process.env.STRIPE_SECRET_KEY, {
   typescript: true
 })
 
-const handler = async (req: { body: { items: any; email: any; name: any; }; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { id: any; }): void; new(): any; }; }; }) => {
+const handler = async (req: { body: { items: any; email: string; name: string; }; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { id: any; }): void; new(): any; }; }; }) => {
   const { items, email, name } = req.body;
 
   const groupedItems = Object.values(groupBy(items, "id"));

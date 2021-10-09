@@ -2,14 +2,18 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Header from "../../components/Header";
+import book from "../../types/bookTypes";
 import requests from "../../utils/requests";
 
 interface Booksprops {
-  books: any;
-  routertitle: any;
+  books: {
+    items: [book];
+  };
+  routertitle: string;
 }
 
 const Index: React.FC<Booksprops> = ({ books, routertitle }) => {
+  console.log(books);
   const router = useRouter();
 
   return (
@@ -38,7 +42,7 @@ const Index: React.FC<Booksprops> = ({ books, routertitle }) => {
           animate={{ x: 0 }}
           className="relative bottom-0 z-20 flex flex-wrap w-1/2 mx-auto text-text"
         >
-          {books.items.map((book: any) => (
+          {books.items.map((book: book) => (
             <motion.div
               whileHover={{
                 scale: [1, 1.1, 1.05],
