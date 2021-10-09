@@ -28,13 +28,15 @@
     "react-hot-toast": "^2.1.1",
     "react-redux": "^7.2.4",
     "react-responsive-carousel": "^3.2.21",
-    "stripe": "^8.174.0"
+    "stripe": "^8.179.0"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.172",
-    "@types/node": "^16.10.2",
+    "@types/lodash": "^4.14.175",
+    "@types/micro": "^7.3.6",
+    "@types/node": "^16.10.3",
     "@types/react": "^17.0.19",
     "@types/react-currency-formatter": "^1.1.4",
+    "@types/stripe": "^8.0.417",
     "autoprefixer": "^10.3.3",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.2",
