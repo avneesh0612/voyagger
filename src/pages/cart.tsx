@@ -58,10 +58,11 @@ const Cart: React.FC<CartProps> = ({ user, dbuser }) => {
       items: items,
       email: user?.email,
       name: user?.name,
+      id: "",
     });
 
-    const result = await stripe?.redirectToCheckout({
-      sessionId: checkoutSession.data.id,
+    await stripe?.redirectToCheckout({
+      sessionId: checkoutSession?.data?.id,
     });
   };
 
@@ -77,7 +78,7 @@ const Cart: React.FC<CartProps> = ({ user, dbuser }) => {
   };
 
   return (
-    <div className="absolute right-0 z-10 flex-col md:w-2/6 w-full  bg-white bg-opacity-50  md:flex backdrop-filter backdrop-blur-sm  ring-white">
+    <div className="absolute right-0 z-10 flex-col w-full bg-white bg-opacity-50 md:w-2/6 md:flex backdrop-filter backdrop-blur-sm ring-white">
       <NextSeo title="Your cart" />
       <div>
         <div className="flex items-center p-8 bg-white bg-opacity-60 rounded-b-3xl ring-1 ring-white">
@@ -127,7 +128,7 @@ const Cart: React.FC<CartProps> = ({ user, dbuser }) => {
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-between pb-3 m-10 mt-21 mb-1">
+        <div className="flex items-center justify-between pb-3 m-10 mb-1 mt-21">
           <h2 className="text-2xl font-Poppins">Total</h2>
           <h2 className="text-xl font-semibold">
             <Currency currency="INR" quantity={total} />
@@ -143,20 +144,20 @@ const Cart: React.FC<CartProps> = ({ user, dbuser }) => {
           Edit
         </h2>
       </div>
-      <div className="flex m-10 mt-2 mb-2 items-center">
-        <LocationMarkerIcon className="text-redmarker mt-2 h-8 w-8" />
-        <div className="flex flex-col ml-4 text-md font-semibold">
+      <div className="flex items-center m-10 mt-2 mb-2">
+        <LocationMarkerIcon className="w-8 h-8 mt-2 text-redmarker" />
+        <div className="flex flex-col ml-4 font-semibold text-md">
           {editShow ? (
             <form action="" onSubmit={editAddress}>
               <input
-                className="flex flex-col placeholder-gray-600 text-black ml-4 text-md font-semibold focus:outline-none"
+                className="flex flex-col ml-4 font-semibold text-black placeholder-gray-600 text-md focus:outline-none"
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
                 placeholder="Please enter your Address"
               />
             </form>
           ) : (
-            <div className="flex flex-col ml-4 text-md font-semibold">
+            <div className="flex flex-col ml-4 font-semibold text-md">
               {dbuser.address ? address : "Please add your address"}
             </div>
           )}

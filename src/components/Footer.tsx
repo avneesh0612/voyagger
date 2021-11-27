@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex z-40 w-screen justify-between items-center text-lg my-5 ">
+    <div className="z-40 flex items-center justify-between w-screen my-5 text-lg ">
       <Link href="https://avneesh0612.hashnode.dev/introducing-voyagger-connecting-people-changing-lives">
         <a
           target="_blank"
@@ -31,8 +31,8 @@ const Footer: React.FC = () => {
         <a target="_blank" className="mr-24">
           <Image
             className="cursor-pointer"
-            width={70}
-            height={70}
+            width={50}
+            height={50}
             src="/github.svg"
             alt="GitHub logo"
           />

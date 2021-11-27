@@ -57,9 +57,10 @@ const Cart: React.FC<CartProps> = ({ ssruser, dbuser }) => {
       items: items,
       email: user.user?.email,
       name: user.user?.name,
+      id: "",
     });
 
-    const result = await stripe?.redirectToCheckout({
+    await stripe?.redirectToCheckout({
       sessionId: checkoutSession.data?.id,
     });
   };
