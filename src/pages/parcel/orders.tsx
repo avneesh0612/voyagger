@@ -5,8 +5,13 @@ import { db } from "../../../firebase";
 import Header from "../../components/Header";
 import Order from "../../components/parcel/Order";
 import { collection, where, getDocs, query } from "firebase/firestore";
+import ParcelType from "../../types/ParcelType";
 
-const Orders = ({ orders }) => {
+interface Props {
+  orders: [ParcelType];
+}
+
+const Orders: React.FC<Props> = ({ orders }) => {
   const router = useRouter();
   return (
     <div>
@@ -42,7 +47,7 @@ const Orders = ({ orders }) => {
           </h2>
         </motion.div>
 
-        {orders?.map((order) => (
+        {orders?.map((order: ParcelType) => (
           <div key={order.id}>
             <Order {...order} />
           </div>
@@ -60,7 +65,7 @@ export const getServerSideProps = withPageAuthRequired({
 
     const parcelOrdersQuery = query(
       collection(db, "parcels"),
-      where("usermail", "==", user?.user.email)
+      where("usermail", "==", "user?.user.email")
     );
 
     const ParcelOrders = await getDocs(parcelOrdersQuery);

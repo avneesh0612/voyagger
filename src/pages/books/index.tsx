@@ -13,7 +13,6 @@ interface Booksprops {
 }
 
 const Index: React.FC<Booksprops> = ({ books, routertitle }) => {
-  console.log(books);
   const router = useRouter();
 
   return (
