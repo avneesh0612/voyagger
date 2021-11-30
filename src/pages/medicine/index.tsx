@@ -65,11 +65,11 @@ export const getServerSideProps = withPageAuthRequired({
       ...userRes.data(),
     };
 
-    const medicinesRef = collection(db, `products/medicine/medicine`);
+    const medicinesRef = collection(db, "products/medicine/medicine");
 
     const allmedicines = await getDocs(medicinesRef);
 
-    const medicines = allmedicines.docs.map((medicine) => ({
+    const medicines = allmedicines.docs.map(medicine => ({
       id: medicine.id,
       ...medicine.data(),
     }));

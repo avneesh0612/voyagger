@@ -90,7 +90,7 @@ export const getServerSideProps = withPageAuthRequired({
     const stripeOrders = await getDocs(stripeOrdersQuery);
 
     const orders = await Promise.all(
-      stripeOrders.docs.map(async (order) => ({
+      stripeOrders.docs.map(async order => ({
         id: order.id,
         amount: order.data().amount,
         amountShipping: order.data().amount_shipping,

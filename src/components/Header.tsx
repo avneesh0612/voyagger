@@ -1,11 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import {
-  ChevronUpIcon,
-  ChevronDownIcon,
-  SearchIcon,
-} from "@heroicons/react/outline";
+import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useSelector } from "react-redux";
@@ -18,7 +13,6 @@ function Header() {
   const items = useSelector(selectItems);
 
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const router = useRouter();
 
   return (
     <motion.header

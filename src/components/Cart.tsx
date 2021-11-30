@@ -147,7 +147,7 @@ const Cart: React.FC<CartProps> = ({ ssruser, dbuser }) => {
               <input
                 className="flex flex-col ml-4 font-semibold text-black placeholder-gray-600 text-md focus:outline-none"
                 value={address}
-                onChange={(e) => setAddress(e.target.value)}
+                onChange={e => setAddress(e.target.value)}
                 placeholder="Please enter your Address"
               />
             </form>

@@ -100,7 +100,7 @@ export async function getServerSideProps(context: any) {
   // @ts-ignore
   const URL = `https://www.googleapis.com/books/v1${requests[volume]?.url}&maxResults=20`;
 
-  const request = await fetch(URL).then((res) => res.json());
+  const request = await fetch(URL).then(res => res.json());
 
   return {
     props: {
