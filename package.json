@@ -9,7 +9,8 @@
     "lint": "eslint --fix 'src/{components,pages,utils}/**/*.{js,jsx,ts,tsx}'",
     "lint:check": "eslint 'src/{components,pages,utils}/**/*.{js,jsx,ts,tsx}'",
     "prepare": "husky install",
-    "pre-commit": "yarn run format && yarn run lint && git add -A ."
+    "pre-commit": "yarn run format && yarn run lint && git add -A .",
+    "ci": "rm -rf node_modules && yarn install --frozen-lockfile"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^1.5.0",
