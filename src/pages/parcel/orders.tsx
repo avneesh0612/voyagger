@@ -71,7 +71,7 @@ export const getServerSideProps = withPageAuthRequired({
     const ParcelOrders = await getDocs(parcelOrdersQuery);
 
     const orders = await Promise.all(
-      ParcelOrders.docs.map(async (order) => ({
+      ParcelOrders.docs.map(async order => ({
         id: order.id,
         pickupaddress: order.data().pickupaddress,
         recipientphone: order.data().recipientphone,

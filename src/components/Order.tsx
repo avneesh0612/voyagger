@@ -22,12 +22,12 @@ const Order: React.FC<OrderProps> = ({
 }) => {
   let groupedImages;
 
-  if (images.every((image) => !image.startsWith("["))) {
+  if (images.every(image => !image.startsWith("["))) {
     groupedImages = Object.values(
-      groupBy(images.map((image) => path.basename(image)))
-    ).map((group) => [group.length, group[0]]);
+      groupBy(images.map(image => path.basename(image)))
+    ).map(group => [group.length, group[0]]);
   } else {
-    groupedImages = [...images.map((image) => JSON.parse(image))];
+    groupedImages = [...images.map(image => JSON.parse(image))];
   }
 
   return (
@@ -67,7 +67,7 @@ const Order: React.FC<OrderProps> = ({
 
       <div className="p-5 sm:p-10">
         <div className="flex space-x-6 overflow-x-auto">
-          {groupedImages.map((group) => (
+          {groupedImages.map(group => (
             <div key={group[1]} className="relative">
               <div className="h-36 w-36 rounded-full flex items-center justify-center bg-white">
                 <div className="relative w-24 h-24 sm:h-32 sm:w-32">

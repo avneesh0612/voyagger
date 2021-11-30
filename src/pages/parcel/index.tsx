@@ -70,7 +70,7 @@ const Index: React.FC<parcelProps> = ({ user }) => {
           <input
             type="text"
             value={pickupaddress}
-            onChange={(e) => setpickupaddress(e.target.value)}
+            onChange={e => setpickupaddress(e.target.value)}
             className="w-full rounded-lg bg-white/50 focus:outline-none pl-3 h-10 "
           />
         </div>
@@ -81,7 +81,7 @@ const Index: React.FC<parcelProps> = ({ user }) => {
           <input
             type="text"
             value={recipientsaddress}
-            onChange={(e) => setrecipientsaddress(e.target.value)}
+            onChange={e => setrecipientsaddress(e.target.value)}
             className="w-full rounded-lg bg-white/50 focus:outline-none pl-3 h-10 "
           />
         </div>
@@ -91,7 +91,7 @@ const Index: React.FC<parcelProps> = ({ user }) => {
           <input
             type="text"
             value={zip}
-            onChange={(e) => setzip(e.target.value)}
+            onChange={e => setzip(e.target.value)}
             className="w-full rounded-lg bg-white/50 focus:outline-none pl-3 h-10 "
           />
         </div>
@@ -103,7 +103,7 @@ const Index: React.FC<parcelProps> = ({ user }) => {
           <input
             type="phone"
             value={recipientphone}
-            onChange={(e) => setrecipientphone(e.target.value)}
+            onChange={e => setrecipientphone(e.target.value)}
             className="w-full rounded-lg bg-white/50 focus:outline-none pl-3 h-10 "
           />
         </div>
@@ -115,7 +115,7 @@ const Index: React.FC<parcelProps> = ({ user }) => {
           <select
             className="w-full rounded-lg bg-white/50 focus:outline-none pl-3 h-10 "
             value={weight}
-            onChange={(e) => setWeight(e.target.value)}
+            onChange={e => setWeight(e.target.value)}
           >
             <option>Under 1/2 kg</option>
             <option>Under 1kg</option>

@@ -4,16 +4,25 @@ import stripelib from "stripe";
 
 // @ts-ignore: ENV vars would be present
 const stripe = new stripelib.Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2020-08-27',
-  typescript: true
-})
+  apiVersion: "2020-08-27",
+  typescript: true,
+});
 
-const handler = async (req: { body: { items: any; email: string; name: string; }; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { id: any; }): void; new(): any; }; }; }) => {
+const handler = async (
+  req: { body: { items: any; email: string; name: string } },
+  res: {
+    status: (arg0: number) => {
+      (): any;
+      new (): any;
+      json: { (arg0: { id: any }): void; new (): any };
+    };
+  }
+) => {
   const { items, email, name } = req.body;
 
   const groupedItems = Object.values(groupBy(items, "id"));
 
-  const transformedItems = groupedItems.map((group) => ({
+  const transformedItems = groupedItems.map(group => ({
     description: group[0].description,
     quantity: group.length,
     price_data: {
@@ -27,8 +36,8 @@ const handler = async (req: { body: { items: any; email: string; name: string; }
   }));
 
   const groupedImages = Object.values(
-    groupBy(items.map((item: { image: string; }) => path.basename(item.image)))
-  ).map((group) => [group.length, group[0]]);
+    groupBy(items.map((item: { image: string }) => path.basename(item.image)))
+  ).map(group => [group.length, group[0]]);
 
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],

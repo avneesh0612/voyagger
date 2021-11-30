@@ -69,7 +69,7 @@ export const getServerSideProps = withPageAuthRequired({
 
     const allmedicines = await getDocs(medicinesRef);
 
-    const medicines = allmedicines.docs.map((medicine) => ({
+    const medicines = allmedicines.docs.map(medicine => ({
       id: medicine.id,
       ...medicine.data(),
     }));

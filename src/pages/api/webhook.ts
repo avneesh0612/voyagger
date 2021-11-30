@@ -6,15 +6,15 @@ import stripelib from "stripe";
 const serviceAccount = require("../../../permissions");
 const app = !admin.apps.length
   ? admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-  })
+      credential: admin.credential.cert(serviceAccount),
+    })
   : admin.app();
 
 // @ts-ignore: ENV vars would be present
 const stripe = new stripelib.Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2020-08-27',
-  typescript: true
-})
+  apiVersion: "2020-08-27",
+  typescript: true,
+});
 const endpointSecret = process.env.STRIPE_SIGNING_SECRET;
 const fulfillOrder = async (session: any) => {
   const images = JSON.parse(session.metadata.images).map((image: any) =>
@@ -35,7 +35,18 @@ const fulfillOrder = async (session: any) => {
     });
 };
 
-const handler = async (req: IncomingMessage, res: { status: (arg0: number) => { (): any; new(): any; send: { (arg0: string): any; new(): any; }; json: { (arg0: { ok: boolean; }): any; new(): any; }; }; json: (arg0: { ok: boolean; }) => void; }) => {
+const handler = async (
+  req: IncomingMessage,
+  res: {
+    status: (arg0: number) => {
+      (): any;
+      new (): any;
+      send: { (arg0: string): any; new (): any };
+      json: { (arg0: { ok: boolean }): any; new (): any };
+    };
+    json: (arg0: { ok: boolean }) => void;
+  }
+) => {
   if (req.method === "POST") {
     const requestBuffer = await buffer(req);
     const payload = requestBuffer.toString();
@@ -55,7 +66,7 @@ const handler = async (req: IncomingMessage, res: { status: (arg0: number) => { 
 
       return fulfillOrder(session)
         .then(() => res.status(200).json({ ok: true }))
-        .catch((err) => res.status(400).send(`Webhook Error: ${err.message}`));
+        .catch(err => res.status(400).send(`Webhook Error: ${err.message}`));
     }
     res.json({ ok: true });
   }

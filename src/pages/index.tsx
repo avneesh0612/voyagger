@@ -32,8 +32,6 @@ const Home: React.FC = () => {
 
   return (
     <>
-    
-      
       {isLoading ? (
         <div className="w-screen h-screen flex justify-center items-center">
           <motion.div initial={{ x: -500 }} animate={{ x: 0 }}>

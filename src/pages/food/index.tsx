@@ -91,7 +91,7 @@ export const getServerSideProps = withPageAuthRequired({
 
     const allsalads = await getDocs(saladsQuery);
 
-    const salads = allsalads.docs.map((salad) => ({
+    const salads = allsalads.docs.map(salad => ({
       id: salad.id,
       ...salad.data(),
     }));
@@ -100,7 +100,7 @@ export const getServerSideProps = withPageAuthRequired({
 
     const allcategories = await getDocs(categoriesRef);
 
-    const categories = allcategories.docs.map((salad) => ({
+    const categories = allcategories.docs.map(salad => ({
       id: salad.id,
       ...salad.data(),
     }));
