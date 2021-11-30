@@ -8,8 +8,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Items from "../components/Items";
 import Image from "next/image";
-import Head from "next/head";
-import Script from "next/script";
 import { updateDoc, doc } from "firebase/firestore";
 
 const Home: React.FC = () => {
@@ -24,9 +22,8 @@ const Home: React.FC = () => {
           name: user?.name,
           photoURL: user?.picture,
         });
-
-        updateUser();
       };
+      updateUser();
     }
   });
 

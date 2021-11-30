@@ -96,7 +96,7 @@ export const getServerSideProps = withPageAuthRequired({
       ...salad.data(),
     }));
 
-    const categoriesRef = collection(db, `products/food/categories`);
+    const categoriesRef = collection(db, "products/food/categories");
 
     const allcategories = await getDocs(categoriesRef);
 

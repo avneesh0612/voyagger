@@ -1,7 +1,6 @@
 import { PlusIcon } from "@heroicons/react/solid";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import Currency from "react-currency-formatter";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
@@ -16,8 +15,6 @@ interface FoodItemProps {
 
 const OfferProduct: React.FC<FoodItemProps> = ({ name, price, image, id }) => {
   const dispatch = useDispatch();
-
-  const router = useRouter();
 
   const addItemTobasket = () => {
     const product = {
