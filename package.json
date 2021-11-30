@@ -38,6 +38,8 @@
     "stripe": "^8.179.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@types/lodash": "^4.14.175",
     "@types/micro": "^7.3.6",
     "@types/node": "^16.10.3",
