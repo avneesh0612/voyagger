@@ -60,5 +60,6 @@
   "license": "MIT",
   "browser": {
     "child_process": false
-  }
+  },
+  "version": "0.1.0"
 }
